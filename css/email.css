@@ -1,1 +1,1771 @@
+/* =========================================================
+   HELIX CRM
+   EMAIL CAMPAIGNS
+   ========================================================= */
 
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.email-page {
+    width:
+        min(
+            1580px,
+            calc(100% - 48px)
+        );
+
+    margin:
+        0 auto;
+
+    padding:
+        28px 0
+        80px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.email-hero {
+    min-height:
+        285px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        245px;
+
+    align-items:
+        end;
+
+    gap:
+        50px;
+
+    padding:
+        42px 0
+        45px;
+}
+
+
+.hero-copy {
+    max-width:
+        900px;
+}
+
+
+.eyebrow {
+    color:
+        var(--coral);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .53rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .11em;
+}
+
+
+.email-hero h1 {
+    max-width:
+        900px;
+
+    margin:
+        14px 0 0;
+
+    font-size:
+        clamp(
+            3rem,
+            5.5vw,
+            6rem
+        );
+
+    font-weight:
+        800;
+
+    line-height:
+        .9;
+
+    letter-spacing:
+        -.06em;
+}
+
+
+.email-hero h1 span {
+    color:
+        var(--coral);
+}
+
+
+.email-hero p {
+    max-width:
+        690px;
+
+    margin:
+        23px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .81rem;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   HERO ACTION
+   ========================================================= */
+
+.hero-action-wrap {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+}
+
+
+.hero-label {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+}
+
+
+.add-campaign-button {
+    min-height:
+        68px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        0 20px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--coral);
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        var(--shadow-card);
+}
+
+
+.add-campaign-button:hover {
+    background:
+        #cf614f;
+}
+
+
+.add-campaign-button span {
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .56rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+}
+
+
+.add-campaign-button strong {
+    font-size:
+        1.5rem;
+
+    font-weight:
+        400;
+}
+
+
+/* =========================================================
+   METRICS
+   ========================================================= */
+
+.email-metrics {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    margin-bottom:
+        22px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.email-metric {
+    position:
+        relative;
+
+    min-height:
+        135px;
+
+    padding:
+        18px;
+
+    border-right:
+        1px solid
+        var(--border);
+}
+
+
+.email-metric:last-child {
+    border-right:
+        none;
+}
+
+
+.email-metric::before {
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        18px;
+
+    right:
+        18px;
+
+    height:
+        3px;
+}
+
+
+.metric-active::before {
+    background:
+        var(--coral);
+}
+
+
+.metric-scheduled::before {
+    background:
+        var(--lavender);
+}
+
+
+.metric-open::before {
+    background:
+        var(--blue);
+}
+
+
+.metric-click::before {
+    background:
+        var(--mint);
+}
+
+
+.metric-recipients::before {
+    background:
+        var(--yellow);
+}
+
+
+.email-metric > span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .08em;
+}
+
+
+.email-metric strong {
+    display:
+        block;
+
+    margin-top:
+        16px;
+
+    font-size:
+        2rem;
+
+    font-weight:
+        800;
+
+    line-height:
+        1;
+}
+
+
+.email-metric small {
+    display:
+        block;
+
+    margin-top:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .53rem;
+}
+
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.email-toolbar {
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(320px,1fr)
+        repeat(4,auto);
+
+    gap:
+        8px;
+
+    margin-bottom:
+        30px;
+}
+
+
+.email-search {
+    min-height:
+        54px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.email-search > span {
+    width:
+        52px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    color:
+        var(--coral);
+
+    font-size:
+        1rem;
+}
+
+
+.email-search input {
+    flex:
+        1;
+
+    min-width: 0;
+
+    min-height:
+        52px;
+
+    border:
+        none;
+
+    outline:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        var(--ink);
+
+    font-size:
+        .7rem;
+}
+
+
+.email-toolbar select {
+    min-width:
+        145px;
+
+    min-height:
+        54px;
+
+    padding:
+        0 12px;
+
+    border:
+        1px solid
+        var(--border);
+
+    outline:
+        none;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--ink);
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.campaign-heading {
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    margin-bottom:
+        16px;
+
+    padding-bottom:
+        13px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+
+.campaign-heading > div:first-child > span {
+    color:
+        var(--coral);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .09em;
+}
+
+
+.campaign-heading h2 {
+    margin:
+        6px 0 0;
+
+    font-size:
+        1.55rem;
+
+    font-weight:
+        800;
+}
+
+
+.visible-count {
+    display:
+        flex;
+
+    align-items:
+        baseline;
+
+    gap:
+        7px;
+}
+
+
+.visible-count strong {
+    color:
+        var(--coral);
+
+    font-size:
+        1.6rem;
+
+    font-weight:
+        800;
+}
+
+
+.visible-count span {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .47rem;
+}
+
+
+/* =========================================================
+   CAMPAIGN LIST
+   ========================================================= */
+
+.campaign-list {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    gap:
+        16px;
+}
+
+
+/* =========================================================
+   CAMPAIGN CARD
+   ========================================================= */
+
+.campaign-card {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    min-height:
+        360px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        var(--shadow-card);
+
+    transition:
+        transform .15s ease,
+        border-color .15s ease,
+        box-shadow .15s ease;
+}
+
+
+.campaign-card:hover {
+    transform:
+        translateY(-2px);
+
+    border-color:
+        var(--coral);
+
+    box-shadow:
+        var(--shadow-soft);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.campaign-card-header {
+    padding:
+        17px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+
+.campaign-topline {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        15px;
+
+    margin-bottom:
+        10px;
+}
+
+
+.campaign-badges {
+    display:
+        flex;
+
+    gap:
+        6px;
+
+    flex-wrap:
+        wrap;
+}
+
+
+.campaign-status,
+.campaign-type {
+    width:
+        fit-content;
+
+    padding:
+        4px 7px;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .4rem;
+
+    font-weight:
+        700;
+
+    text-transform:
+        uppercase;
+}
+
+
+.campaign-status.draft {
+    background:
+        var(--paper-soft);
+
+    color:
+        var(--muted);
+}
+
+
+.campaign-status.scheduled {
+    background:
+        var(--lavender-soft);
+
+    color:
+        #554a9b;
+}
+
+
+.campaign-status.active {
+    background:
+        var(--coral-soft);
+
+    color:
+        #8b4035;
+}
+
+
+.campaign-status.sent {
+    background:
+        var(--mint-soft);
+
+    color:
+        #36725a;
+}
+
+
+.campaign-status.paused {
+    background:
+        var(--yellow-soft);
+
+    color:
+        #786321;
+}
+
+
+.campaign-status.archived {
+    background:
+        #ececec;
+
+    color:
+        #666;
+}
+
+
+.campaign-type {
+    background:
+        var(--blue-soft);
+
+    color:
+        var(--blue-dark);
+}
+
+
+.campaign-send-date {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .42rem;
+}
+
+
+.campaign-card-header h3 {
+    margin:
+        0;
+
+    font-size:
+        .9rem;
+
+    font-weight:
+        800;
+
+    line-height:
+        1.35;
+}
+
+
+.campaign-subject {
+    margin-top:
+        8px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .58rem;
+
+    line-height:
+        1.45;
+}
+
+
+/* =========================================================
+   AUDIENCE
+   ========================================================= */
+
+.campaign-audience {
+    padding:
+        11px 17px;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+
+    background:
+        var(--coral-soft);
+}
+
+
+.campaign-audience span {
+    display:
+        block;
+
+    color:
+        #965041;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .39rem;
+
+    font-weight:
+        700;
+}
+
+
+.campaign-audience strong {
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    color:
+        #754136;
+
+    font-size:
+        .56rem;
+}
+
+
+/* =========================================================
+   PERFORMANCE
+   ========================================================= */
+
+.campaign-performance {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+
+.performance-item {
+    min-height:
+        82px;
+
+    padding:
+        13px;
+
+    border-right:
+        1px solid
+        var(--border-soft);
+}
+
+
+.performance-item:last-child {
+    border-right:
+        none;
+}
+
+
+.performance-item span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .38rem;
+
+    font-weight:
+        700;
+}
+
+
+.performance-item strong {
+    display:
+        block;
+
+    margin-top:
+        8px;
+
+    font-size:
+        .88rem;
+
+    font-weight:
+        800;
+}
+
+
+/* =========================================================
+   RATE BARS
+   ========================================================= */
+
+.rate-section {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap:
+        16px;
+
+    padding:
+        15px 17px;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+}
+
+
+.rate-item span {
+    display:
+        block;
+
+    margin-bottom:
+        6px;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .38rem;
+
+    font-weight:
+        700;
+}
+
+
+.rate-track {
+    height:
+        6px;
+
+    background:
+        var(--paper-soft);
+}
+
+
+.rate-fill {
+    height:
+        100%;
+}
+
+
+.rate-fill.open-rate {
+    background:
+        var(--blue);
+}
+
+
+.rate-fill.click-rate {
+    background:
+        var(--mint);
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.campaign-summary {
+    flex:
+        1;
+
+    padding:
+        15px 17px;
+}
+
+
+.campaign-summary span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .38rem;
+
+    font-weight:
+        700;
+}
+
+
+.campaign-summary p {
+    margin:
+        6px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .56rem;
+
+    line-height:
+        1.55;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.campaign-actions {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    border-top:
+        1px solid
+        var(--border);
+}
+
+
+.campaign-actions button {
+    min-height:
+        44px;
+
+    border:
+        none;
+
+    border-right:
+        1px solid
+        var(--border);
+
+    background:
+        transparent;
+
+    color:
+        var(--ink);
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .42rem;
+
+    font-weight:
+        700;
+}
+
+
+.campaign-actions button:last-child {
+    border-right:
+        none;
+}
+
+
+.campaign-actions button:hover {
+    background:
+        var(--coral-soft);
+
+    color:
+        #804033;
+}
+
+
+/* =========================================================
+   EMPTY
+   ========================================================= */
+
+.campaign-empty {
+    grid-column:
+        1 / -1;
+
+    min-height:
+        340px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    padding:
+        38px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.campaign-empty span {
+    color:
+        var(--coral);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+}
+
+
+.campaign-empty h3 {
+    margin:
+        8px 0 0;
+
+    font-size:
+        1.5rem;
+}
+
+
+.campaign-empty p {
+    max-width:
+        550px;
+
+    margin:
+        12px 0 20px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    line-height:
+        1.6;
+}
+
+
+.campaign-empty button {
+    width:
+        fit-content;
+
+    padding:
+        12px 15px;
+
+    border:
+        1px solid
+        var(--coral);
+
+    background:
+        var(--coral);
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .5rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.campaign-overlay {
+    position:
+        fixed;
+
+    inset: 0;
+
+    z-index:
+        1900;
+
+    background:
+        rgba(15,15,15,.58);
+
+    opacity:
+        0;
+
+    transition:
+        opacity .18s ease;
+}
+
+
+.campaign-overlay.open {
+    opacity:
+        1;
+}
+
+
+/* =========================================================
+   DRAWER
+   ========================================================= */
+
+.campaign-drawer {
+    position:
+        fixed;
+
+    top: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    z-index:
+        2000;
+
+    width:
+        min(700px,100%);
+
+    overflow-y:
+        auto;
+
+    background:
+        var(--paper);
+
+    border-left:
+        1px solid
+        var(--border);
+
+    box-shadow:
+        -20px 0 55px
+        rgba(0,0,0,.16);
+
+    transform:
+        translateX(100%);
+
+    transition:
+        transform .22s ease;
+}
+
+
+.campaign-drawer.open {
+    transform:
+        translateX(0);
+}
+
+
+body.drawer-open {
+    overflow:
+        hidden;
+}
+
+
+/* =========================================================
+   DRAWER TOP
+   ========================================================= */
+
+.drawer-top {
+    min-height:
+        105px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        23px 27px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.drawer-kicker {
+    color:
+        var(--coral);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .09em;
+}
+
+
+.drawer-top h2 {
+    margin:
+        7px 0 0;
+
+    font-size:
+        1.4rem;
+
+    font-weight:
+        800;
+}
+
+
+.drawer-close {
+    width:
+        42px;
+
+    height:
+        42px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        transparent;
+
+    cursor:
+        pointer;
+
+    font-size:
+        1.4rem;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.campaign-form {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap:
+        16px;
+
+    padding:
+        27px;
+}
+
+
+.form-group {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        7px;
+}
+
+
+.form-group.full,
+.drawer-actions.full {
+    grid-column:
+        1 / -1;
+}
+
+
+.form-group label {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width:
+        100%;
+
+    border:
+        1px solid
+        var(--border);
+
+    outline:
+        none;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--ink);
+}
+
+
+.form-group input,
+.form-group select {
+    min-height:
+        46px;
+
+    padding:
+        0 11px;
+}
+
+
+.form-group textarea {
+    padding:
+        11px;
+
+    resize:
+        vertical;
+
+    line-height:
+        1.5;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color:
+        var(--coral);
+
+    box-shadow:
+        0 0 0 2px
+        var(--coral-soft);
+}
+
+
+/* =========================================================
+   DRAWER ACTIONS
+   ========================================================= */
+
+.drawer-actions {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        1.4fr;
+
+    gap:
+        10px;
+
+    margin-top:
+        8px;
+}
+
+
+.secondary-button,
+.save-button {
+    min-height:
+        52px;
+
+    border:
+        1px solid
+        var(--border);
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .5rem;
+
+    font-weight:
+        700;
+}
+
+
+.secondary-button {
+    background:
+        var(--surface);
+}
+
+
+.save-button {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        0 17px;
+
+    background:
+        var(--coral);
+
+    color:
+        white;
+}
+
+
+.save-button:hover {
+    background:
+        #cf614f;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .campaign-list {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .email-toolbar {
+        grid-template-columns:
+            1fr
+            1fr
+            1fr;
+    }
+
+
+    .email-search {
+        grid-column:
+            1 / -1;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+
+    .email-metrics {
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+
+    .email-metric:nth-child(3) {
+        border-right:
+            none;
+    }
+
+
+    .email-metric:nth-child(n+4) {
+        border-top:
+            1px solid
+            var(--border);
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .email-page {
+        width:
+            calc(100% - 28px);
+    }
+
+
+    .email-hero {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .hero-action-wrap {
+        max-width:
+            400px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .email-hero h1 {
+        font-size:
+            3rem;
+    }
+
+
+    .email-metrics {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .email-metric {
+        border-right:
+            none;
+
+        border-bottom:
+            1px solid
+            var(--border);
+    }
+
+
+    .email-toolbar {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .email-search {
+        grid-column:
+            auto;
+    }
+
+
+    .campaign-heading {
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+    }
+
+
+    .campaign-performance {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .performance-item:nth-child(2) {
+        border-right:
+            none;
+    }
+
+
+    .performance-item:nth-child(-n+2) {
+        border-bottom:
+            1px solid
+            var(--border-soft);
+    }
+
+
+    .campaign-form {
+        grid-template-columns:
+            1fr;
+
+        padding:
+            22px 18px;
+    }
+
+
+    .form-group.full,
+    .drawer-actions.full {
+        grid-column:
+            auto;
+    }
+
+
+    .drawer-actions {
+        grid-template-columns:
+            1fr;
+    }
+
+}
