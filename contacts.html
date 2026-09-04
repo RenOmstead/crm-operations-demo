@@ -1,1 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Contacts | Helix CRM
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/contacts.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="app-shell">
+
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-brand">
+
+                <a
+                    href="index.html"
+                    class="brand-link"
+                >
+
+                    <div class="brand-mark">
+                        H
+                    </div>
+
+
+                    <div class="brand-copy">
+
+                        <strong>
+                            HELIX
+                        </strong>
+
+                        <span>
+                            OPERATIONS CRM
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <nav class="sidebar-nav">
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        WORKSPACE
+                    </span>
+
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◫
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="customers.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◩
+                        </span>
+
+                        <span>
+                            Customers
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contacts.html"
+                        class="nav-link active"
+                    >
+
+                        <span class="nav-icon">
+                            ◉
+                        </span>
+
+                        <span>
+                            Contacts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="pipeline.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ↗
+                        </span>
+
+                        <span>
+                            Pipeline
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contracts.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌘
+                        </span>
+
+                        <span>
+                            Gov Contracts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="tasks.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ✓
+                        </span>
+
+                        <span>
+                            Tasks
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        MARKETING
+                    </span>
+
+
+                    <a
+                        href="email.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ✉
+                        </span>
+
+                        <span>
+                            Email Campaigns
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-planner.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◇
+                        </span>
+
+                        <span>
+                            Social Planner
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-analytics.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌁
+                        </span>
+
+                        <span>
+                            Social Analytics
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="seo.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌕
+                        </span>
+
+                        <span>
+                            SEO
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        EVENTS
+                    </span>
+
+
+                    <a
+                        href="tradeshows.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ▦
+                        </span>
+
+                        <span>
+                            Tradeshows
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+            </nav>
+
+
+
+            <div class="sidebar-footer">
+
+                <div class="demo-chip">
+
+                    <span class="demo-dot"></span>
+
+                    Portfolio Demo
+
+                </div>
+
+
+                <div class="user-card">
+
+                    <div class="user-avatar">
+                        LO
+                    </div>
+
+
+                    <div class="user-copy">
+
+                        <strong>
+                            Lauren Omstead
+                        </strong>
+
+                        <span>
+                            Workspace Admin
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
+        <div class="main-shell">
+
+
+            <!-- =============================================
+                 TOPBAR
+                 ============================================= -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        id="globalSearch"
+                        type="search"
+                        placeholder="Search contacts..."
+                        autocomplete="off"
+                    >
+
+                    <kbd>
+                        /
+                    </kbd>
+
+                </div>
+
+
+
+                <div class="topbar-actions">
+
+
+                    <button
+                        id="quickCreateButton"
+                        class="quick-create"
+                        type="button"
+                    >
+
+                        <span>
+                            + NEW RECORD
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="icon-button"
+                        type="button"
+                        aria-label="Notifications"
+                    >
+                        ◌
+                    </button>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =============================================
+                 PAGE
+                 ============================================= -->
+
+            <main class="contacts-page">
+
+
+                <div class="demo-notice">
+
+                    Portfolio Demo · Helix Operations Group is fictional · Contact information shown is mock data
+
+                </div>
+
+
+
+                <!-- =========================================
+                     HERO
+                     ========================================= -->
+
+                <section class="contacts-hero">
+
+
+                    <div class="hero-copy">
+
+                        <span class="eyebrow">
+                            RELATIONSHIPS / 02
+                        </span>
+
+
+                        <h1>
+
+                            WHO DO WE
+                            <span>ACTUALLY KNOW?</span>
+
+                        </h1>
+
+
+                        <p>
+
+                            Track the people behind customer relationships,
+                            who owns the conversation, what matters to them,
+                            and when somebody needs a follow-up.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="hero-action-wrap">
+
+
+                        <div class="hero-sticker">
+                            HUMAN BEINGS! AMAZING!
+                        </div>
+
+
+                        <button
+                            id="addContactButton"
+                            class="add-contact-button"
+                            type="button"
+                        >
+
+                            <span>
+                                ADD CONTACT
+                            </span>
+
+                            <strong>
+                                +
+                            </strong>
+
+                        </button>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     METRICS
+                     ========================================= -->
+
+                <section class="contact-metrics">
+
+
+                    <article class="contact-metric metric-total">
+
+                        <span>
+                            TOTAL CONTACTS
+                        </span>
+
+                        <strong id="metricTotal">
+                            0
+                        </strong>
+
+                        <small>
+                            people in CRM
+                        </small>
+
+                    </article>
+
+
+                    <article class="contact-metric metric-decision">
+
+                        <span>
+                            DECISION MAKERS
+                        </span>
+
+                        <strong id="metricDecisionMakers">
+                            0
+                        </strong>
+
+                        <small>
+                            key contacts
+                        </small>
+
+                    </article>
+
+
+                    <article class="contact-metric metric-followup">
+
+                        <span>
+                            FOLLOW-UPS DUE
+                        </span>
+
+                        <strong id="metricFollowUps">
+                            0
+                        </strong>
+
+                        <small>
+                            need attention
+                        </small>
+
+                    </article>
+
+
+                    <article class="contact-metric metric-companies">
+
+                        <span>
+                            COMPANIES
+                        </span>
+
+                        <strong id="metricCompanies">
+                            0
+                        </strong>
+
+                        <small>
+                            represented here
+                        </small>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     TOOLBAR
+                     ========================================= -->
+
+                <section class="contacts-toolbar">
+
+
+                    <label class="contact-search">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            id="contactSearch"
+                            type="search"
+                            placeholder="Search name, company, title, email..."
+                            autocomplete="off"
+                        >
+
+                    </label>
+
+
+
+                    <select id="companyFilter">
+
+                        <option value="">
+                            ALL COMPANIES
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="roleFilter">
+
+                        <option value="">
+                            ALL RELATIONSHIP TYPES
+                        </option>
+
+                        <option value="decision-maker">
+                            DECISION MAKER
+                        </option>
+
+                        <option value="influencer">
+                            INFLUENCER
+                        </option>
+
+                        <option value="technical">
+                            TECHNICAL
+                        </option>
+
+                        <option value="procurement">
+                            PROCUREMENT
+                        </option>
+
+                        <option value="champion">
+                            CHAMPION
+                        </option>
+
+                        <option value="other">
+                            OTHER
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="followUpFilter">
+
+                        <option value="">
+                            ALL FOLLOW-UP
+                        </option>
+
+                        <option value="due">
+                            DUE / OVERDUE
+                        </option>
+
+                        <option value="scheduled">
+                            SCHEDULED
+                        </option>
+
+                        <option value="none">
+                            NO DATE
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="contactSort">
+
+                        <option value="name">
+                            NAME A–Z
+                        </option>
+
+                        <option value="company">
+                            COMPANY
+                        </option>
+
+                        <option value="follow-up">
+                            FOLLOW-UP DATE
+                        </option>
+
+                        <option value="recent">
+                            RECENTLY UPDATED
+                        </option>
+
+                    </select>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     DIRECTORY HEADER
+                     ========================================= -->
+
+                <section class="directory-heading">
+
+
+                    <div>
+
+                        <span>
+                            PEOPLE DATABASE
+                        </span>
+
+                        <h2>
+                            Relationship network
+                        </h2>
+
+                    </div>
+
+
+                    <div class="visible-count">
+
+                        <strong id="visibleContactCount">
+                            0
+                        </strong>
+
+                        <span>
+                            VISIBLE
+                        </span>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     CONTACT GRID
+                     ========================================= -->
+
+                <section
+                    id="contactGrid"
+                    class="contact-grid"
+                >
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         QUICK CREATE
+         ===================================================== -->
+
+    <div
+        id="quickCreateMenu"
+        class="quick-create-menu"
+        hidden
+    >
+
+        <div class="quick-menu-header">
+            CREATE NEW
+        </div>
+
+        <a href="customers.html?action=new">
+            Customer
+            <span>→</span>
+        </a>
+
+        <a href="contacts.html?action=new">
+            Contact
+            <span>→</span>
+        </a>
+
+        <a href="pipeline.html?action=new">
+            Opportunity
+            <span>→</span>
+        </a>
+
+        <a href="tasks.html?action=new">
+            Task
+            <span>→</span>
+        </a>
+
+        <a href="contracts.html?action=new">
+            Contract Record
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         OVERLAY
+         ===================================================== -->
+
+    <div
+        id="contactOverlay"
+        class="contact-overlay"
+        hidden
+    >
+    </div>
+
+
+
+    <!-- =====================================================
+         CONTACT DRAWER
+         ===================================================== -->
+
+    <aside
+        id="contactDrawer"
+        class="contact-drawer"
+        hidden
+        aria-label="Contact editor"
+    >
+
+
+        <div class="drawer-top">
+
+
+            <div>
+
+                <span class="drawer-kicker">
+                    PERSON RECORD
+                </span>
+
+                <h2 id="drawerTitle">
+                    Add contact
+                </h2>
+
+            </div>
+
+
+            <button
+                id="drawerCloseButton"
+                class="drawer-close"
+                type="button"
+                aria-label="Close contact editor"
+            >
+                ×
+            </button>
+
+
+        </div>
+
+
+
+        <form
+            id="contactForm"
+            class="contact-form"
+        >
+
+
+            <input
+                id="editingContactId"
+                type="hidden"
+            >
+
+
+
+            <div class="form-group">
+
+                <label for="contactFirstName">
+                    First Name
+                </label>
+
+                <input
+                    id="contactFirstName"
+                    type="text"
+                    placeholder="First name"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactLastName">
+                    Last Name
+                </label>
+
+                <input
+                    id="contactLastName"
+                    type="text"
+                    placeholder="Last name"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="contactCustomer">
+                    Company
+                </label>
+
+                <select id="contactCustomer">
+
+                    <option value="">
+                        No company selected
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactTitle">
+                    Job Title
+                </label>
+
+                <input
+                    id="contactTitle"
+                    type="text"
+                    placeholder="Director, engineer, buyer..."
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactDepartment">
+                    Department
+                </label>
+
+                <input
+                    id="contactDepartment"
+                    type="text"
+                    placeholder="Engineering, procurement..."
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactRole">
+                    Relationship Type
+                </label>
+
+                <select id="contactRole">
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                    <option value="decision-maker">
+                        Decision Maker
+                    </option>
+
+                    <option value="influencer">
+                        Influencer
+                    </option>
+
+                    <option value="technical">
+                        Technical
+                    </option>
+
+                    <option value="procurement">
+                        Procurement
+                    </option>
+
+                    <option value="champion">
+                        Champion
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactOwner">
+                    Relationship Owner
+                </label>
+
+                <input
+                    id="contactOwner"
+                    type="text"
+                    placeholder="Team member"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactEmail">
+                    Email
+                </label>
+
+                <input
+                    id="contactEmail"
+                    type="email"
+                    placeholder="name@company.com"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactPhone">
+                    Phone
+                </label>
+
+                <input
+                    id="contactPhone"
+                    type="text"
+                    placeholder="Phone number"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactLinkedIn">
+                    LinkedIn
+                </label>
+
+                <input
+                    id="contactLinkedIn"
+                    type="text"
+                    placeholder="LinkedIn profile"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactLastContact">
+                    Last Contact
+                </label>
+
+                <input
+                    id="contactLastContact"
+                    type="date"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="contactFollowUp">
+                    Follow-Up Date
+                </label>
+
+                <input
+                    id="contactFollowUp"
+                    type="date"
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="contactNotes">
+                    Relationship Notes
+                </label>
+
+                <textarea
+                    id="contactNotes"
+                    rows="7"
+                    placeholder="What matters to this person? What have you discussed? What should happen next?"
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="drawer-actions full">
+
+
+                <button
+                    id="cancelContactButton"
+                    class="secondary-button"
+                    type="button"
+                >
+                    CANCEL
+                </button>
+
+
+                <button
+                    class="save-button"
+                    type="submit"
+                >
+
+                    <span id="saveContactLabel">
+                        SAVE CONTACT
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </aside>
+
+
+
+    <script src="js/config.js"></script>
+
+    <script src="js/contacts.js"></script>
+
+
+</body>
+
+</html>
