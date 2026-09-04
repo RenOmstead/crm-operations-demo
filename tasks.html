@@ -1,1 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Tasks | Helix CRM
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/tasks.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="app-shell">
+
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-brand">
+
+                <a
+                    href="index.html"
+                    class="brand-link"
+                >
+
+                    <div class="brand-mark">
+                        H
+                    </div>
+
+
+                    <div class="brand-copy">
+
+                        <strong>
+                            HELIX
+                        </strong>
+
+                        <span>
+                            OPERATIONS CRM
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <nav class="sidebar-nav">
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        WORKSPACE
+                    </span>
+
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◫
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="customers.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◩
+                        </span>
+
+                        <span>
+                            Customers
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contacts.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◉
+                        </span>
+
+                        <span>
+                            Contacts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="pipeline.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ↗
+                        </span>
+
+                        <span>
+                            Pipeline
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contracts.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌘
+                        </span>
+
+                        <span>
+                            Gov Contracts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="tasks.html"
+                        class="nav-link active"
+                    >
+
+                        <span class="nav-icon">
+                            ✓
+                        </span>
+
+                        <span>
+                            Tasks
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        MARKETING
+                    </span>
+
+
+                    <a
+                        href="email.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ✉
+                        </span>
+
+                        <span>
+                            Email Campaigns
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-planner.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◇
+                        </span>
+
+                        <span>
+                            Social Planner
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-analytics.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌁
+                        </span>
+
+                        <span>
+                            Social Analytics
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="seo.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌕
+                        </span>
+
+                        <span>
+                            SEO
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        EVENTS
+                    </span>
+
+
+                    <a
+                        href="tradeshows.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ▦
+                        </span>
+
+                        <span>
+                            Tradeshows
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+            </nav>
+
+
+
+            <div class="sidebar-footer">
+
+                <div class="demo-chip">
+
+                    <span class="demo-dot"></span>
+
+                    Portfolio Demo
+
+                </div>
+
+
+                <div class="user-card">
+
+                    <div class="user-avatar">
+                        LO
+                    </div>
+
+
+                    <div class="user-copy">
+
+                        <strong>
+                            Lauren Omstead
+                        </strong>
+
+                        <span>
+                            Workspace Admin
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
+        <div class="main-shell">
+
+
+            <!-- =============================================
+                 TOPBAR
+                 ============================================= -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        id="globalSearch"
+                        type="search"
+                        placeholder="Search tasks..."
+                        autocomplete="off"
+                    >
+
+                    <kbd>
+                        /
+                    </kbd>
+
+                </div>
+
+
+
+                <div class="topbar-actions">
+
+
+                    <button
+                        id="quickCreateButton"
+                        class="quick-create"
+                        type="button"
+                    >
+
+                        <span>
+                            + NEW RECORD
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="icon-button"
+                        type="button"
+                        aria-label="Notifications"
+                    >
+                        ◌
+                    </button>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =============================================
+                 PAGE
+                 ============================================= -->
+
+            <main class="tasks-page">
+
+
+                <div class="demo-notice">
+
+                    Portfolio Demo · Helix Operations Group is fictional · Task information shown is mock data
+
+                </div>
+
+
+
+                <!-- =========================================
+                     HERO
+                     ========================================= -->
+
+                <section class="tasks-hero">
+
+
+                    <div class="hero-copy">
+
+                        <span class="eyebrow">
+                            WORK MANAGEMENT / 05
+                        </span>
+
+
+                        <h1>
+
+                            WHAT NEEDS TO
+                            <span>GET DONE?</span>
+
+                        </h1>
+
+
+                        <p>
+
+                            Keep daily work connected to the customer,
+                            opportunity, contract, or relationship that
+                            created it — with clear priorities and deadlines.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="hero-action-wrap">
+
+                        <span class="hero-label">
+                            PLAN · PRIORITIZE · COMPLETE
+                        </span>
+
+
+                        <button
+                            id="addTaskButton"
+                            class="add-task-button"
+                            type="button"
+                        >
+
+                            <span>
+                                ADD TASK
+                            </span>
+
+                            <strong>
+                                +
+                            </strong>
+
+                        </button>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     METRICS
+                     ========================================= -->
+
+                <section class="task-metrics">
+
+
+                    <article class="task-metric metric-open">
+
+                        <span>
+                            OPEN TASKS
+                        </span>
+
+                        <strong id="metricOpen">
+                            0
+                        </strong>
+
+                        <small>
+                            still need action
+                        </small>
+
+                    </article>
+
+
+                    <article class="task-metric metric-today">
+
+                        <span>
+                            DUE TODAY
+                        </span>
+
+                        <strong id="metricToday">
+                            0
+                        </strong>
+
+                        <small>
+                            due before day ends
+                        </small>
+
+                    </article>
+
+
+                    <article class="task-metric metric-overdue">
+
+                        <span>
+                            OVERDUE
+                        </span>
+
+                        <strong id="metricOverdue">
+                            0
+                        </strong>
+
+                        <small>
+                            missed deadlines
+                        </small>
+
+                    </article>
+
+
+                    <article class="task-metric metric-high">
+
+                        <span>
+                            HIGH PRIORITY
+                        </span>
+
+                        <strong id="metricHigh">
+                            0
+                        </strong>
+
+                        <small>
+                            important open work
+                        </small>
+
+                    </article>
+
+
+                    <article class="task-metric metric-complete">
+
+                        <span>
+                            COMPLETION
+                        </span>
+
+                        <strong id="metricCompletion">
+                            0%
+                        </strong>
+
+                        <small>
+                            all-time completion
+                        </small>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     TOOLBAR
+                     ========================================= -->
+
+                <section class="tasks-toolbar">
+
+
+                    <label class="task-search">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            id="taskSearch"
+                            type="search"
+                            placeholder="Search title, owner, linked record, notes..."
+                            autocomplete="off"
+                        >
+
+                    </label>
+
+
+
+                    <select id="statusFilter">
+
+                        <option value="open">
+                            OPEN TASKS
+                        </option>
+
+                        <option value="">
+                            ALL TASKS
+                        </option>
+
+                        <option value="completed">
+                            COMPLETED
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="priorityFilter">
+
+                        <option value="">
+                            ALL PRIORITIES
+                        </option>
+
+                        <option value="urgent">
+                            URGENT
+                        </option>
+
+                        <option value="high">
+                            HIGH
+                        </option>
+
+                        <option value="normal">
+                            NORMAL
+                        </option>
+
+                        <option value="low">
+                            LOW
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="ownerFilter">
+
+                        <option value="">
+                            ALL OWNERS
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="dueFilter">
+
+                        <option value="">
+                            ALL DUE DATES
+                        </option>
+
+                        <option value="overdue">
+                            OVERDUE
+                        </option>
+
+                        <option value="today">
+                            TODAY
+                        </option>
+
+                        <option value="7">
+                            NEXT 7 DAYS
+                        </option>
+
+                        <option value="30">
+                            NEXT 30 DAYS
+                        </option>
+
+                        <option value="none">
+                            NO DATE
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="taskSort">
+
+                        <option value="due">
+                            DUE DATE
+                        </option>
+
+                        <option value="priority">
+                            PRIORITY
+                        </option>
+
+                        <option value="recent">
+                            RECENTLY UPDATED
+                        </option>
+
+                        <option value="owner">
+                            OWNER
+                        </option>
+
+                    </select>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     TASK BOARD HEADER
+                     ========================================= -->
+
+                <section class="task-heading">
+
+
+                    <div>
+
+                        <span>
+                            CURRENT WORKLOAD
+                        </span>
+
+                        <h2>
+                            Task board
+                        </h2>
+
+                    </div>
+
+
+                    <div class="visible-count">
+
+                        <strong id="visibleTaskCount">
+                            0
+                        </strong>
+
+                        <span>
+                            VISIBLE
+                        </span>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     TASK BOARD
+                     ========================================= -->
+
+                <section class="task-board">
+
+
+                    <!-- =====================================
+                         OVERDUE
+                         ===================================== -->
+
+                    <div class="task-column overdue-column">
+
+
+                        <div class="task-column-header">
+
+                            <div>
+
+                                <span class="task-status-dot overdue"></span>
+
+                                <strong>
+                                    Overdue
+                                </strong>
+
+                            </div>
+
+
+                            <span id="overdueCount">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="overdueList"
+                            class="task-list"
+                        >
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         TODAY
+                         ===================================== -->
+
+                    <div class="task-column today-column">
+
+
+                        <div class="task-column-header">
+
+                            <div>
+
+                                <span class="task-status-dot today"></span>
+
+                                <strong>
+                                    Today
+                                </strong>
+
+                            </div>
+
+
+                            <span id="todayCount">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="todayList"
+                            class="task-list"
+                        >
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         UPCOMING
+                         ===================================== -->
+
+                    <div class="task-column upcoming-column">
+
+
+                        <div class="task-column-header">
+
+                            <div>
+
+                                <span class="task-status-dot upcoming"></span>
+
+                                <strong>
+                                    Upcoming
+                                </strong>
+
+                            </div>
+
+
+                            <span id="upcomingCount">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="upcomingList"
+                            class="task-list"
+                        >
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         NO DATE
+                         ===================================== -->
+
+                    <div class="task-column unscheduled-column">
+
+
+                        <div class="task-column-header">
+
+                            <div>
+
+                                <span class="task-status-dot unscheduled"></span>
+
+                                <strong>
+                                    Unscheduled
+                                </strong>
+
+                            </div>
+
+
+                            <span id="unscheduledCount">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="unscheduledList"
+                            class="task-list"
+                        >
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     COMPLETED
+                     ========================================= -->
+
+                <section class="completed-section">
+
+
+                    <div class="completed-heading">
+
+                        <div>
+
+                            <span>
+                                COMPLETED WORK
+                            </span>
+
+                            <h2>
+                                Recently finished
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="completedTaskList"
+                        class="completed-task-list"
+                    >
+                    </div>
+
+
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         QUICK CREATE
+         ===================================================== -->
+
+    <div
+        id="quickCreateMenu"
+        class="quick-create-menu"
+        hidden
+    >
+
+        <div class="quick-menu-header">
+            CREATE NEW
+        </div>
+
+        <a href="customers.html?action=new">
+            Customer
+            <span>→</span>
+        </a>
+
+        <a href="contacts.html?action=new">
+            Contact
+            <span>→</span>
+        </a>
+
+        <a href="pipeline.html?action=new">
+            Opportunity
+            <span>→</span>
+        </a>
+
+        <a href="tasks.html?action=new">
+            Task
+            <span>→</span>
+        </a>
+
+        <a href="contracts.html?action=new">
+            Contract Record
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         OVERLAY
+         ===================================================== -->
+
+    <div
+        id="taskOverlay"
+        class="task-overlay"
+        hidden
+    >
+    </div>
+
+
+
+    <!-- =====================================================
+         TASK DRAWER
+         ===================================================== -->
+
+    <aside
+        id="taskDrawer"
+        class="task-drawer"
+        hidden
+        aria-label="Task editor"
+    >
+
+
+        <div class="drawer-top">
+
+
+            <div>
+
+                <span class="drawer-kicker">
+                    TASK RECORD
+                </span>
+
+                <h2 id="drawerTitle">
+                    Add task
+                </h2>
+
+            </div>
+
+
+            <button
+                id="drawerCloseButton"
+                class="drawer-close"
+                type="button"
+                aria-label="Close task editor"
+            >
+                ×
+            </button>
+
+
+        </div>
+
+
+
+        <form
+            id="taskForm"
+            class="task-form"
+        >
+
+
+            <input
+                id="editingTaskId"
+                type="hidden"
+            >
+
+
+
+            <div class="form-group full">
+
+                <label for="taskTitle">
+                    Task
+                </label>
+
+                <input
+                    id="taskTitle"
+                    type="text"
+                    placeholder="What needs to happen?"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="taskPriority">
+                    Priority
+                </label>
+
+                <select id="taskPriority">
+
+                    <option value="normal">
+                        Normal
+                    </option>
+
+                    <option value="high">
+                        High
+                    </option>
+
+                    <option value="urgent">
+                        Urgent
+                    </option>
+
+                    <option value="low">
+                        Low
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="taskOwner">
+                    Owner
+                </label>
+
+                <input
+                    id="taskOwner"
+                    type="text"
+                    placeholder="Team member"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="taskDueDate">
+                    Due Date
+                </label>
+
+                <input
+                    id="taskDueDate"
+                    type="date"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="taskDueTime">
+                    Due Time
+                </label>
+
+                <input
+                    id="taskDueTime"
+                    type="time"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="taskType">
+                    Task Type
+                </label>
+
+                <select id="taskType">
+
+                    <option value="follow-up">
+                        Follow-Up
+                    </option>
+
+                    <option value="sales">
+                        Sales
+                    </option>
+
+                    <option value="contract">
+                        Contract
+                    </option>
+
+                    <option value="marketing">
+                        Marketing
+                    </option>
+
+                    <option value="meeting">
+                        Meeting
+                    </option>
+
+                    <option value="research">
+                        Research
+                    </option>
+
+                    <option value="admin">
+                        Administrative
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="taskStatus">
+                    Status
+                </label>
+
+                <select id="taskStatus">
+
+                    <option value="open">
+                        Open
+                    </option>
+
+                    <option value="in-progress">
+                        In Progress
+                    </option>
+
+                    <option value="waiting">
+                        Waiting
+                    </option>
+
+                    <option value="completed">
+                        Completed
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="taskCustomer">
+                    Linked Customer
+                </label>
+
+                <select id="taskCustomer">
+
+                    <option value="">
+                        No linked customer
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="taskContact">
+                    Linked Contact
+                </label>
+
+                <select id="taskContact">
+
+                    <option value="">
+                        No linked contact
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="taskOpportunity">
+                    Linked Opportunity
+                </label>
+
+                <select id="taskOpportunity">
+
+                    <option value="">
+                        No linked opportunity
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="taskContract">
+                    Linked Government Contract
+                </label>
+
+                <select id="taskContract">
+
+                    <option value="">
+                        No linked contract
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="taskDescription">
+                    Details
+                </label>
+
+                <textarea
+                    id="taskDescription"
+                    rows="5"
+                    placeholder="Context, instructions, deliverables..."
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="taskNotes">
+                    Notes
+                </label>
+
+                <textarea
+                    id="taskNotes"
+                    rows="5"
+                    placeholder="Progress notes, blockers, updates..."
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="drawer-actions full">
+
+
+                <button
+                    id="cancelTaskButton"
+                    class="secondary-button"
+                    type="button"
+                >
+                    CANCEL
+                </button>
+
+
+                <button
+                    class="save-button"
+                    type="submit"
+                >
+
+                    <span id="saveTaskLabel">
+                        SAVE TASK
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </aside>
+
+
+
+    <script src="js/config.js"></script>
+    <script src="js/tasks.js"></script>
+
+
+</body>
+
+</html>
