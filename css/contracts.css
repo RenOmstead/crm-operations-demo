@@ -1,1 +1,1714 @@
+/* =========================================================
+   HELIX CRM
+   GOVERNMENT CONTRACTS
+   ========================================================= */
 
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.contracts-page {
+    width:
+        min(
+            1580px,
+            calc(100% - 48px)
+        );
+
+    margin: 0 auto;
+
+    padding:
+        28px 0
+        80px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.contracts-hero {
+    min-height:
+        285px;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        255px;
+
+    align-items:
+        end;
+
+    gap:
+        50px;
+
+    padding:
+        42px 0
+        45px;
+}
+
+
+.hero-copy {
+    max-width:
+        920px;
+}
+
+
+.eyebrow {
+    color:
+        var(--coral);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .53rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .11em;
+}
+
+
+.contracts-hero h1 {
+    max-width:
+        900px;
+
+    margin:
+        14px 0 0;
+
+    font-size:
+        clamp(
+            3rem,
+            5.5vw,
+            6rem
+        );
+
+    font-weight:
+        800;
+
+    line-height:
+        .9;
+
+    letter-spacing:
+        -.06em;
+}
+
+
+.contracts-hero h1 span {
+    color:
+        var(--coral);
+}
+
+
+.contracts-hero p {
+    max-width:
+        700px;
+
+    margin:
+        23px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .81rem;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   HERO ACTION
+   ========================================================= */
+
+.hero-action-wrap {
+    display: flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+}
+
+
+.hero-label {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+}
+
+
+.add-contract-button {
+    min-height:
+        68px;
+
+    display: flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        0 20px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--coral);
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        var(--shadow-card);
+}
+
+
+.add-contract-button:hover {
+    background:
+        #cf614f;
+}
+
+
+.add-contract-button span {
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .55rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+}
+
+
+.add-contract-button strong {
+    font-size:
+        1.5rem;
+
+    font-weight:
+        400;
+}
+
+
+/* =========================================================
+   METRICS
+   ========================================================= */
+
+.contract-metrics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    margin-bottom:
+        22px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.contract-metric {
+    position: relative;
+
+    min-height:
+        135px;
+
+    padding:
+        18px;
+
+    border-right:
+        1px solid
+        var(--border);
+}
+
+
+.contract-metric:last-child {
+    border-right: none;
+}
+
+
+.contract-metric::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 18px;
+
+    right: 18px;
+
+    height:
+        3px;
+}
+
+
+.metric-tracked::before {
+    background:
+        var(--coral);
+}
+
+
+.metric-pursue::before {
+    background:
+        var(--blue);
+}
+
+
+.metric-deadlines::before {
+    background:
+        var(--yellow);
+}
+
+
+.metric-fit::before {
+    background:
+        var(--mint);
+}
+
+
+.metric-value::before {
+    background:
+        var(--lavender);
+}
+
+
+.contract-metric > span {
+    display: block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .08em;
+}
+
+
+.contract-metric strong {
+    display: block;
+
+    margin-top:
+        16px;
+
+    font-size:
+        2rem;
+
+    font-weight:
+        800;
+
+    line-height:
+        1;
+}
+
+
+.contract-metric small {
+    display: block;
+
+    margin-top:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .53rem;
+}
+
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.contracts-toolbar {
+    display: grid;
+
+    grid-template-columns:
+        minmax(320px,1fr)
+        repeat(4,auto);
+
+    gap:
+        8px;
+
+    margin-bottom:
+        30px;
+}
+
+
+.contract-search {
+    min-height:
+        54px;
+
+    display: flex;
+
+    align-items:
+        center;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.contract-search > span {
+    width:
+        52px;
+
+    display: grid;
+
+    place-items:
+        center;
+
+    color:
+        var(--coral);
+
+    font-size:
+        1rem;
+}
+
+
+.contract-search input {
+    flex: 1;
+
+    min-width: 0;
+
+    min-height:
+        52px;
+
+    border: none;
+
+    outline: none;
+
+    background:
+        transparent;
+
+    color:
+        var(--ink);
+
+    font-size:
+        .7rem;
+}
+
+
+.contracts-toolbar select {
+    min-width:
+        145px;
+
+    min-height:
+        54px;
+
+    padding:
+        0 13px;
+
+    border:
+        1px solid
+        var(--border);
+
+    outline:
+        none;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--ink);
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .47rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.contract-heading {
+    display: flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    margin-bottom:
+        16px;
+
+    padding-bottom:
+        13px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+
+.contract-heading > div:first-child > span {
+    color:
+        var(--coral);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .09em;
+}
+
+
+.contract-heading h2 {
+    margin:
+        6px 0 0;
+
+    font-size:
+        1.55rem;
+
+    font-weight:
+        800;
+}
+
+
+.visible-count {
+    display: flex;
+
+    align-items:
+        baseline;
+
+    gap:
+        7px;
+}
+
+
+.visible-count strong {
+    color:
+        var(--coral);
+
+    font-size:
+        1.6rem;
+
+    font-weight:
+        800;
+}
+
+
+.visible-count span {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .47rem;
+}
+
+
+/* =========================================================
+   CONTRACT LIST
+   ========================================================= */
+
+.contract-list {
+    display: flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        12px;
+}
+
+
+/* =========================================================
+   CONTRACT CARD
+   ========================================================= */
+
+.contract-card {
+    display: grid;
+
+    grid-template-columns:
+        10px
+        minmax(300px,1.4fr)
+        170px
+        150px
+        150px
+        minmax(190px,.9fr)
+        130px;
+
+    min-height:
+        155px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        var(--shadow-card);
+
+    transition:
+        transform .15s ease,
+        box-shadow .15s ease;
+}
+
+
+.contract-card:hover {
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        var(--shadow-soft);
+}
+
+
+/* =========================================================
+   MATCH STRIP
+   ========================================================= */
+
+.match-strip {
+    background:
+        var(--paper-soft);
+}
+
+
+.match-strip.high {
+    background:
+        var(--mint);
+}
+
+
+.match-strip.medium {
+    background:
+        var(--yellow);
+}
+
+
+.match-strip.low {
+    background:
+        var(--coral);
+}
+
+
+/* =========================================================
+   MAIN SUMMARY
+   ========================================================= */
+
+.contract-main {
+    padding:
+        18px;
+
+    border-right:
+        1px solid
+        var(--border-soft);
+}
+
+
+.contract-topline {
+    display: flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    flex-wrap:
+        wrap;
+}
+
+
+.contract-status {
+    width:
+        fit-content;
+
+    padding:
+        4px 7px;
+
+    background:
+        var(--paper-soft);
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .4rem;
+
+    font-weight:
+        700;
+
+    text-transform:
+        uppercase;
+}
+
+
+.contract-status.pursue {
+    background:
+        var(--blue-soft);
+
+    color:
+        var(--blue-dark);
+}
+
+
+.contract-status.submitted {
+    background:
+        var(--lavender-soft);
+
+    color:
+        #554a9b;
+}
+
+
+.contract-status.awarded {
+    background:
+        var(--mint-soft);
+
+    color:
+        #36725a;
+}
+
+
+.contract-status.no-bid,
+.contract-status.lost {
+    background:
+        var(--red-soft);
+
+    color:
+        #963d3d;
+}
+
+
+.contract-solicitation {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .42rem;
+}
+
+
+.contract-main h3 {
+    margin:
+        11px 0 0;
+
+    max-width:
+        720px;
+
+    font-size:
+        .86rem;
+
+    font-weight:
+        800;
+
+    line-height:
+        1.4;
+}
+
+
+.contract-agency {
+    margin-top:
+        7px;
+
+    color:
+        var(--coral);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    text-transform:
+        uppercase;
+}
+
+
+.contract-summary {
+    margin:
+        11px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .56rem;
+
+    line-height:
+        1.55;
+}
+
+
+/* =========================================================
+   INFO COLUMNS
+   ========================================================= */
+
+.contract-column {
+    display: flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    gap:
+        7px;
+
+    padding:
+        16px;
+
+    border-right:
+        1px solid
+        var(--border-soft);
+}
+
+
+.contract-column span {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .39rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .05em;
+}
+
+
+.contract-column strong {
+    font-size:
+        .65rem;
+
+    line-height:
+        1.35;
+}
+
+
+.contract-column small {
+    color:
+        var(--muted);
+
+    font-size:
+        .49rem;
+
+    line-height:
+        1.4;
+}
+
+
+/* =========================================================
+   DEADLINE
+   ========================================================= */
+
+.deadline-column.due strong {
+    color:
+        var(--coral);
+}
+
+
+.deadline-tag {
+    width:
+        fit-content;
+
+    padding:
+        4px 6px;
+
+    background:
+        var(--yellow-soft);
+
+    color:
+        #75601c;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .38rem;
+
+    font-weight:
+        700;
+}
+
+
+.deadline-tag.overdue {
+    background:
+        var(--red-soft);
+
+    color:
+        #963d3d;
+}
+
+
+/* =========================================================
+   MATCH
+   ========================================================= */
+
+.match-score {
+    font-size:
+        1.35rem !important;
+
+    font-weight:
+        800;
+}
+
+
+.match-score.high {
+    color:
+        #3c8065;
+}
+
+
+.match-score.medium {
+    color:
+        #9b7a1e;
+}
+
+
+.match-score.low {
+    color:
+        var(--coral);
+}
+
+
+/* =========================================================
+   NEXT ACTION
+   ========================================================= */
+
+.next-action-column p {
+    margin: 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .55rem;
+
+    line-height:
+        1.55;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.contract-actions {
+    display: flex;
+
+    flex-direction:
+        column;
+}
+
+
+.contract-action {
+    flex: 1;
+
+    min-height:
+        38px;
+
+    display: flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        10px;
+
+    padding:
+        0 12px;
+
+    border: none;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+
+    background:
+        transparent;
+
+    color:
+        var(--ink);
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .42rem;
+
+    font-weight:
+        700;
+}
+
+
+.contract-action:last-child {
+    border-bottom: none;
+}
+
+
+.contract-action:hover {
+    background:
+        var(--coral-soft);
+}
+
+
+/* =========================================================
+   EMPTY
+   ========================================================= */
+
+.contract-empty {
+    min-height:
+        340px;
+
+    display: flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    padding:
+        38px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.contract-empty span {
+    color:
+        var(--coral);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+}
+
+
+.contract-empty h3 {
+    margin:
+        8px 0 0;
+
+    font-size:
+        1.5rem;
+}
+
+
+.contract-empty p {
+    max-width:
+        560px;
+
+    margin:
+        12px 0 20px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    line-height:
+        1.6;
+}
+
+
+.contract-empty button {
+    width:
+        fit-content;
+
+    padding:
+        12px 15px;
+
+    border:
+        1px solid
+        var(--coral);
+
+    background:
+        var(--coral);
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .5rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.contract-overlay {
+    position:
+        fixed;
+
+    inset: 0;
+
+    z-index:
+        1900;
+
+    background:
+        rgba(15,15,15,.58);
+
+    opacity:
+        0;
+
+    transition:
+        opacity .18s ease;
+}
+
+
+.contract-overlay.open {
+    opacity:
+        1;
+}
+
+
+/* =========================================================
+   DRAWER
+   ========================================================= */
+
+.contract-drawer {
+    position:
+        fixed;
+
+    top: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    z-index:
+        2000;
+
+    width:
+        min(720px,100%);
+
+    overflow-y:
+        auto;
+
+    background:
+        var(--paper);
+
+    border-left:
+        1px solid
+        var(--border);
+
+    box-shadow:
+        -20px 0 55px
+        rgba(0,0,0,.16);
+
+    transform:
+        translateX(100%);
+
+    transition:
+        transform .22s ease;
+}
+
+
+.contract-drawer.open {
+    transform:
+        translateX(0);
+}
+
+
+body.drawer-open {
+    overflow:
+        hidden;
+}
+
+
+/* =========================================================
+   DRAWER HEADER
+   ========================================================= */
+
+.drawer-top {
+    min-height:
+        105px;
+
+    display: flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        23px 27px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.drawer-kicker {
+    color:
+        var(--coral);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .09em;
+}
+
+
+.drawer-top h2 {
+    margin:
+        7px 0 0;
+
+    font-size:
+        1.4rem;
+
+    font-weight:
+        800;
+}
+
+
+.drawer-close {
+    width:
+        42px;
+
+    height:
+        42px;
+
+    display: grid;
+
+    place-items: center;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        transparent;
+
+    cursor:
+        pointer;
+
+    font-size:
+        1.4rem;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.contract-form {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap:
+        16px;
+
+    padding:
+        27px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        7px;
+}
+
+
+.form-group.full,
+.drawer-actions.full {
+    grid-column:
+        1 / -1;
+}
+
+
+.form-group label {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width:
+        100%;
+
+    border:
+        1px solid
+        var(--border);
+
+    outline:
+        none;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--ink);
+}
+
+
+.form-group input,
+.form-group select {
+    min-height:
+        46px;
+
+    padding:
+        0 11px;
+}
+
+
+.form-group textarea {
+    padding:
+        11px;
+
+    resize:
+        vertical;
+
+    line-height:
+        1.5;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color:
+        var(--coral);
+
+    box-shadow:
+        0 0 0 2px
+        var(--coral-soft);
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.drawer-actions {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1.4fr;
+
+    gap:
+        10px;
+
+    margin-top:
+        8px;
+}
+
+
+.secondary-button,
+.save-button {
+    min-height:
+        52px;
+
+    border:
+        1px solid
+        var(--border);
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .5rem;
+
+    font-weight:
+        700;
+}
+
+
+.secondary-button {
+    background:
+        var(--surface);
+}
+
+
+.save-button {
+    display: flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        0 17px;
+
+    background:
+        var(--coral);
+
+    color:
+        white;
+}
+
+
+.save-button:hover {
+    background:
+        #cf614f;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1350px) {
+
+    .contract-card {
+        grid-template-columns:
+            8px
+            minmax(300px,1.5fr)
+            150px
+            140px
+            minmax(180px,1fr)
+            120px;
+    }
+
+
+    .contract-card .value-column {
+        display:
+            none;
+    }
+
+
+    .contracts-toolbar {
+        grid-template-columns:
+            1fr
+            1fr
+            1fr;
+    }
+
+
+    .contract-search {
+        grid-column:
+            1 / -1;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+
+    .contract-metrics {
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+
+    .contract-metric:nth-child(3) {
+        border-right: none;
+    }
+
+
+    .contract-metric:nth-child(n+4) {
+        border-top:
+            1px solid
+            var(--border);
+    }
+
+
+    .contract-card {
+        grid-template-columns:
+            7px
+            minmax(0,1fr)
+            150px
+            130px;
+    }
+
+
+    .contract-card .owner-column,
+    .contract-card .next-action-column {
+        display:
+            none;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .contracts-page {
+        width:
+            calc(100% - 28px);
+    }
+
+
+    .contracts-hero {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .hero-action-wrap {
+        max-width:
+            400px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .contracts-hero h1 {
+        font-size:
+            3rem;
+    }
+
+
+    .contract-metrics {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .contract-metric {
+        border-right: none;
+
+        border-bottom:
+            1px solid
+            var(--border);
+    }
+
+
+    .contracts-toolbar {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .contract-search {
+        grid-column:
+            auto;
+    }
+
+
+    .contract-heading {
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+    }
+
+
+    .contract-card {
+        display:
+            block;
+    }
+
+
+    .match-strip {
+        height:
+            5px;
+    }
+
+
+    .contract-main,
+    .contract-column {
+        border-right:
+            none;
+
+        border-bottom:
+            1px solid
+            var(--border-soft);
+    }
+
+
+    .contract-actions {
+        display:
+            grid;
+
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .contract-form {
+        grid-template-columns:
+            1fr;
+
+        padding:
+            22px 18px;
+    }
+
+
+    .form-group.full,
+    .drawer-actions.full {
+        grid-column:
+            auto;
+    }
+
+
+    .drawer-actions {
+        grid-template-columns:
+            1fr;
+    }
+
+}
