@@ -1,1 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Social Planner | Helix CRM
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/social-planner.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="app-shell">
+
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-brand">
+
+                <a
+                    href="index.html"
+                    class="brand-link"
+                >
+
+                    <div class="brand-mark">
+                        H
+                    </div>
+
+
+                    <div class="brand-copy">
+
+                        <strong>
+                            HELIX
+                        </strong>
+
+                        <span>
+                            OPERATIONS CRM
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <nav class="sidebar-nav">
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        WORKSPACE
+                    </span>
+
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">◫</span>
+                        <span>Dashboard</span>
+                    </a>
+
+
+                    <a
+                        href="customers.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">◩</span>
+                        <span>Customers</span>
+                    </a>
+
+
+                    <a
+                        href="contacts.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">◉</span>
+                        <span>Contacts</span>
+                    </a>
+
+
+                    <a
+                        href="pipeline.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">↗</span>
+                        <span>Pipeline</span>
+                    </a>
+
+
+                    <a
+                        href="contracts.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">⌘</span>
+                        <span>Gov Contracts</span>
+                    </a>
+
+
+                    <a
+                        href="tasks.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">✓</span>
+                        <span>Tasks</span>
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        MARKETING
+                    </span>
+
+
+                    <a
+                        href="email.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">✉</span>
+                        <span>Email Campaigns</span>
+                    </a>
+
+
+                    <a
+                        href="social-planner.html"
+                        class="nav-link active"
+                    >
+                        <span class="nav-icon">◇</span>
+                        <span>Social Planner</span>
+                    </a>
+
+
+                    <a
+                        href="social-analytics.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">⌁</span>
+                        <span>Social Analytics</span>
+                    </a>
+
+
+                    <a
+                        href="seo.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">⌕</span>
+                        <span>SEO</span>
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        EVENTS
+                    </span>
+
+
+                    <a
+                        href="tradeshows.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">▦</span>
+                        <span>Tradeshows</span>
+                    </a>
+
+                </div>
+
+
+            </nav>
+
+
+
+            <div class="sidebar-footer">
+
+                <div class="demo-chip">
+                    <span class="demo-dot"></span>
+                    Portfolio Demo
+                </div>
+
+
+                <div class="user-card">
+
+                    <div class="user-avatar">
+                        LO
+                    </div>
+
+
+                    <div class="user-copy">
+
+                        <strong>
+                            Lauren Omstead
+                        </strong>
+
+                        <span>
+                            Workspace Admin
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
+        <div class="main-shell">
+
+
+            <header class="topbar">
+
+
+                <div class="topbar-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        id="globalSearch"
+                        type="search"
+                        placeholder="Search social content..."
+                        autocomplete="off"
+                    >
+
+                    <kbd>
+                        /
+                    </kbd>
+
+                </div>
+
+
+
+                <div class="topbar-actions">
+
+                    <button
+                        id="quickCreateButton"
+                        class="quick-create"
+                        type="button"
+                    >
+                        <span>
+                            + NEW RECORD
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="icon-button"
+                        type="button"
+                        aria-label="Notifications"
+                    >
+                        ◌
+                    </button>
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =============================================
+                 PAGE
+                 ============================================= -->
+
+            <main class="social-page">
+
+
+                <div class="demo-notice">
+
+                    Portfolio Demo · Helix Operations Group is fictional · Social content shown is mock data
+
+                </div>
+
+
+
+                <!-- =========================================
+                     HERO
+                     ========================================= -->
+
+                <section class="social-hero">
+
+
+                    <div class="hero-copy">
+
+                        <span class="eyebrow">
+                            SOCIAL CONTENT / 07
+                        </span>
+
+
+                        <h1>
+
+                            WHAT ARE WE
+                            <span>POSTING?</span>
+
+                        </h1>
+
+
+                        <p>
+
+                            Plan social content across platforms,
+                            organize themes and campaigns, manage the
+                            publishing schedule, and keep a clear view
+                            of what is still in development.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="hero-action-wrap">
+
+                        <span class="hero-label">
+                            IDEATE · SCHEDULE · PUBLISH
+                        </span>
+
+
+                        <button
+                            id="addPostButton"
+                            class="add-post-button"
+                            type="button"
+                        >
+
+                            <span>
+                                NEW POST
+                            </span>
+
+                            <strong>
+                                +
+                            </strong>
+
+                        </button>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     METRICS
+                     ========================================= -->
+
+                <section class="social-metrics">
+
+
+                    <article class="social-metric metric-ideas">
+
+                        <span>
+                            IDEAS
+                        </span>
+
+                        <strong id="metricIdeas">
+                            0
+                        </strong>
+
+                        <small>
+                            waiting to develop
+                        </small>
+
+                    </article>
+
+
+                    <article class="social-metric metric-drafts">
+
+                        <span>
+                            DRAFTS
+                        </span>
+
+                        <strong id="metricDrafts">
+                            0
+                        </strong>
+
+                        <small>
+                            content in progress
+                        </small>
+
+                    </article>
+
+
+                    <article class="social-metric metric-scheduled">
+
+                        <span>
+                            SCHEDULED
+                        </span>
+
+                        <strong id="metricScheduled">
+                            0
+                        </strong>
+
+                        <small>
+                            ready to publish
+                        </small>
+
+                    </article>
+
+
+                    <article class="social-metric metric-week">
+
+                        <span>
+                            THIS WEEK
+                        </span>
+
+                        <strong id="metricWeek">
+                            0
+                        </strong>
+
+                        <small>
+                            scheduled posts
+                        </small>
+
+                    </article>
+
+
+                    <article class="social-metric metric-published">
+
+                        <span>
+                            PUBLISHED
+                        </span>
+
+                        <strong id="metricPublished">
+                            0
+                        </strong>
+
+                        <small>
+                            completed content
+                        </small>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     WEEK STRIP
+                     ========================================= -->
+
+                <section class="week-section">
+
+
+                    <div class="section-heading">
+
+                        <div>
+
+                            <span>
+                                CONTENT CALENDAR
+                            </span>
+
+                            <h2>
+                                This week
+                            </h2>
+
+                        </div>
+
+
+                        <div id="weekRange" class="week-range">
+                            —
+                        </div>
+
+                    </div>
+
+
+
+                    <div
+                        id="weekPlanner"
+                        class="week-planner"
+                    >
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     TOOLBAR
+                     ========================================= -->
+
+                <section class="social-toolbar">
+
+
+                    <label class="social-search">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            id="postSearch"
+                            type="search"
+                            placeholder="Search content, campaign, platform, owner..."
+                            autocomplete="off"
+                        >
+
+                    </label>
+
+
+
+                    <select id="statusFilter">
+
+                        <option value="">
+                            ALL STATUSES
+                        </option>
+
+                        <option value="idea">
+                            IDEA
+                        </option>
+
+                        <option value="draft">
+                            DRAFT
+                        </option>
+
+                        <option value="review">
+                            REVIEW
+                        </option>
+
+                        <option value="scheduled">
+                            SCHEDULED
+                        </option>
+
+                        <option value="published">
+                            PUBLISHED
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="platformFilter">
+
+                        <option value="">
+                            ALL PLATFORMS
+                        </option>
+
+                        <option value="linkedin">
+                            LINKEDIN
+                        </option>
+
+                        <option value="facebook">
+                            FACEBOOK
+                        </option>
+
+                        <option value="instagram">
+                            INSTAGRAM
+                        </option>
+
+                        <option value="x">
+                            X / TWITTER
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="ownerFilter">
+
+                        <option value="">
+                            ALL OWNERS
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="postSort">
+
+                        <option value="scheduled">
+                            PUBLISH DATE
+                        </option>
+
+                        <option value="recent">
+                            RECENTLY UPDATED
+                        </option>
+
+                        <option value="status">
+                            STATUS
+                        </option>
+
+                        <option value="platform">
+                            PLATFORM
+                        </option>
+
+                    </select>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     CONTENT QUEUE
+                     ========================================= -->
+
+                <section class="queue-heading">
+
+
+                    <div>
+
+                        <span>
+                            CONTENT QUEUE
+                        </span>
+
+                        <h2>
+                            Planned content
+                        </h2>
+
+                    </div>
+
+
+                    <div class="visible-count">
+
+                        <strong id="visiblePostCount">
+                            0
+                        </strong>
+
+                        <span>
+                            VISIBLE
+                        </span>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <section
+                    id="postList"
+                    class="post-list"
+                >
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         QUICK CREATE
+         ===================================================== -->
+
+    <div
+        id="quickCreateMenu"
+        class="quick-create-menu"
+        hidden
+    >
+
+        <div class="quick-menu-header">
+            CREATE NEW
+        </div>
+
+        <a href="customers.html?action=new">
+            Customer
+            <span>→</span>
+        </a>
+
+        <a href="contacts.html?action=new">
+            Contact
+            <span>→</span>
+        </a>
+
+        <a href="pipeline.html?action=new">
+            Opportunity
+            <span>→</span>
+        </a>
+
+        <a href="tasks.html?action=new">
+            Task
+            <span>→</span>
+        </a>
+
+        <a href="contracts.html?action=new">
+            Contract Record
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         OVERLAY
+         ===================================================== -->
+
+    <div
+        id="postOverlay"
+        class="post-overlay"
+        hidden
+    >
+    </div>
+
+
+
+    <!-- =====================================================
+         POST DRAWER
+         ===================================================== -->
+
+    <aside
+        id="postDrawer"
+        class="post-drawer"
+        hidden
+        aria-label="Social post editor"
+    >
+
+
+        <div class="drawer-top">
+
+
+            <div>
+
+                <span class="drawer-kicker">
+                    SOCIAL CONTENT
+                </span>
+
+                <h2 id="drawerTitle">
+                    New post
+                </h2>
+
+            </div>
+
+
+            <button
+                id="drawerCloseButton"
+                class="drawer-close"
+                type="button"
+                aria-label="Close social post editor"
+            >
+                ×
+            </button>
+
+
+        </div>
+
+
+
+        <form
+            id="postForm"
+            class="post-form"
+        >
+
+
+            <input
+                id="editingPostId"
+                type="hidden"
+            >
+
+
+
+            <div class="form-group full">
+
+                <label for="postTitle">
+                    Internal Post Title
+                </label>
+
+                <input
+                    id="postTitle"
+                    type="text"
+                    placeholder="Short internal title"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="postStatus">
+                    Status
+                </label>
+
+                <select id="postStatus">
+
+                    <option value="idea">
+                        Idea
+                    </option>
+
+                    <option value="draft">
+                        Draft
+                    </option>
+
+                    <option value="review">
+                        Review
+                    </option>
+
+                    <option value="scheduled">
+                        Scheduled
+                    </option>
+
+                    <option value="published">
+                        Published
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="postOwner">
+                    Owner
+                </label>
+
+                <input
+                    id="postOwner"
+                    type="text"
+                    placeholder="Team member"
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label>
+                    Platforms
+                </label>
+
+                <div class="platform-checks">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="platform"
+                            value="linkedin"
+                        >
+                        LinkedIn
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="platform"
+                            value="facebook"
+                        >
+                        Facebook
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="platform"
+                            value="instagram"
+                        >
+                        Instagram
+                    </label>
+
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="platform"
+                            value="x"
+                        >
+                        X / Twitter
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="postDate">
+                    Publish Date
+                </label>
+
+                <input
+                    id="postDate"
+                    type="date"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="postTime">
+                    Publish Time
+                </label>
+
+                <input
+                    id="postTime"
+                    type="time"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="postCampaign">
+                    Campaign / Theme
+                </label>
+
+                <input
+                    id="postCampaign"
+                    type="text"
+                    placeholder="Campaign or content theme"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="postContentType">
+                    Content Type
+                </label>
+
+                <select id="postContentType">
+
+                    <option value="educational">
+                        Educational
+                    </option>
+
+                    <option value="thought-leadership">
+                        Thought Leadership
+                    </option>
+
+                    <option value="company">
+                        Company Update
+                    </option>
+
+                    <option value="event">
+                        Event
+                    </option>
+
+                    <option value="case-study">
+                        Case Study
+                    </option>
+
+                    <option value="promotion">
+                        Promotion
+                    </option>
+
+                    <option value="employee">
+                        Employee / Culture
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="postCopy">
+                    Post Copy
+                </label>
+
+                <textarea
+                    id="postCopy"
+                    rows="9"
+                    placeholder="Write or draft the social post..."
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="postCta">
+                    CTA
+                </label>
+
+                <input
+                    id="postCta"
+                    type="text"
+                    placeholder="Read more, contact us, register..."
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="postLink">
+                    Link
+                </label>
+
+                <input
+                    id="postLink"
+                    type="text"
+                    placeholder="Landing page or destination URL"
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="postHashtags">
+                    Hashtags
+                </label>
+
+                <input
+                    id="postHashtags"
+                    type="text"
+                    placeholder="#training #engineering #transportation"
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="postAsset">
+                    Creative / Asset Note
+                </label>
+
+                <input
+                    id="postAsset"
+                    type="text"
+                    placeholder="Graphic, photo, carousel, video..."
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="postNotes">
+                    Internal Notes
+                </label>
+
+                <textarea
+                    id="postNotes"
+                    rows="5"
+                    placeholder="Approvals, revisions, creative direction..."
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="drawer-actions full">
+
+
+                <button
+                    id="cancelPostButton"
+                    class="secondary-button"
+                    type="button"
+                >
+                    CANCEL
+                </button>
+
+
+                <button
+                    class="save-button"
+                    type="submit"
+                >
+
+                    <span id="savePostLabel">
+                        SAVE POST
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </aside>
+
+
+
+    <script src="js/config.js"></script>
+    <script src="js/social-planner.js"></script>
+
+
+</body>
+
+</html>
