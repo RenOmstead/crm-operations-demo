@@ -1,1 +1,1866 @@
+/* =========================================================
+   HELIX CRM
+   SOCIAL PLANNER
+   ========================================================= */
 
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.social-page {
+    width:
+        min(
+            1580px,
+            calc(100% - 48px)
+        );
+
+    margin:
+        0 auto;
+
+    padding:
+        28px 0
+        80px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.social-hero {
+    min-height:
+        285px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        245px;
+
+    align-items:
+        end;
+
+    gap:
+        50px;
+
+    padding:
+        42px 0
+        45px;
+}
+
+
+.hero-copy {
+    max-width:
+        900px;
+}
+
+
+.eyebrow {
+    color:
+        var(--lavender);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .53rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .11em;
+}
+
+
+.social-hero h1 {
+    max-width:
+        900px;
+
+    margin:
+        14px 0 0;
+
+    font-size:
+        clamp(
+            3rem,
+            5.5vw,
+            6rem
+        );
+
+    font-weight:
+        800;
+
+    line-height:
+        .9;
+
+    letter-spacing:
+        -.06em;
+}
+
+
+.social-hero h1 span {
+    color:
+        var(--lavender);
+}
+
+
+.social-hero p {
+    max-width:
+        690px;
+
+    margin:
+        23px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .81rem;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   ACTION
+   ========================================================= */
+
+.hero-action-wrap {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+}
+
+
+.hero-label {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+}
+
+
+.add-post-button {
+    min-height:
+        68px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        0 20px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--lavender);
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+}
+
+
+.add-post-button:hover {
+    background:
+        #756bb4;
+}
+
+
+.add-post-button span {
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .56rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+}
+
+
+.add-post-button strong {
+    font-size:
+        1.5rem;
+
+    font-weight:
+        400;
+}
+
+
+/* =========================================================
+   METRICS
+   ========================================================= */
+
+.social-metrics {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    margin-bottom:
+        28px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.social-metric {
+    position:
+        relative;
+
+    min-height:
+        135px;
+
+    padding:
+        18px;
+
+    border-right:
+        1px solid
+        var(--border);
+}
+
+
+.social-metric:last-child {
+    border-right:
+        none;
+}
+
+
+.social-metric::before {
+    content: "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        18px;
+
+    right:
+        18px;
+
+    height:
+        3px;
+}
+
+
+.metric-ideas::before {
+    background:
+        var(--yellow);
+}
+
+
+.metric-drafts::before {
+    background:
+        var(--blue);
+}
+
+
+.metric-scheduled::before {
+    background:
+        var(--lavender);
+}
+
+
+.metric-week::before {
+    background:
+        var(--coral);
+}
+
+
+.metric-published::before {
+    background:
+        var(--mint);
+}
+
+
+.social-metric > span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .08em;
+}
+
+
+.social-metric strong {
+    display:
+        block;
+
+    margin-top:
+        16px;
+
+    font-size:
+        2rem;
+
+    font-weight:
+        800;
+}
+
+
+.social-metric small {
+    display:
+        block;
+
+    margin-top:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .53rem;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.section-heading,
+.queue-heading {
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    margin-bottom:
+        16px;
+
+    padding-bottom:
+        13px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+
+.section-heading > div:first-child > span,
+.queue-heading > div:first-child > span {
+    color:
+        var(--lavender);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .09em;
+}
+
+
+.section-heading h2,
+.queue-heading h2 {
+    margin:
+        6px 0 0;
+
+    font-size:
+        1.55rem;
+
+    font-weight:
+        800;
+}
+
+
+.week-range {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   WEEK PLANNER
+   ========================================================= */
+
+.week-section {
+    margin-bottom:
+        30px;
+}
+
+
+.week-planner {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(7,minmax(130px,1fr));
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+
+    overflow-x:
+        auto;
+}
+
+
+.week-day {
+    min-width:
+        130px;
+
+    min-height:
+        175px;
+
+    padding:
+        13px;
+
+    border-right:
+        1px solid
+        var(--border-soft);
+}
+
+
+.week-day:last-child {
+    border-right:
+        none;
+}
+
+
+.week-day.today {
+    background:
+        var(--lavender-soft);
+}
+
+
+.week-day-name {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .4rem;
+
+    font-weight:
+        700;
+}
+
+
+.week-day-number {
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        1.2rem;
+
+    font-weight:
+        800;
+}
+
+
+.week-post-count {
+    margin-top:
+        14px;
+
+    padding-top:
+        10px;
+
+    border-top:
+        1px solid
+        var(--border-soft);
+
+    color:
+        var(--muted);
+
+    font-size:
+        .5rem;
+}
+
+
+.week-post-item {
+    margin-top:
+        8px;
+
+    padding:
+        7px;
+
+    border-left:
+        3px solid
+        var(--lavender);
+
+    background:
+        var(--surface-2);
+
+    font-size:
+        .48rem;
+
+    line-height:
+        1.4;
+}
+
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.social-toolbar {
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(320px,1fr)
+        repeat(4,auto);
+
+    gap:
+        8px;
+
+    margin-bottom:
+        30px;
+}
+
+
+.social-search {
+    min-height:
+        54px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.social-search > span {
+    width:
+        52px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    color:
+        var(--lavender);
+}
+
+
+.social-search input {
+    flex:
+        1;
+
+    min-height:
+        52px;
+
+    border:
+        none;
+
+    outline:
+        none;
+
+    background:
+        transparent;
+
+    font-size:
+        .7rem;
+}
+
+
+.social-toolbar select {
+    min-width:
+        145px;
+
+    min-height:
+        54px;
+
+    padding:
+        0 12px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+
+    color:
+        var(--ink);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   VISIBLE COUNT
+   ========================================================= */
+
+.visible-count {
+    display:
+        flex;
+
+    align-items:
+        baseline;
+
+    gap:
+        7px;
+}
+
+
+.visible-count strong {
+    color:
+        var(--lavender);
+
+    font-size:
+        1.6rem;
+
+    font-weight:
+        800;
+}
+
+
+.visible-count span {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .47rem;
+}
+
+
+/* =========================================================
+   POST GRID
+   ========================================================= */
+
+.post-list {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:
+        16px;
+}
+
+
+/* =========================================================
+   POST CARD
+   ========================================================= */
+
+.post-card {
+    min-height:
+        360px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        var(--shadow-card);
+
+    transition:
+        transform .15s ease,
+        border-color .15s ease;
+}
+
+
+.post-card:hover {
+    transform:
+        translateY(-2px);
+
+    border-color:
+        var(--lavender);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.post-card-header {
+    padding:
+        15px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+
+.post-topline {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        12px;
+
+    margin-bottom:
+        10px;
+}
+
+
+.post-status {
+    padding:
+        4px 7px;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .4rem;
+
+    font-weight:
+        700;
+
+    text-transform:
+        uppercase;
+}
+
+
+.post-status.idea {
+    background:
+        var(--yellow-soft);
+
+    color:
+        #75601c;
+}
+
+
+.post-status.draft {
+    background:
+        var(--blue-soft);
+
+    color:
+        var(--blue-dark);
+}
+
+
+.post-status.review {
+    background:
+        var(--coral-soft);
+
+    color:
+        #8b4035;
+}
+
+
+.post-status.scheduled {
+    background:
+        var(--lavender-soft);
+
+    color:
+        #554a9b;
+}
+
+
+.post-status.published {
+    background:
+        var(--mint-soft);
+
+    color:
+        #36725a;
+}
+
+
+.post-date {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .4rem;
+}
+
+
+.post-card-header h3 {
+    margin: 0;
+
+    font-size:
+        .82rem;
+
+    font-weight:
+        800;
+
+    line-height:
+        1.4;
+}
+
+
+/* =========================================================
+   PLATFORM ROW
+   ========================================================= */
+
+.platform-row {
+    display:
+        flex;
+
+    gap:
+        6px;
+
+    flex-wrap:
+        wrap;
+
+    padding:
+        11px 15px;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+}
+
+
+.platform-tag {
+    padding:
+        4px 6px;
+
+    background:
+        var(--paper-soft);
+
+    color:
+        var(--ink-muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .38rem;
+
+    font-weight:
+        700;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* =========================================================
+   CAMPAIGN
+   ========================================================= */
+
+.post-campaign {
+    padding:
+        9px 15px;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+
+    background:
+        var(--lavender-soft);
+}
+
+
+.post-campaign span {
+    color:
+        #5d5590;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .38rem;
+
+    font-weight:
+        700;
+}
+
+
+.post-campaign strong {
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    color:
+        #514a7e;
+
+    font-size:
+        .53rem;
+}
+
+
+/* =========================================================
+   COPY PREVIEW
+   ========================================================= */
+
+.post-copy-preview {
+    flex:
+        1;
+
+    padding:
+        15px;
+}
+
+
+.post-copy-preview span {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .38rem;
+
+    font-weight:
+        700;
+}
+
+
+.post-copy-preview p {
+    display:
+        -webkit-box;
+
+    margin:
+        8px 0 0;
+
+    overflow:
+        hidden;
+
+    -webkit-line-clamp:
+        5;
+
+    -webkit-box-orient:
+        vertical;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .57rem;
+
+    line-height:
+        1.55;
+}
+
+
+/* =========================================================
+   CARD META
+   ========================================================= */
+
+.post-meta {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    border-top:
+        1px solid
+        var(--border-soft);
+}
+
+
+.post-meta > div {
+    min-height:
+        58px;
+
+    padding:
+        10px 12px;
+}
+
+
+.post-meta > div + div {
+    border-left:
+        1px solid
+        var(--border-soft);
+}
+
+
+.post-meta span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .38rem;
+
+    font-weight:
+        700;
+}
+
+
+.post-meta strong {
+    display:
+        block;
+
+    margin-top:
+        5px;
+
+    font-size:
+        .53rem;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.post-actions {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    border-top:
+        1px solid
+        var(--border);
+}
+
+
+.post-actions button {
+    min-height:
+        43px;
+
+    border:
+        none;
+
+    border-right:
+        1px solid
+        var(--border);
+
+    background:
+        transparent;
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .41rem;
+
+    font-weight:
+        700;
+}
+
+
+.post-actions button:last-child {
+    border-right:
+        none;
+}
+
+
+.post-actions button:hover {
+    background:
+        var(--lavender-soft);
+
+    color:
+        #554a9b;
+}
+
+
+/* =========================================================
+   EMPTY
+   ========================================================= */
+
+.post-empty {
+    grid-column:
+        1 / -1;
+
+    min-height:
+        330px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    padding:
+        38px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.post-empty > span {
+    color:
+        var(--lavender);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+}
+
+
+.post-empty h3 {
+    margin:
+        8px 0 0;
+
+    font-size:
+        1.5rem;
+}
+
+
+.post-empty p {
+    max-width:
+        550px;
+
+    margin:
+        12px 0 20px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .68rem;
+
+    line-height:
+        1.6;
+}
+
+
+.post-empty button {
+    width:
+        fit-content;
+
+    padding:
+        12px 15px;
+
+    border:
+        1px solid
+        var(--lavender);
+
+    background:
+        var(--lavender);
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .5rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.post-overlay {
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    z-index:
+        1900;
+
+    background:
+        rgba(15,15,15,.58);
+
+    opacity:
+        0;
+
+    transition:
+        opacity .18s ease;
+}
+
+
+.post-overlay.open {
+    opacity:
+        1;
+}
+
+
+/* =========================================================
+   DRAWER
+   ========================================================= */
+
+.post-drawer {
+    position:
+        fixed;
+
+    top:
+        0;
+
+    right:
+        0;
+
+    bottom:
+        0;
+
+    z-index:
+        2000;
+
+    width:
+        min(700px,100%);
+
+    overflow-y:
+        auto;
+
+    background:
+        var(--paper);
+
+    border-left:
+        1px solid
+        var(--border);
+
+    box-shadow:
+        -20px 0 55px
+        rgba(0,0,0,.16);
+
+    transform:
+        translateX(100%);
+
+    transition:
+        transform .22s ease;
+}
+
+
+.post-drawer.open {
+    transform:
+        translateX(0);
+}
+
+
+body.drawer-open {
+    overflow:
+        hidden;
+}
+
+
+/* =========================================================
+   DRAWER HEADER
+   ========================================================= */
+
+.drawer-top {
+    min-height:
+        105px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        23px 27px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.drawer-kicker {
+    color:
+        var(--lavender);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .09em;
+}
+
+
+.drawer-top h2 {
+    margin:
+        7px 0 0;
+
+    font-size:
+        1.4rem;
+
+    font-weight:
+        800;
+}
+
+
+.drawer-close {
+    width:
+        42px;
+
+    height:
+        42px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        transparent;
+
+    cursor:
+        pointer;
+
+    font-size:
+        1.4rem;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.post-form {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap:
+        16px;
+
+    padding:
+        27px;
+}
+
+
+.form-group {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        7px;
+}
+
+
+.form-group.full,
+.drawer-actions.full {
+    grid-column:
+        1 / -1;
+}
+
+
+.form-group > label {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width:
+        100%;
+
+    border:
+        1px solid
+        var(--border);
+
+    outline:
+        none;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--ink);
+}
+
+
+.form-group input,
+.form-group select {
+    min-height:
+        46px;
+
+    padding:
+        0 11px;
+}
+
+
+.form-group textarea {
+    padding:
+        11px;
+
+    resize:
+        vertical;
+
+    line-height:
+        1.5;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color:
+        var(--lavender);
+
+    box-shadow:
+        0 0 0 2px
+        var(--lavender-soft);
+}
+
+
+/* =========================================================
+   PLATFORM CHECKS
+   ========================================================= */
+
+.platform-checks {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.platform-checks label {
+    min-height:
+        46px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    padding:
+        0 11px;
+
+    border-right:
+        1px solid
+        var(--border-soft);
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+
+    color:
+        var(--ink);
+
+    font-size:
+        .57rem;
+}
+
+
+.platform-checks label:nth-child(2n) {
+    border-right:
+        none;
+}
+
+
+.platform-checks label:nth-last-child(-n+2) {
+    border-bottom:
+        none;
+}
+
+
+.platform-checks input {
+    width:
+        auto;
+
+    min-height:
+        0;
+
+    padding:
+        0;
+}
+
+
+/* =========================================================
+   DRAWER ACTIONS
+   ========================================================= */
+
+.drawer-actions {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        1.4fr;
+
+    gap:
+        10px;
+
+    margin-top:
+        8px;
+}
+
+
+.secondary-button,
+.save-button {
+    min-height:
+        52px;
+
+    border:
+        1px solid
+        var(--border);
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .5rem;
+
+    font-weight:
+        700;
+}
+
+
+.secondary-button {
+    background:
+        var(--surface);
+}
+
+
+.save-button {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        0 17px;
+
+    background:
+        var(--lavender);
+
+    color:
+        white;
+}
+
+
+.save-button:hover {
+    background:
+        #756bb4;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1250px) {
+
+    .post-list {
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+    }
+
+
+    .social-toolbar {
+        grid-template-columns:
+            1fr
+            1fr
+            1fr;
+    }
+
+
+    .social-search {
+        grid-column:
+            1 / -1;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+
+    .social-metrics {
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .social-page {
+        width:
+            calc(100% - 28px);
+    }
+
+
+    .social-hero {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .hero-action-wrap {
+        max-width:
+            400px;
+    }
+
+
+    .post-list {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .social-hero h1 {
+        font-size:
+            3rem;
+    }
+
+
+    .social-metrics {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .social-toolbar {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .social-search {
+        grid-column:
+            auto;
+    }
+
+
+    .section-heading,
+    .queue-heading {
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+    }
+
+
+    .post-form {
+        grid-template-columns:
+            1fr;
+
+        padding:
+            22px 18px;
+    }
+
+
+    .form-group.full,
+    .drawer-actions.full {
+        grid-column:
+            auto;
+    }
+
+
+    .drawer-actions {
+        grid-template-columns:
+            1fr;
+    }
+
+}
