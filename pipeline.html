@@ -1,1 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Pipeline | Helix CRM
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/pipeline.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="app-shell">
+
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-brand">
+
+                <a
+                    href="index.html"
+                    class="brand-link"
+                >
+
+                    <div class="brand-mark">
+                        H
+                    </div>
+
+
+                    <div class="brand-copy">
+
+                        <strong>
+                            HELIX
+                        </strong>
+
+                        <span>
+                            OPERATIONS CRM
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <nav class="sidebar-nav">
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        WORKSPACE
+                    </span>
+
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◫
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="customers.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◩
+                        </span>
+
+                        <span>
+                            Customers
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contacts.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◉
+                        </span>
+
+                        <span>
+                            Contacts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="pipeline.html"
+                        class="nav-link active"
+                    >
+
+                        <span class="nav-icon">
+                            ↗
+                        </span>
+
+                        <span>
+                            Pipeline
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contracts.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌘
+                        </span>
+
+                        <span>
+                            Gov Contracts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="tasks.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ✓
+                        </span>
+
+                        <span>
+                            Tasks
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        MARKETING
+                    </span>
+
+
+                    <a
+                        href="email.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ✉
+                        </span>
+
+                        <span>
+                            Email Campaigns
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-planner.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◇
+                        </span>
+
+                        <span>
+                            Social Planner
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-analytics.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌁
+                        </span>
+
+                        <span>
+                            Social Analytics
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="seo.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌕
+                        </span>
+
+                        <span>
+                            SEO
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        EVENTS
+                    </span>
+
+
+                    <a
+                        href="tradeshows.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ▦
+                        </span>
+
+                        <span>
+                            Tradeshows
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+            </nav>
+
+
+
+            <div class="sidebar-footer">
+
+                <div class="demo-chip">
+
+                    <span class="demo-dot"></span>
+
+                    Portfolio Demo
+
+                </div>
+
+
+                <div class="user-card">
+
+                    <div class="user-avatar">
+                        LO
+                    </div>
+
+
+                    <div class="user-copy">
+
+                        <strong>
+                            Lauren Omstead
+                        </strong>
+
+                        <span>
+                            Workspace Admin
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
+        <div class="main-shell">
+
+
+            <!-- =============================================
+                 TOPBAR
+                 ============================================= -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        id="globalSearch"
+                        type="search"
+                        placeholder="Search opportunities..."
+                        autocomplete="off"
+                    >
+
+                    <kbd>
+                        /
+                    </kbd>
+
+                </div>
+
+
+
+                <div class="topbar-actions">
+
+
+                    <button
+                        id="quickCreateButton"
+                        class="quick-create"
+                        type="button"
+                    >
+
+                        <span>
+                            + NEW RECORD
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="icon-button"
+                        type="button"
+                        aria-label="Notifications"
+                    >
+                        ◌
+                    </button>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =============================================
+                 PAGE
+                 ============================================= -->
+
+            <main class="pipeline-page">
+
+
+                <div class="demo-notice">
+
+                    Portfolio Demo · Helix Operations Group is fictional · Opportunity data shown is mock data
+
+                </div>
+
+
+
+                <!-- =========================================
+                     HERO
+                     ========================================= -->
+
+                <section class="pipeline-hero">
+
+
+                    <div class="hero-copy">
+
+                        <span class="eyebrow">
+                            OPPORTUNITY PIPELINE / 03
+                        </span>
+
+
+                        <h1>
+
+                            WHAT COULD WE
+                            <span>WIN NEXT?</span>
+
+                        </h1>
+
+
+                        <p>
+
+                            Move business opportunities from qualification
+                            through proposal and negotiation while keeping
+                            account context, probability, value, ownership,
+                            and next steps connected.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="hero-action-wrap">
+
+                        <span class="hero-label">
+                            BUSINESS DEVELOPMENT
+                        </span>
+
+
+                        <button
+                            id="addOpportunityButton"
+                            class="add-opportunity-button"
+                            type="button"
+                        >
+
+                            <span>
+                                ADD OPPORTUNITY
+                            </span>
+
+                            <strong>
+                                +
+                            </strong>
+
+                        </button>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     METRICS
+                     ========================================= -->
+
+                <section class="pipeline-metrics">
+
+
+                    <article class="pipeline-metric metric-open">
+
+                        <span>
+                            OPEN PIPELINE
+                        </span>
+
+                        <strong id="metricOpenValue">
+                            $0
+                        </strong>
+
+                        <small>
+                            active opportunity value
+                        </small>
+
+                    </article>
+
+
+                    <article class="pipeline-metric metric-weighted">
+
+                        <span>
+                            WEIGHTED PIPELINE
+                        </span>
+
+                        <strong id="metricWeightedValue">
+                            $0
+                        </strong>
+
+                        <small>
+                            probability adjusted
+                        </small>
+
+                    </article>
+
+
+                    <article class="pipeline-metric metric-opportunities">
+
+                        <span>
+                            OPEN OPPORTUNITIES
+                        </span>
+
+                        <strong id="metricOpenCount">
+                            0
+                        </strong>
+
+                        <small>
+                            currently in motion
+                        </small>
+
+                    </article>
+
+
+                    <article class="pipeline-metric metric-probability">
+
+                        <span>
+                            AVG. PROBABILITY
+                        </span>
+
+                        <strong id="metricProbability">
+                            0%
+                        </strong>
+
+                        <small>
+                            across open deals
+                        </small>
+
+                    </article>
+
+
+                    <article class="pipeline-metric metric-won">
+
+                        <span>
+                            WON
+                        </span>
+
+                        <strong id="metricWon">
+                            0
+                        </strong>
+
+                        <small>
+                            closed successfully
+                        </small>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     TOOLBAR
+                     ========================================= -->
+
+                <section class="pipeline-toolbar">
+
+
+                    <label class="pipeline-search">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            id="pipelineSearch"
+                            type="search"
+                            placeholder="Search opportunity, customer, contact, owner..."
+                            autocomplete="off"
+                        >
+
+                    </label>
+
+
+
+                    <select id="customerFilter">
+
+                        <option value="">
+                            ALL CUSTOMERS
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="ownerFilter">
+
+                        <option value="">
+                            ALL OWNERS
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="statusFilter">
+
+                        <option value="open">
+                            OPEN PIPELINE
+                        </option>
+
+                        <option value="">
+                            ALL OPPORTUNITIES
+                        </option>
+
+                        <option value="won">
+                            WON
+                        </option>
+
+                        <option value="lost">
+                            LOST
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="pipelineSort">
+
+                        <option value="value">
+                            HIGHEST VALUE
+                        </option>
+
+                        <option value="probability">
+                            HIGHEST PROBABILITY
+                        </option>
+
+                        <option value="recent">
+                            RECENTLY UPDATED
+                        </option>
+
+                        <option value="company">
+                            CUSTOMER A–Z
+                        </option>
+
+                        <option value="close-date">
+                            CLOSE DATE
+                        </option>
+
+                    </select>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     BOARD HEADER
+                     ========================================= -->
+
+                <section class="pipeline-heading">
+
+
+                    <div>
+
+                        <span>
+                            ACTIVE BUSINESS DEVELOPMENT
+                        </span>
+
+                        <h2>
+                            Opportunity board
+                        </h2>
+
+                    </div>
+
+
+                    <div class="visible-count">
+
+                        <strong id="visibleOpportunityCount">
+                            0
+                        </strong>
+
+                        <span>
+                            VISIBLE
+                        </span>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     STAGE BOARD
+                     ========================================= -->
+
+                <section
+                    id="pipelineBoard"
+                    class="pipeline-board"
+                >
+
+
+                    <div
+                        class="pipeline-column"
+                        data-stage="qualified"
+                    >
+
+                        <div class="column-header">
+
+                            <div>
+
+                                <span class="stage-marker qualified"></span>
+
+                                <strong>
+                                    Qualified
+                                </strong>
+
+                            </div>
+
+                            <span id="qualifiedCount">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <div class="column-summary">
+
+                            <strong id="qualifiedValue">
+                                $0
+                            </strong>
+
+                            <span>
+                                STAGE VALUE
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="qualifiedList"
+                            class="opportunity-list"
+                        >
+                        </div>
+
+                    </div>
+
+
+
+                    <div
+                        class="pipeline-column"
+                        data-stage="discovery"
+                    >
+
+                        <div class="column-header">
+
+                            <div>
+
+                                <span class="stage-marker discovery"></span>
+
+                                <strong>
+                                    Discovery
+                                </strong>
+
+                            </div>
+
+                            <span id="discoveryCount">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <div class="column-summary">
+
+                            <strong id="discoveryValue">
+                                $0
+                            </strong>
+
+                            <span>
+                                STAGE VALUE
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="discoveryList"
+                            class="opportunity-list"
+                        >
+                        </div>
+
+                    </div>
+
+
+
+                    <div
+                        class="pipeline-column"
+                        data-stage="proposal"
+                    >
+
+                        <div class="column-header">
+
+                            <div>
+
+                                <span class="stage-marker proposal"></span>
+
+                                <strong>
+                                    Proposal
+                                </strong>
+
+                            </div>
+
+                            <span id="proposalCount">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <div class="column-summary">
+
+                            <strong id="proposalValue">
+                                $0
+                            </strong>
+
+                            <span>
+                                STAGE VALUE
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="proposalList"
+                            class="opportunity-list"
+                        >
+                        </div>
+
+                    </div>
+
+
+
+                    <div
+                        class="pipeline-column"
+                        data-stage="negotiation"
+                    >
+
+                        <div class="column-header">
+
+                            <div>
+
+                                <span class="stage-marker negotiation"></span>
+
+                                <strong>
+                                    Negotiation
+                                </strong>
+
+                            </div>
+
+                            <span id="negotiationCount">
+                                0
+                            </span>
+
+                        </div>
+
+
+                        <div class="column-summary">
+
+                            <strong id="negotiationValue">
+                                $0
+                            </strong>
+
+                            <span>
+                                STAGE VALUE
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            id="negotiationList"
+                            class="opportunity-list"
+                        >
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     CLOSED SECTION
+                     ========================================= -->
+
+                <section
+                    id="closedSection"
+                    class="closed-section"
+                >
+
+
+                    <div class="closed-heading">
+
+                        <div>
+
+                            <span>
+                                CLOSED BUSINESS
+                            </span>
+
+                            <h2>
+                                Won & lost
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="closedOpportunityList"
+                        class="closed-opportunity-list"
+                    >
+                    </div>
+
+
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         QUICK CREATE
+         ===================================================== -->
+
+    <div
+        id="quickCreateMenu"
+        class="quick-create-menu"
+        hidden
+    >
+
+        <div class="quick-menu-header">
+            CREATE NEW
+        </div>
+
+        <a href="customers.html?action=new">
+            Customer
+            <span>→</span>
+        </a>
+
+        <a href="contacts.html?action=new">
+            Contact
+            <span>→</span>
+        </a>
+
+        <a href="pipeline.html?action=new">
+            Opportunity
+            <span>→</span>
+        </a>
+
+        <a href="tasks.html?action=new">
+            Task
+            <span>→</span>
+        </a>
+
+        <a href="contracts.html?action=new">
+            Contract Record
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         OVERLAY
+         ===================================================== -->
+
+    <div
+        id="opportunityOverlay"
+        class="opportunity-overlay"
+        hidden
+    >
+    </div>
+
+
+
+    <!-- =====================================================
+         OPPORTUNITY DRAWER
+         ===================================================== -->
+
+    <aside
+        id="opportunityDrawer"
+        class="opportunity-drawer"
+        hidden
+        aria-label="Opportunity editor"
+    >
+
+
+        <div class="drawer-top">
+
+
+            <div>
+
+                <span class="drawer-kicker">
+                    OPPORTUNITY RECORD
+                </span>
+
+                <h2 id="drawerTitle">
+                    Add opportunity
+                </h2>
+
+            </div>
+
+
+            <button
+                id="drawerCloseButton"
+                class="drawer-close"
+                type="button"
+                aria-label="Close opportunity editor"
+            >
+                ×
+            </button>
+
+
+        </div>
+
+
+
+        <form
+            id="opportunityForm"
+            class="opportunity-form"
+        >
+
+
+            <input
+                id="editingOpportunityId"
+                type="hidden"
+            >
+
+
+
+            <div class="form-group full">
+
+                <label for="opportunityName">
+                    Opportunity Name
+                </label>
+
+                <input
+                    id="opportunityName"
+                    type="text"
+                    placeholder="Project or business opportunity"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="opportunityCustomer">
+                    Customer
+                </label>
+
+                <select
+                    id="opportunityCustomer"
+                    required
+                >
+
+                    <option value="">
+                        Select customer
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="opportunityContact">
+                    Primary Contact
+                </label>
+
+                <select id="opportunityContact">
+
+                    <option value="">
+                        No primary contact
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="opportunityStage">
+                    Stage
+                </label>
+
+                <select id="opportunityStage">
+
+                    <option value="qualified">
+                        Qualified
+                    </option>
+
+                    <option value="discovery">
+                        Discovery
+                    </option>
+
+                    <option value="proposal">
+                        Proposal
+                    </option>
+
+                    <option value="negotiation">
+                        Negotiation
+                    </option>
+
+                    <option value="won">
+                        Won
+                    </option>
+
+                    <option value="lost">
+                        Lost
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="opportunityOwner">
+                    Owner
+                </label>
+
+                <input
+                    id="opportunityOwner"
+                    type="text"
+                    placeholder="Team member"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="opportunityValue">
+                    Estimated Value
+                </label>
+
+                <input
+                    id="opportunityValue"
+                    type="number"
+                    min="0"
+                    step="1000"
+                    placeholder="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="opportunityProbability">
+                    Probability %
+                </label>
+
+                <input
+                    id="opportunityProbability"
+                    type="number"
+                    min="0"
+                    max="100"
+                    step="5"
+                    value="25"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="opportunityCloseDate">
+                    Expected Close
+                </label>
+
+                <input
+                    id="opportunityCloseDate"
+                    type="date"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="opportunityPriority">
+                    Priority
+                </label>
+
+                <select id="opportunityPriority">
+
+                    <option value="normal">
+                        Normal
+                    </option>
+
+                    <option value="high">
+                        High
+                    </option>
+
+                    <option value="strategic">
+                        Strategic
+                    </option>
+
+                    <option value="low">
+                        Low
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="opportunityNextStep">
+                    Next Step
+                </label>
+
+                <input
+                    id="opportunityNextStep"
+                    type="text"
+                    placeholder="Schedule discovery call, send proposal, follow up..."
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="opportunityDescription">
+                    Opportunity Summary
+                </label>
+
+                <textarea
+                    id="opportunityDescription"
+                    rows="5"
+                    placeholder="What is the opportunity and why does it matter?"
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="opportunityNotes">
+                    Internal Notes
+                </label>
+
+                <textarea
+                    id="opportunityNotes"
+                    rows="6"
+                    placeholder="Requirements, risks, relationship context, decisions, next actions..."
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="drawer-actions full">
+
+
+                <button
+                    id="cancelOpportunityButton"
+                    class="secondary-button"
+                    type="button"
+                >
+                    CANCEL
+                </button>
+
+
+                <button
+                    class="save-button"
+                    type="submit"
+                >
+
+                    <span id="saveOpportunityLabel">
+                        SAVE OPPORTUNITY
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </aside>
+
+
+
+    <script src="js/config.js"></script>
+
+    <script src="js/pipeline.js"></script>
+
+
+</body>
+
+</html>
