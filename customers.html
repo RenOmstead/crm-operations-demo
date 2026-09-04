@@ -1,1 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Customers | Helix CRM
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/customers.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="app-shell">
+
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-brand">
+
+                <a
+                    href="index.html"
+                    class="brand-link"
+                >
+
+                    <div class="brand-mark">
+                        H
+                    </div>
+
+                    <div class="brand-copy">
+
+                        <strong>
+                            HELIX
+                        </strong>
+
+                        <span>
+                            OPERATIONS CRM
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <nav class="sidebar-nav">
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        WORKSPACE
+                    </span>
+
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◫
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="customers.html"
+                        class="nav-link active"
+                    >
+
+                        <span class="nav-icon">
+                            ◩
+                        </span>
+
+                        <span>
+                            Customers
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contacts.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◉
+                        </span>
+
+                        <span>
+                            Contacts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="pipeline.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ↗
+                        </span>
+
+                        <span>
+                            Pipeline
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contracts.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌘
+                        </span>
+
+                        <span>
+                            Gov Contracts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="tasks.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ✓
+                        </span>
+
+                        <span>
+                            Tasks
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        MARKETING
+                    </span>
+
+
+                    <a
+                        href="email.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ✉
+                        </span>
+
+                        <span>
+                            Email Campaigns
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-planner.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◇
+                        </span>
+
+                        <span>
+                            Social Planner
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-analytics.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌁
+                        </span>
+
+                        <span>
+                            Social Analytics
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="seo.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌕
+                        </span>
+
+                        <span>
+                            SEO
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        EVENTS
+                    </span>
+
+
+                    <a
+                        href="tradeshows.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ▦
+                        </span>
+
+                        <span>
+                            Tradeshows
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+            </nav>
+
+
+
+            <div class="sidebar-footer">
+
+                <div class="demo-chip">
+
+                    <span class="demo-dot"></span>
+
+                    Portfolio Demo
+
+                </div>
+
+
+                <div class="user-card">
+
+                    <div class="user-avatar">
+                        LO
+                    </div>
+
+
+                    <div class="user-copy">
+
+                        <strong>
+                            Lauren Omstead
+                        </strong>
+
+                        <span>
+                            Workspace Admin
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
+        <div class="main-shell">
+
+
+            <!-- =============================================
+                 TOPBAR
+                 ============================================= -->
+
+            <header class="topbar">
+
+
+                <div class="topbar-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        id="globalSearch"
+                        type="search"
+                        placeholder="Search customers..."
+                        autocomplete="off"
+                    >
+
+                    <kbd>
+                        /
+                    </kbd>
+
+                </div>
+
+
+
+                <div class="topbar-actions">
+
+
+                    <button
+                        id="quickCreateButton"
+                        class="quick-create"
+                        type="button"
+                    >
+
+                        <span>
+                            + NEW RECORD
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="icon-button"
+                        type="button"
+                        aria-label="Notifications"
+                    >
+                        ◌
+                    </button>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =============================================
+                 PAGE
+                 ============================================= -->
+
+            <main class="customers-page">
+
+
+                <div class="demo-notice">
+
+                    Portfolio Demo · Helix Operations Group is fictional · Customer information shown is mock data
+
+                </div>
+
+
+
+                <!-- =========================================
+                     HERO
+                     ========================================= -->
+
+                <section class="customers-hero">
+
+
+                    <div class="hero-copy">
+
+                        <span class="eyebrow">
+                            CUSTOMER DIRECTORY / 01
+                        </span>
+
+
+                        <h1>
+
+                            WHO ARE WE
+                            <span>WORKING WITH?</span>
+
+                        </h1>
+
+
+                        <p>
+
+                            Keep companies, relationship status,
+                            account ownership, activity, and opportunity
+                            context in one colorful little universe.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="hero-action-wrap">
+
+
+                        <div class="hero-sticker">
+                            PEOPLE + COMPANIES + CHAOS
+                        </div>
+
+
+                        <button
+                            id="addCustomerButton"
+                            class="add-customer-button"
+                            type="button"
+                        >
+
+                            <span>
+                                ADD CUSTOMER
+                            </span>
+
+                            <strong>
+                                +
+                            </strong>
+
+                        </button>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     METRICS
+                     ========================================= -->
+
+                <section class="customer-metrics">
+
+
+                    <article class="customer-metric metric-total">
+
+                        <span>
+                            TOTAL CUSTOMERS
+                        </span>
+
+                        <strong id="metricTotal">
+                            0
+                        </strong>
+
+                        <small>
+                            companies in CRM
+                        </small>
+
+                    </article>
+
+
+                    <article class="customer-metric metric-active">
+
+                        <span>
+                            ACTIVE
+                        </span>
+
+                        <strong id="metricActive">
+                            0
+                        </strong>
+
+                        <small>
+                            current relationships
+                        </small>
+
+                    </article>
+
+
+                    <article class="customer-metric metric-prospect">
+
+                        <span>
+                            PROSPECTS
+                        </span>
+
+                        <strong id="metricProspects">
+                            0
+                        </strong>
+
+                        <small>
+                            still being developed
+                        </small>
+
+                    </article>
+
+
+                    <article class="customer-metric metric-value">
+
+                        <span>
+                            OPEN VALUE
+                        </span>
+
+                        <strong id="metricValue">
+                            $0
+                        </strong>
+
+                        <small>
+                            linked pipeline
+                        </small>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     TOOLBAR
+                     ========================================= -->
+
+                <section class="customer-toolbar">
+
+
+                    <label class="customer-search">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            id="customerSearch"
+                            type="search"
+                            placeholder="Search company, industry, owner, city..."
+                            autocomplete="off"
+                        >
+
+                    </label>
+
+
+
+                    <select id="statusFilter">
+
+                        <option value="">
+                            ALL STATUSES
+                        </option>
+
+                        <option value="active">
+                            ACTIVE
+                        </option>
+
+                        <option value="prospect">
+                            PROSPECT
+                        </option>
+
+                        <option value="inactive">
+                            INACTIVE
+                        </option>
+
+                        <option value="partner">
+                            PARTNER
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="industryFilter">
+
+                        <option value="">
+                            ALL INDUSTRIES
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="customerSort">
+
+                        <option value="company">
+                            COMPANY A–Z
+                        </option>
+
+                        <option value="recent">
+                            RECENTLY UPDATED
+                        </option>
+
+                        <option value="value">
+                            HIGHEST VALUE
+                        </option>
+
+                        <option value="owner">
+                            OWNER
+                        </option>
+
+                    </select>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     DIRECTORY HEADER
+                     ========================================= -->
+
+                <section class="directory-heading">
+
+
+                    <div>
+
+                        <span>
+                            COMPANY DATABASE
+                        </span>
+
+                        <h2>
+                            Customer universe
+                        </h2>
+
+                    </div>
+
+
+                    <div class="visible-count">
+
+                        <strong id="visibleCustomerCount">
+                            0
+                        </strong>
+
+                        <span>
+                            VISIBLE
+                        </span>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     CUSTOMER GRID
+                     ========================================= -->
+
+                <section
+                    id="customerGrid"
+                    class="customer-grid"
+                >
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         QUICK CREATE MENU
+         ===================================================== -->
+
+    <div
+        id="quickCreateMenu"
+        class="quick-create-menu"
+        hidden
+    >
+
+        <div class="quick-menu-header">
+            CREATE NEW
+        </div>
+
+        <a href="customers.html?action=new">
+            Customer
+            <span>→</span>
+        </a>
+
+        <a href="contacts.html?action=new">
+            Contact
+            <span>→</span>
+        </a>
+
+        <a href="pipeline.html?action=new">
+            Opportunity
+            <span>→</span>
+        </a>
+
+        <a href="tasks.html?action=new">
+            Task
+            <span>→</span>
+        </a>
+
+        <a href="contracts.html?action=new">
+            Contract Record
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         DRAWER OVERLAY
+         ===================================================== -->
+
+    <div
+        id="customerOverlay"
+        class="customer-overlay"
+        hidden
+    >
+    </div>
+
+
+
+    <!-- =====================================================
+         CUSTOMER DRAWER
+         ===================================================== -->
+
+    <aside
+        id="customerDrawer"
+        class="customer-drawer"
+        hidden
+        aria-label="Customer editor"
+    >
+
+
+        <div class="drawer-top">
+
+
+            <div>
+
+                <span class="drawer-kicker">
+                    COMPANY RECORD
+                </span>
+
+                <h2 id="drawerTitle">
+                    Add customer
+                </h2>
+
+            </div>
+
+
+            <button
+                id="drawerCloseButton"
+                class="drawer-close"
+                type="button"
+                aria-label="Close customer editor"
+            >
+                ×
+            </button>
+
+
+        </div>
+
+
+
+        <form
+            id="customerForm"
+            class="customer-form"
+        >
+
+
+            <input
+                id="editingCustomerId"
+                type="hidden"
+            >
+
+
+
+            <div class="form-group full">
+
+                <label for="customerName">
+                    Company Name
+                </label>
+
+                <input
+                    id="customerName"
+                    type="text"
+                    placeholder="Company name"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="customerStatus">
+                    Status
+                </label>
+
+                <select id="customerStatus">
+
+                    <option value="prospect">
+                        Prospect
+                    </option>
+
+                    <option value="active">
+                        Active
+                    </option>
+
+                    <option value="partner">
+                        Partner
+                    </option>
+
+                    <option value="inactive">
+                        Inactive
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="customerIndustry">
+                    Industry
+                </label>
+
+                <input
+                    id="customerIndustry"
+                    type="text"
+                    placeholder="Rail, aerospace, manufacturing..."
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="customerOwner">
+                    Account Owner
+                </label>
+
+                <input
+                    id="customerOwner"
+                    type="text"
+                    placeholder="Team member"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="customerWebsite">
+                    Website
+                </label>
+
+                <input
+                    id="customerWebsite"
+                    type="text"
+                    placeholder="example.com"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="customerCity">
+                    City
+                </label>
+
+                <input
+                    id="customerCity"
+                    type="text"
+                    placeholder="City"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="customerState">
+                    State / Region
+                </label>
+
+                <input
+                    id="customerState"
+                    type="text"
+                    placeholder="NY"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="customerEmployees">
+                    Company Size
+                </label>
+
+                <select id="customerEmployees">
+
+                    <option value="">
+                        Unknown
+                    </option>
+
+                    <option value="1-50">
+                        1–50
+                    </option>
+
+                    <option value="51-250">
+                        51–250
+                    </option>
+
+                    <option value="251-1000">
+                        251–1,000
+                    </option>
+
+                    <option value="1001-5000">
+                        1,001–5,000
+                    </option>
+
+                    <option value="5000+">
+                        5,000+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="customerPriority">
+                    Relationship Priority
+                </label>
+
+                <select id="customerPriority">
+
+                    <option value="normal">
+                        Normal
+                    </option>
+
+                    <option value="high">
+                        High
+                    </option>
+
+                    <option value="strategic">
+                        Strategic
+                    </option>
+
+                    <option value="low">
+                        Low
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="customerDescription">
+                    Company Overview
+                </label>
+
+                <textarea
+                    id="customerDescription"
+                    rows="5"
+                    placeholder="What does this company do, and why does it matter?"
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="customerNotes">
+                    Relationship Notes
+                </label>
+
+                <textarea
+                    id="customerNotes"
+                    rows="6"
+                    placeholder="Current relationship, history, priorities, next steps..."
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="drawer-actions full">
+
+
+                <button
+                    id="cancelCustomerButton"
+                    class="secondary-button"
+                    type="button"
+                >
+                    CANCEL
+                </button>
+
+
+                <button
+                    class="save-button"
+                    type="submit"
+                >
+
+                    <span id="saveCustomerLabel">
+                        SAVE CUSTOMER
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </aside>
+
+
+
+    <script src="js/config.js"></script>
+
+    <script src="js/customers.js"></script>
+
+
+</body>
+
+</html>
