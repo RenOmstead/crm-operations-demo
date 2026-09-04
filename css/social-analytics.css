@@ -1,1 +1,1846 @@
+/* =========================================================
+   HELIX CRM
+   SOCIAL ANALYTICS
+   ========================================================= */
 
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.analytics-page {
+    width:
+        min(
+            1580px,
+            calc(100% - 48px)
+        );
+
+    margin:
+        0 auto;
+
+    padding:
+        28px 0
+        80px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.analytics-hero {
+    min-height:
+        285px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        245px;
+
+    align-items:
+        end;
+
+    gap:
+        50px;
+
+    padding:
+        42px 0
+        45px;
+}
+
+
+.hero-copy {
+    max-width:
+        900px;
+}
+
+
+.eyebrow {
+    color:
+        var(--blue);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .53rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .11em;
+}
+
+
+.analytics-hero h1 {
+    max-width:
+        900px;
+
+    margin:
+        14px 0 0;
+
+    font-size:
+        clamp(
+            3rem,
+            5.5vw,
+            6rem
+        );
+
+    font-weight:
+        800;
+
+    line-height:
+        .9;
+
+    letter-spacing:
+        -.06em;
+}
+
+
+.analytics-hero h1 span {
+    color:
+        var(--blue);
+}
+
+
+.analytics-hero p {
+    max-width:
+        690px;
+
+    margin:
+        23px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .81rem;
+
+    line-height:
+        1.7;
+}
+
+
+/* =========================================================
+   HERO ACTION
+   ========================================================= */
+
+.hero-action-wrap {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+}
+
+
+.hero-label {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+}
+
+
+.edit-analytics-button {
+    min-height:
+        68px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        0 20px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+}
+
+
+.edit-analytics-button:hover {
+    background:
+        var(--blue-dark);
+}
+
+
+.edit-analytics-button span {
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .56rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+}
+
+
+/* =========================================================
+   CONTROLS
+   ========================================================= */
+
+.analytics-controls {
+    display:
+        flex;
+
+    align-items:
+        stretch;
+
+    justify-content:
+        space-between;
+
+    gap:
+        15px;
+
+    margin-bottom:
+        18px;
+}
+
+
+.range-buttons {
+    display:
+        flex;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.range-button {
+    min-height:
+        48px;
+
+    padding:
+        0 15px;
+
+    border:
+        none;
+
+    border-right:
+        1px solid
+        var(--border-soft);
+
+    background:
+        transparent;
+
+    color:
+        var(--muted);
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .45rem;
+
+    font-weight:
+        700;
+}
+
+
+.range-button:last-child {
+    border-right:
+        none;
+}
+
+
+.range-button:hover {
+    background:
+        var(--blue-soft);
+}
+
+
+.range-button.active {
+    background:
+        var(--blue);
+
+    color:
+        white;
+}
+
+
+.analytics-controls select {
+    min-width:
+        175px;
+
+    min-height:
+        48px;
+
+    padding:
+        0 13px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+
+    color:
+        var(--ink);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   METRICS
+   ========================================================= */
+
+.analytics-metrics {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    margin-bottom:
+        18px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.analytics-metric {
+    position:
+        relative;
+
+    min-height:
+        140px;
+
+    padding:
+        18px;
+
+    border-right:
+        1px solid
+        var(--border);
+}
+
+
+.analytics-metric:last-child {
+    border-right:
+        none;
+}
+
+
+.analytics-metric::before {
+    content: "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        18px;
+
+    right:
+        18px;
+
+    height:
+        3px;
+}
+
+
+.metric-impressions::before {
+    background:
+        var(--blue);
+}
+
+
+.metric-engagement::before {
+    background:
+        var(--mint);
+}
+
+
+.metric-clicks::before {
+    background:
+        var(--coral);
+}
+
+
+.metric-followers::before {
+    background:
+        var(--lavender);
+}
+
+
+.metric-posts::before {
+    background:
+        var(--yellow);
+}
+
+
+.analytics-metric > span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .08em;
+}
+
+
+.analytics-metric strong {
+    display:
+        block;
+
+    margin-top:
+        17px;
+
+    font-size:
+        2rem;
+
+    font-weight:
+        800;
+}
+
+
+.analytics-metric small {
+    display:
+        block;
+
+    margin-top:
+        8px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .5rem;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.analytics-grid {
+    display:
+        grid;
+
+    gap:
+        18px;
+
+    margin-bottom:
+        18px;
+}
+
+
+.primary-analytics-grid {
+    grid-template-columns:
+        1.5fr
+        .8fr;
+}
+
+
+.secondary-analytics-grid {
+    grid-template-columns:
+        1.2fr
+        .8fr
+        .8fr;
+}
+
+
+/* =========================================================
+   PANEL
+   ========================================================= */
+
+.analytics-panel {
+    min-width:
+        0;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+
+    box-shadow:
+        var(--shadow-card);
+}
+
+
+.panel-heading {
+    min-height:
+        76px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        16px 18px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+
+.panel-heading span {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .45rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .08em;
+}
+
+
+.panel-heading h2 {
+    margin:
+        5px 0 0;
+
+    font-size:
+        1rem;
+
+    font-weight:
+        800;
+}
+
+
+/* =========================================================
+   CHART LEGEND
+   ========================================================= */
+
+.chart-legend {
+    display:
+        flex;
+
+    gap:
+        14px;
+}
+
+
+.chart-legend > span {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        6px;
+
+    color:
+        var(--muted);
+}
+
+
+.legend-dot {
+    width:
+        7px;
+
+    height:
+        7px;
+
+    border-radius:
+        50%;
+}
+
+
+.legend-dot.impressions {
+    background:
+        var(--blue);
+}
+
+
+.legend-dot.engagement {
+    background:
+        var(--mint);
+}
+
+
+/* =========================================================
+   TREND CHART
+   ========================================================= */
+
+.trend-chart {
+    min-height:
+        330px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(8,1fr);
+
+    align-items:
+        end;
+
+    gap:
+        12px;
+
+    padding:
+        28px 22px
+        20px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 24%,
+            var(--border-soft) 25%,
+            transparent 26%,
+            transparent 49%,
+            var(--border-soft) 50%,
+            transparent 51%,
+            transparent 74%,
+            var(--border-soft) 75%,
+            transparent 76%
+        );
+}
+
+
+.trend-group {
+    min-width:
+        0;
+
+    height:
+        260px;
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        center;
+
+    gap:
+        5px;
+
+    position:
+        relative;
+}
+
+
+.trend-bar {
+    width:
+        22px;
+
+    min-height:
+        2px;
+}
+
+
+.trend-bar.impressions {
+    background:
+        var(--blue);
+}
+
+
+.trend-bar.engagement {
+    background:
+        var(--mint);
+}
+
+
+.trend-label {
+    position:
+        absolute;
+
+    bottom:
+        -18px;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .37rem;
+}
+
+
+/* =========================================================
+   PLATFORM COMPARISON
+   ========================================================= */
+
+.platform-comparison {
+    padding:
+        8px 18px 18px;
+}
+
+
+.platform-row {
+    padding:
+        17px 0;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+}
+
+
+.platform-row:last-child {
+    border-bottom:
+        none;
+}
+
+
+.platform-row-head {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        15px;
+
+    margin-bottom:
+        9px;
+}
+
+
+.platform-row-head strong {
+    font-size:
+        .65rem;
+}
+
+
+.platform-row-head span {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .42rem;
+}
+
+
+.platform-bar {
+    height:
+        7px;
+
+    background:
+        var(--paper-soft);
+}
+
+
+.platform-fill {
+    height:
+        100%;
+
+    background:
+        var(--blue);
+}
+
+
+.platform-stats {
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        8px;
+
+    margin-top:
+        10px;
+}
+
+
+.platform-stat span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .36rem;
+
+    font-weight:
+        700;
+}
+
+
+.platform-stat strong {
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    font-size:
+        .53rem;
+}
+
+
+/* =========================================================
+   TOP POSTS
+   ========================================================= */
+
+.top-post-list {
+    min-height:
+        300px;
+}
+
+
+.top-post-row {
+    display:
+        grid;
+
+    grid-template-columns:
+        38px
+        minmax(0,1fr)
+        110px
+        90px;
+
+    align-items:
+        center;
+
+    min-height:
+        76px;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+}
+
+
+.top-post-row:last-child {
+    border-bottom:
+        none;
+}
+
+
+.top-post-rank {
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    align-self:
+        stretch;
+
+    border-right:
+        1px solid
+        var(--border-soft);
+
+    color:
+        var(--blue);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .5rem;
+
+    font-weight:
+        700;
+}
+
+
+.top-post-copy {
+    padding:
+        11px 14px;
+}
+
+
+.top-post-copy strong {
+    display:
+        block;
+
+    font-size:
+        .61rem;
+
+    line-height:
+        1.4;
+}
+
+
+.top-post-copy span {
+    display:
+        block;
+
+    margin-top:
+        5px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        .48rem;
+}
+
+
+.top-post-metric {
+    padding:
+        11px;
+
+    border-left:
+        1px solid
+        var(--border-soft);
+
+    text-align:
+        right;
+}
+
+
+.top-post-metric span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .35rem;
+}
+
+
+.top-post-metric strong {
+    display:
+        block;
+
+    margin-top:
+        5px;
+
+    font-size:
+        .61rem;
+}
+
+
+/* =========================================================
+   CONTENT TYPE
+   ========================================================= */
+
+.content-type-list {
+    padding:
+        12px 18px 18px;
+}
+
+
+.content-type-row {
+    padding:
+        13px 0;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+}
+
+
+.content-type-row:last-child {
+    border-bottom:
+        none;
+}
+
+
+.content-type-head {
+    display:
+        flex;
+
+    align-items:
+        baseline;
+
+    justify-content:
+        space-between;
+
+    gap:
+        10px;
+
+    margin-bottom:
+        7px;
+}
+
+
+.content-type-head strong {
+    font-size:
+        .58rem;
+}
+
+
+.content-type-head span {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .38rem;
+}
+
+
+.content-type-track {
+    height:
+        7px;
+
+    background:
+        var(--paper-soft);
+}
+
+
+.content-type-fill {
+    height:
+        100%;
+
+    background:
+        var(--lavender);
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.performance-summary {
+    padding:
+        20px;
+}
+
+
+.summary-stat {
+    padding:
+        14px 0;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+}
+
+
+.summary-stat:last-child {
+    border-bottom:
+        none;
+}
+
+
+.summary-stat span {
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .4rem;
+
+    font-weight:
+        700;
+}
+
+
+.summary-stat strong {
+    display:
+        block;
+
+    margin-top:
+        6px;
+
+    font-size:
+        .68rem;
+
+    line-height:
+        1.45;
+}
+
+
+.summary-note {
+    margin-top:
+        15px;
+
+    padding:
+        14px;
+
+    border-left:
+        3px solid
+        var(--blue);
+
+    background:
+        var(--blue-soft);
+
+    color:
+        var(--ink-muted);
+
+    font-size:
+        .55rem;
+
+    line-height:
+        1.55;
+}
+
+
+/* =========================================================
+   EMPTY
+   ========================================================= */
+
+.analytics-empty {
+    min-height:
+        230px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        30px;
+
+    color:
+        var(--muted);
+
+    text-align:
+        center;
+
+    font-size:
+        .58rem;
+}
+
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.analytics-overlay {
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    z-index:
+        1900;
+
+    background:
+        rgba(15,15,15,.58);
+
+    opacity:
+        0;
+
+    transition:
+        opacity .18s ease;
+}
+
+
+.analytics-overlay.open {
+    opacity:
+        1;
+}
+
+
+/* =========================================================
+   DRAWER
+   ========================================================= */
+
+.analytics-drawer {
+    position:
+        fixed;
+
+    top:
+        0;
+
+    right:
+        0;
+
+    bottom:
+        0;
+
+    z-index:
+        2000;
+
+    width:
+        min(720px,100%);
+
+    overflow-y:
+        auto;
+
+    background:
+        var(--paper);
+
+    border-left:
+        1px solid
+        var(--border);
+
+    box-shadow:
+        -20px 0 55px
+        rgba(0,0,0,.16);
+
+    transform:
+        translateX(100%);
+
+    transition:
+        transform .22s ease;
+}
+
+
+.analytics-drawer.open {
+    transform:
+        translateX(0);
+}
+
+
+body.drawer-open {
+    overflow:
+        hidden;
+}
+
+
+/* =========================================================
+   DRAWER TOP
+   ========================================================= */
+
+.drawer-top {
+    min-height:
+        105px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        23px 27px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.drawer-kicker {
+    color:
+        var(--blue);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .09em;
+}
+
+
+.drawer-top h2 {
+    margin:
+        7px 0 0;
+
+    font-size:
+        1.4rem;
+
+    font-weight:
+        800;
+}
+
+
+.drawer-close {
+    width:
+        42px;
+
+    height:
+        42px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        transparent;
+
+    cursor:
+        pointer;
+
+    font-size:
+        1.4rem;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.analytics-form {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap:
+        16px;
+
+    padding:
+        27px;
+}
+
+
+.form-group {
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        7px;
+}
+
+
+.form-group.full,
+.form-section-title.full,
+.platform-editor.full,
+.drawer-actions.full {
+    grid-column:
+        1 / -1;
+}
+
+
+.form-section-title {
+    margin-top:
+        6px;
+
+    padding-bottom:
+        9px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    color:
+        var(--blue);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .48rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .09em;
+}
+
+
+.form-group label {
+    color:
+        var(--muted);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .46rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .07em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.form-group input,
+.form-group textarea,
+.platform-editor-row input {
+    width:
+        100%;
+
+    border:
+        1px solid
+        var(--border);
+
+    outline:
+        none;
+
+    background:
+        var(--surface);
+
+    color:
+        var(--ink);
+}
+
+
+.form-group input,
+.platform-editor-row input {
+    min-height:
+        46px;
+
+    padding:
+        0 11px;
+}
+
+
+.form-group textarea {
+    padding:
+        11px;
+
+    resize:
+        vertical;
+
+    line-height:
+        1.5;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus,
+.platform-editor-row input:focus {
+    border-color:
+        var(--blue);
+
+    box-shadow:
+        0 0 0 2px
+        var(--blue-soft);
+}
+
+
+/* =========================================================
+   PLATFORM EDITOR
+   ========================================================= */
+
+.platform-editor {
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
+}
+
+
+.platform-editor-row {
+    display:
+        grid;
+
+    grid-template-columns:
+        120px
+        repeat(3,1fr);
+
+    gap:
+        8px;
+
+    align-items:
+        center;
+
+    padding:
+        10px;
+
+    border-bottom:
+        1px solid
+        var(--border-soft);
+}
+
+
+.platform-editor-row:last-child {
+    border-bottom:
+        none;
+}
+
+
+.platform-editor-row strong {
+    font-size:
+        .58rem;
+}
+
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.drawer-actions {
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        1.4fr;
+
+    gap:
+        10px;
+
+    margin-top:
+        8px;
+}
+
+
+.secondary-button,
+.save-button {
+    min-height:
+        52px;
+
+    border:
+        1px solid
+        var(--border);
+
+    cursor:
+        pointer;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size:
+        .5rem;
+
+    font-weight:
+        700;
+}
+
+
+.secondary-button {
+    background:
+        var(--surface);
+}
+
+
+.save-button {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        0 17px;
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+}
+
+
+.save-button:hover {
+    background:
+        var(--blue-dark);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1250px) {
+
+    .primary-analytics-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .secondary-analytics-grid {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .insight-panel {
+        grid-column:
+            1 / -1;
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+
+    .analytics-metrics {
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+
+    .analytics-metric:nth-child(3) {
+        border-right:
+            none;
+    }
+
+
+    .analytics-metric:nth-child(n+4) {
+        border-top:
+            1px solid
+            var(--border);
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .analytics-page {
+        width:
+            calc(100% - 28px);
+    }
+
+
+    .analytics-hero {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .hero-action-wrap {
+        max-width:
+            400px;
+    }
+
+
+    .secondary-analytics-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .insight-panel {
+        grid-column:
+            auto;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .analytics-hero h1 {
+        font-size:
+            3rem;
+    }
+
+
+    .analytics-controls {
+        flex-direction:
+            column;
+    }
+
+
+    .range-buttons {
+        overflow-x:
+            auto;
+    }
+
+
+    .analytics-metrics {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .analytics-metric {
+        border-right:
+            none;
+
+        border-bottom:
+            1px solid
+            var(--border);
+    }
+
+
+    .trend-chart {
+        grid-template-columns:
+            repeat(8,65px);
+
+        overflow-x:
+            auto;
+    }
+
+
+    .top-post-row {
+        grid-template-columns:
+            38px
+            minmax(0,1fr);
+    }
+
+
+    .top-post-metric {
+        display:
+            none;
+    }
+
+
+    .analytics-form {
+        grid-template-columns:
+            1fr;
+
+        padding:
+            22px 18px;
+    }
+
+
+    .form-group.full,
+    .form-section-title.full,
+    .platform-editor.full,
+    .drawer-actions.full {
+        grid-column:
+            auto;
+    }
+
+
+    .platform-editor-row {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .drawer-actions {
+        grid-template-columns:
+            1fr;
+    }
+
+}
