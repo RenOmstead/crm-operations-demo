@@ -1,1165 +1,1248 @@
-<!DOCTYPE html>
-<html lang="en">
+/* =========================================================
+   HELIX CRM
+   GLOBAL DESIGN SYSTEM
+   PLAYFUL RETRO-FUTURIST / NEO-BRUTALIST
+   ========================================================= */
 
-<head>
 
-    <meta charset="UTF-8">
+/* =========================================================
+   TOKENS
+   ========================================================= */
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+:root {
+    --ink: #151515;
+    --ink-soft: #292929;
 
-    <title>
-        Helix CRM
-    </title>
+    --cream: #fff8e7;
+    --cream-dark: #f0e8d4;
+    --white: #ffffff;
 
-    <link
-        rel="stylesheet"
-        href="css/global.css"
-    >
+    --pink: #ff4fa3;
+    --pink-soft: #ff94c7;
 
-    <link
-        rel="stylesheet"
-        href="css/dashboard.css"
-    >
+    --blue: #4158ff;
+    --blue-dark: #2537ca;
 
-</head>
+    --acid: #c7ff3d;
+    --acid-dark: #809f12;
 
+    --yellow: #ffd83d;
+    --orange: #ff7849;
 
-<body>
+    --lavender: #b9a5ff;
+    --aqua: #62e8e0;
 
+    --red: #ff4c4c;
+    --green: #55d88b;
 
-    <!-- =====================================================
-         APP SHELL
-         ===================================================== -->
+    --muted: #747066;
+    --muted-light: #a19b8e;
 
-    <div class="app-shell">
+    --border: #151515;
 
+    --sidebar-width: 248px;
+    --topbar-height: 72px;
 
-        <!-- =================================================
-             SIDEBAR
-             ================================================= -->
+    --hard-shadow:
+        7px 7px 0
+        var(--ink);
 
-        <aside class="sidebar">
+    --hard-shadow-small:
+        4px 4px 0
+        var(--ink);
+}
 
 
-            <div class="sidebar-brand">
+/* =========================================================
+   RESET
+   ========================================================= */
 
-                <a
-                    href="index.html"
-                    class="brand-link"
-                >
+* {
+    box-sizing: border-box;
+}
 
-                    <div class="brand-mark">
-                        H
-                    </div>
 
+html {
+    scroll-behavior: smooth;
+}
 
-                    <div class="brand-copy">
 
-                        <strong>
-                            HELIX
-                        </strong>
+body {
+    margin: 0;
 
-                        <span>
-                            OPERATIONS CRM
-                        </span>
+    min-height: 100vh;
 
-                    </div>
+    background:
+        var(--cream);
 
-                </a>
+    color:
+        var(--ink);
 
-            </div>
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
 
 
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
 
-            <!-- =============================================
-                 MAIN NAV
-                 ============================================= -->
 
-            <nav class="sidebar-nav">
+button {
+    border-radius: 0;
+}
 
 
-                <div class="nav-group">
+a {
+    color: inherit;
 
-                    <span class="nav-group-label">
-                        WORKSPACE
-                    </span>
+    text-decoration: none;
+}
 
 
-                    <a
-                        href="index.html"
-                        class="nav-link active"
-                    >
+/* =========================================================
+   SELECTION
+   ========================================================= */
 
-                        <span class="nav-icon">
-                            ◫
-                        </span>
+::selection {
+    background:
+        var(--pink);
 
-                        <span>
-                            Dashboard
-                        </span>
+    color:
+        white;
+}
 
-                    </a>
 
+/* =========================================================
+   APP SHELL
+   ========================================================= */
 
-                    <a
-                        href="customers.html"
-                        class="nav-link"
-                    >
+.app-shell {
+    min-height: 100vh;
 
-                        <span class="nav-icon">
-                            ◩
-                        </span>
+    display: grid;
 
-                        <span>
-                            Customers
-                        </span>
+    grid-template-columns:
+        var(--sidebar-width)
+        minmax(0, 1fr);
+}
 
-                    </a>
 
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
 
-                    <a
-                        href="contacts.html"
-                        class="nav-link"
-                    >
+.sidebar {
+    position: fixed;
 
-                        <span class="nav-icon">
-                            ◉
-                        </span>
+    top: 0;
+    left: 0;
+    bottom: 0;
 
-                        <span>
-                            Contacts
-                        </span>
+    z-index: 1200;
 
-                    </a>
+    width:
+        var(--sidebar-width);
 
+    display: flex;
 
-                    <a
-                        href="pipeline.html"
-                        class="nav-link"
-                    >
+    flex-direction: column;
 
-                        <span class="nav-icon">
-                            ↗
-                        </span>
+    background:
+        var(--ink);
 
-                        <span>
-                            Pipeline
-                        </span>
+    color:
+        white;
 
-                    </a>
+    border-right:
+        3px solid
+        var(--ink);
+}
 
 
-                    <a
-                        href="contracts.html"
-                        class="nav-link"
-                    >
+/* =========================================================
+   BRAND
+   ========================================================= */
 
-                        <span class="nav-icon">
-                            ⌘
-                        </span>
+.sidebar-brand {
+    height:
+        var(--topbar-height);
 
-                        <span>
-                            Gov Contracts
-                        </span>
+    border-bottom:
+        3px solid
+        var(--ink);
 
-                    </a>
+    background:
+        var(--yellow);
+}
 
 
-                    <a
-                        href="tasks.html"
-                        class="nav-link"
-                    >
+.brand-link {
+    height: 100%;
 
-                        <span class="nav-icon">
-                            ✓
-                        </span>
+    display: flex;
 
-                        <span>
-                            Tasks
-                        </span>
+    align-items: stretch;
+}
 
-                    </a>
 
-                </div>
+.brand-mark {
+    width: 72px;
 
+    display: grid;
 
+    place-items: center;
 
-                <!-- =========================================
-                     MARKETING
-                     ========================================= -->
+    background:
+        var(--pink);
 
-                <div class="nav-group">
+    border-right:
+        3px solid
+        var(--ink);
 
-                    <span class="nav-group-label">
-                        MARKETING
-                    </span>
+    color:
+        var(--ink);
 
+    font-size:
+        1.7rem;
 
-                    <a
-                        href="email.html"
-                        class="nav-link"
-                    >
+    font-weight:
+        1000;
+}
 
-                        <span class="nav-icon">
-                            ✉
-                        </span>
 
-                        <span>
-                            Email Campaigns
-                        </span>
+.brand-copy {
+    flex: 1;
 
-                    </a>
+    display: flex;
 
+    flex-direction: column;
 
-                    <a
-                        href="social-planner.html"
-                        class="nav-link"
-                    >
+    justify-content: center;
 
-                        <span class="nav-icon">
-                            ◇
-                        </span>
+    padding:
+        0 16px;
 
-                        <span>
-                            Social Planner
-                        </span>
+    color:
+        var(--ink);
+}
 
-                    </a>
 
+.brand-copy strong {
+    font-size:
+        1.02rem;
 
-                    <a
-                        href="social-analytics.html"
-                        class="nav-link"
-                    >
+    font-weight:
+        1000;
 
-                        <span class="nav-icon">
-                            ⌁
-                        </span>
+    letter-spacing:
+        .11em;
+}
 
-                        <span>
-                            Social Analytics
-                        </span>
 
-                    </a>
+.brand-copy span {
+    margin-top:
+        3px;
 
+    font-family:
+        "Courier New",
+        monospace;
 
-                    <a
-                        href="seo.html"
-                        class="nav-link"
-                    >
+    font-size:
+        .48rem;
 
-                        <span class="nav-icon">
-                            ⌕
-                        </span>
+    font-weight:
+        800;
 
-                        <span>
-                            SEO
-                        </span>
+    letter-spacing:
+        .08em;
+}
 
-                    </a>
 
-                </div>
+/* =========================================================
+   SIDEBAR NAV
+   ========================================================= */
 
+.sidebar-nav {
+    flex:
+        1;
 
+    overflow-y:
+        auto;
 
-                <!-- =========================================
-                     EVENTS
-                     ========================================= -->
+    padding:
+        20px 13px;
+}
 
-                <div class="nav-group">
 
-                    <span class="nav-group-label">
-                        EVENTS
-                    </span>
+.nav-group {
+    margin-bottom:
+        26px;
+}
 
 
-                    <a
-                        href="tradeshows.html"
-                        class="nav-link"
-                    >
+.nav-group-label {
+    display:
+        inline-block;
 
-                        <span class="nav-icon">
-                            ▦
-                        </span>
+    margin:
+        0 8px
+        11px;
 
-                        <span>
-                            Tradeshows
-                        </span>
+    padding:
+        4px 6px;
 
-                    </a>
+    background:
+        rgba(255,255,255,.08);
 
-                </div>
+    color:
+        rgba(255,255,255,.55);
 
+    font-family:
+        "Courier New",
+        monospace;
 
-            </nav>
+    font-size:
+        .48rem;
 
+    font-weight:
+        800;
 
+    letter-spacing:
+        .14em;
+}
 
-            <!-- =============================================
-                 SIDEBAR FOOTER
-                 ============================================= -->
 
-            <div class="sidebar-footer">
+.nav-link {
+    position: relative;
 
-                <div class="demo-chip">
+    min-height:
+        43px;
 
-                    <span class="demo-dot">
-                    </span>
+    display: flex;
 
-                    Portfolio Demo
+    align-items:
+        center;
 
-                </div>
+    gap:
+        10px;
 
+    margin-bottom:
+        5px;
 
-                <div class="user-card">
+    padding:
+        0 10px;
 
-                    <div class="user-avatar">
-                        LO
-                    </div>
+    border:
+        2px solid
+        transparent;
 
+    color:
+        rgba(255,255,255,.75);
 
-                    <div class="user-copy">
+    font-size:
+        .68rem;
 
-                        <strong>
-                            Lauren Omstead
-                        </strong>
+    font-weight:
+        800;
 
-                        <span>
-                            Workspace Admin
-                        </span>
+    transition:
+        transform .12s ease,
+        background .12s ease,
+        color .12s ease;
+}
 
-                    </div>
 
-                </div>
+.nav-link:hover {
+    transform:
+        translateX(4px);
 
-            </div>
+    background:
+        rgba(255,255,255,.08);
 
+    color:
+        white;
+}
 
-        </aside>
 
+.nav-link.active {
+    background:
+        var(--acid);
 
+    border-color:
+        var(--ink);
 
-        <!-- =================================================
-             MAIN AREA
-             ================================================= -->
+    color:
+        var(--ink);
 
-        <div class="main-shell">
+    box-shadow:
+        4px 4px 0
+        var(--pink);
+}
 
 
-            <!-- =============================================
-                 TOP BAR
-                 ============================================= -->
+.nav-link.active:hover {
+    transform:
+        translate(2px,2px);
 
-            <header class="topbar">
+    box-shadow:
+        2px 2px 0
+        var(--pink);
+}
 
 
-                <div class="topbar-search">
+.nav-icon {
+    width:
+        23px;
 
-                    <span>
-                        ⌕
-                    </span>
+    text-align:
+        center;
 
-                    <input
-                        id="globalSearch"
-                        type="search"
-                        placeholder="Search customers, contacts, opportunities..."
-                        autocomplete="off"
-                    >
+    font-size:
+        1rem;
+}
 
-                    <kbd>
-                        /
-                    </kbd>
 
-                </div>
+/* =========================================================
+   SIDEBAR FOOTER
+   ========================================================= */
 
+.sidebar-footer {
+    padding:
+        12px;
 
+    border-top:
+        2px solid
+        rgba(255,255,255,.15);
+}
 
-                <div class="topbar-actions">
 
+.demo-chip {
+    display: flex;
 
-                    <button
-                        id="quickCreateButton"
-                        class="quick-create"
-                        type="button"
-                    >
+    align-items: center;
 
-                        <span>
-                            + NEW RECORD
-                        </span>
+    gap:
+        8px;
 
-                    </button>
+    min-height:
+        31px;
 
+    margin-bottom:
+        8px;
 
-                    <button
-                        class="icon-button"
-                        type="button"
-                        aria-label="Notifications"
-                    >
-                        ◌
-                    </button>
+    padding:
+        0 8px;
 
+    color:
+        rgba(255,255,255,.58);
 
-                </div>
+    font-family:
+        "Courier New",
+        monospace;
 
+    font-size:
+        .48rem;
 
-            </header>
+    font-weight:
+        800;
 
+    letter-spacing:
+        .08em;
 
+    text-transform:
+        uppercase;
+}
 
-            <!-- =================================================
-                 DASHBOARD CONTENT
-                 ================================================= -->
 
-            <main class="dashboard-page">
+.demo-dot {
+    width:
+        8px;
 
+    height:
+        8px;
 
-                <!-- =============================================
-                     DEMO NOTICE
-                     ============================================= -->
+    background:
+        var(--acid);
 
-                <div class="demo-notice">
+    border:
+        1px solid
+        white;
 
-                    Portfolio Demo · Helix Operations Group is a fictional company · All business data is mock data
+    animation:
+        demoBlink 2s infinite;
+}
 
-                </div>
 
+@keyframes demoBlink {
 
+    0%,
+    100% {
+        opacity: 1;
+    }
 
-                <!-- =============================================
-                     HERO
-                     ============================================= -->
+    50% {
+        opacity: .4;
+    }
 
-                <section class="dashboard-hero">
+}
 
 
-                    <div>
+.user-card {
+    display: flex;
 
-                        <span class="eyebrow">
-                            COMMAND CENTER
-                        </span>
+    align-items: center;
 
+    gap:
+        10px;
 
-                        <h1>
-                            Here’s what needs
-                            <span>your attention.</span>
-                        </h1>
+    min-height:
+        55px;
 
+    padding:
+        7px;
+}
 
-                        <p>
 
-                            Review priorities, follow-ups, opportunities,
-                            contract deadlines, marketing activity, and upcoming
-                            events from one operational workspace.
+.user-avatar {
+    width:
+        37px;
 
-                        </p>
+    height:
+        37px;
 
-                    </div>
+    display: grid;
 
+    place-items: center;
 
+    background:
+        var(--lavender);
 
-                    <div class="hero-meta">
+    border:
+        2px solid
+        white;
 
-                        <span>
-                            TODAY
-                        </span>
+    color:
+        var(--ink);
 
-                        <strong id="currentDate">
-                            —
-                        </strong>
+    font-size:
+        .59rem;
 
-                    </div>
+    font-weight:
+        1000;
+}
 
 
-                </section>
+.user-copy {
+    display: flex;
 
+    flex-direction: column;
+}
 
 
-                <!-- =============================================
-                     KPI STRIP
-                     ============================================= -->
+.user-copy strong {
+    font-size:
+        .63rem;
+}
 
-                <section class="kpi-strip">
 
+.user-copy span {
+    margin-top:
+        3px;
 
-                    <article class="kpi-card">
+    color:
+        rgba(255,255,255,.45);
 
-                        <span class="kpi-label">
-                            OPEN PIPELINE
-                        </span>
+    font-size:
+        .49rem;
+}
 
-                        <strong id="pipelineValue">
-                            $0
-                        </strong>
 
-                        <small>
-                            across active opportunities
-                        </small>
+/* =========================================================
+   MAIN
+   ========================================================= */
 
-                    </article>
+.main-shell {
+    min-width: 0;
 
+    grid-column:
+        2;
+}
 
-                    <article class="kpi-card">
 
-                        <span class="kpi-label">
-                            WEIGHTED VALUE
-                        </span>
+/* =========================================================
+   TOP BAR
+   ========================================================= */
 
-                        <strong id="weightedValue">
-                            $0
-                        </strong>
+.topbar {
+    position: sticky;
 
-                        <small>
-                            probability adjusted
-                        </small>
+    top: 0;
 
-                    </article>
+    z-index: 1000;
 
+    height:
+        var(--topbar-height);
 
-                    <article class="kpi-card accent">
+    display: flex;
 
-                        <span class="kpi-label">
-                            TASKS DUE
-                        </span>
+    align-items: stretch;
 
-                        <strong id="tasksDue">
-                            0
-                        </strong>
+    justify-content: space-between;
 
-                        <small>
-                            require action today
-                        </small>
+    background:
+        var(--cream);
 
-                    </article>
+    border-bottom:
+        3px solid
+        var(--ink);
+}
 
 
-                    <article class="kpi-card">
+/* =========================================================
+   SEARCH
+   ========================================================= */
 
-                        <span class="kpi-label">
-                            FOLLOW-UPS
-                        </span>
+.topbar-search {
+    flex: 1;
 
-                        <strong id="followUpsDue">
-                            0
-                        </strong>
+    max-width:
+        640px;
 
-                        <small>
-                            customer actions due
-                        </small>
+    display: flex;
 
-                    </article>
+    align-items: center;
 
+    border-right:
+        3px solid
+        var(--ink);
+}
 
-                    <article class="kpi-card">
 
-                        <span class="kpi-label">
-                            CONTRACT DEADLINES
-                        </span>
+.topbar-search > span {
+    width:
+        58px;
 
-                        <strong id="contractDeadlines">
-                            0
-                        </strong>
+    display: grid;
 
-                        <small>
-                            inside 30 days
-                        </small>
+    place-items: center;
 
-                    </article>
+    color:
+        var(--blue);
 
+    font-size:
+        1.15rem;
 
-                </section>
+    font-weight:
+        1000;
+}
 
 
+.topbar-search input {
+    flex: 1;
 
-                <!-- =============================================
-                     PRIMARY GRID
-                     ============================================= -->
+    min-width: 0;
 
-                <section class="dashboard-grid primary-grid">
+    height: 100%;
 
+    border: none;
 
-                    <!-- =========================================
-                         PRIORITIES
-                         ========================================= -->
+    outline: none;
 
-                    <article class="dashboard-panel priorities-panel">
+    background:
+        transparent;
 
+    color:
+        var(--ink);
 
-                        <div class="panel-header">
+    font-size:
+        .73rem;
 
-                            <div>
+    font-weight:
+        700;
+}
 
-                                <span class="panel-kicker">
-                                    01 / TODAY
-                                </span>
 
-                                <h2>
-                                    Priority actions
-                                </h2>
+.topbar-search input::placeholder {
+    color:
+        var(--muted);
+}
 
-                            </div>
 
+.topbar-search kbd {
+    margin-right:
+        16px;
 
-                            <a href="tasks.html">
-                                View tasks →
-                            </a>
+    padding:
+        5px 8px;
 
-                        </div>
+    border:
+        2px solid
+        var(--ink);
 
+    background:
+        var(--white);
 
-                        <div
-                            id="priorityList"
-                            class="priority-list"
-                        >
-                        </div>
+    box-shadow:
+        2px 2px 0
+        var(--ink);
 
+    color:
+        var(--ink);
 
-                    </article>
+    font-family:
+        "Courier New",
+        monospace;
 
+    font-size:
+        .54rem;
 
+    font-weight:
+        800;
+}
 
-                    <!-- =========================================
-                         PIPELINE
-                         ========================================= -->
 
-                    <article class="dashboard-panel pipeline-panel">
+/* =========================================================
+   TOPBAR ACTIONS
+   ========================================================= */
 
+.topbar-actions {
+    display: flex;
 
-                        <div class="panel-header">
+    align-items: stretch;
+}
 
-                            <div>
 
-                                <span class="panel-kicker">
-                                    02 / SALES
-                                </span>
+.quick-create {
+    min-width:
+        170px;
 
-                                <h2>
-                                    Pipeline
-                                </h2>
+    padding:
+        0 20px;
 
-                            </div>
+    border:
+        none;
 
+    border-left:
+        3px solid
+        var(--ink);
 
-                            <a href="pipeline.html">
-                                Open pipeline →
-                            </a>
+    background:
+        var(--pink);
 
-                        </div>
+    color:
+        var(--ink);
 
+    cursor:
+        pointer;
 
+    font-family:
+        "Courier New",
+        monospace;
 
-                        <div
-                            id="pipelineStageList"
-                            class="pipeline-stage-list"
-                        >
-                        </div>
+    font-size:
+        .57rem;
 
+    font-weight:
+        900;
 
-                        <div class="pipeline-footer">
+    letter-spacing:
+        .08em;
 
-                            <div>
+    transition:
+        background .12s ease;
+}
 
-                                <span>
-                                    OPEN OPPORTUNITIES
-                                </span>
 
-                                <strong id="openOpportunityCount">
-                                    0
-                                </strong>
+.quick-create:hover {
+    background:
+        var(--acid);
+}
 
-                            </div>
 
+.icon-button {
+    width:
+        70px;
 
-                            <div>
+    border:
+        none;
 
-                                <span>
-                                    AVG. PROBABILITY
-                                </span>
+    border-left:
+        3px solid
+        var(--ink);
 
-                                <strong id="averageProbability">
-                                    0%
-                                </strong>
+    background:
+        var(--yellow);
 
-                            </div>
+    color:
+        var(--ink);
 
-                        </div>
+    cursor:
+        pointer;
 
+    font-size:
+        1.25rem;
+}
 
-                    </article>
 
+.icon-button:hover {
+    background:
+        var(--aqua);
+}
 
-                </section>
 
+/* =========================================================
+   DEMO NOTICE
+   ========================================================= */
 
+.demo-notice {
+    position: relative;
 
-                <!-- =============================================
-                     SECONDARY GRID
-                     ============================================= -->
+    padding:
+        11px 15px;
 
-                <section class="dashboard-grid secondary-grid">
+    border:
+        2px solid
+        var(--ink);
 
+    background:
+        var(--lavender);
 
-                    <!-- =========================================
-                         FOLLOW UPS
-                         ========================================= -->
+    box-shadow:
+        4px 4px 0
+        var(--ink);
 
-                    <article class="dashboard-panel">
+    color:
+        var(--ink);
 
+    font-family:
+        "Courier New",
+        monospace;
 
-                        <div class="panel-header">
+    font-size:
+        .5rem;
 
-                            <div>
+    font-weight:
+        900;
 
-                                <span class="panel-kicker">
-                                    03 / RELATIONSHIPS
-                                </span>
+    letter-spacing:
+        .06em;
 
-                                <h2>
-                                    Follow-ups
-                                </h2>
+    text-transform:
+        uppercase;
+}
 
-                            </div>
 
+/* =========================================================
+   SHARED PANELS
+   ========================================================= */
 
-                            <a href="contacts.html">
-                                Contacts →
-                            </a>
+.dashboard-panel {
+    min-width: 0;
 
-                        </div>
+    background:
+        var(--white);
 
+    border:
+        3px solid
+        var(--ink);
 
-                        <div
-                            id="followUpList"
-                            class="compact-list"
-                        >
-                        </div>
+    box-shadow:
+        var(--hard-shadow);
 
+    transition:
+        transform .14s ease,
+        box-shadow .14s ease;
+}
 
-                    </article>
 
+.dashboard-panel:hover {
+    transform:
+        translate(3px,3px);
 
+    box-shadow:
+        4px 4px 0
+        var(--ink);
+}
 
-                    <!-- =========================================
-                         CONTRACTS
-                         ========================================= -->
 
-                    <article class="dashboard-panel">
+.panel-header {
+    min-height:
+        78px;
 
+    display: flex;
 
-                        <div class="panel-header">
+    align-items: center;
 
-                            <div>
+    justify-content: space-between;
 
-                                <span class="panel-kicker">
-                                    04 / CONTRACTS
-                                </span>
+    gap:
+        20px;
 
-                                <h2>
-                                    Government deadlines
-                                </h2>
+    padding:
+        16px 18px;
 
-                            </div>
+    border-bottom:
+        3px solid
+        var(--ink);
+}
 
 
-                            <a href="contracts.html">
-                                Contracts →
-                            </a>
+.panel-header h2 {
+    margin:
+        5px 0 0;
 
-                        </div>
+    font-size:
+        1.05rem;
 
+    font-weight:
+        1000;
 
-                        <div
-                            id="contractList"
-                            class="compact-list"
-                        >
-                        </div>
+    line-height:
+        1;
+}
 
 
-                    </article>
+.panel-header > a {
+    padding:
+        6px 8px;
 
+    background:
+        var(--acid);
 
+    border:
+        2px solid
+        var(--ink);
 
-                    <!-- =========================================
-                         EVENTS
-                         ========================================= -->
+    color:
+        var(--ink);
 
-                    <article class="dashboard-panel">
+    font-family:
+        "Courier New",
+        monospace;
 
+    font-size:
+        .5rem;
 
-                        <div class="panel-header">
+    font-weight:
+        900;
 
-                            <div>
+    box-shadow:
+        2px 2px 0
+        var(--ink);
 
-                                <span class="panel-kicker">
-                                    05 / EVENTS
-                                </span>
+    transition:
+        transform .1s ease,
+        box-shadow .1s ease;
+}
 
-                                <h2>
-                                    Upcoming tradeshows
-                                </h2>
 
-                            </div>
+.panel-header > a:hover {
+    transform:
+        translate(2px,2px);
 
+    box-shadow:
+        none;
+}
 
-                            <a href="tradeshows.html">
-                                Events →
-                            </a>
 
-                        </div>
+.panel-kicker {
+    color:
+        var(--blue);
 
+    font-family:
+        "Courier New",
+        monospace;
 
-                        <div
-                            id="eventList"
-                            class="compact-list"
-                        >
-                        </div>
+    font-size:
+        .48rem;
 
+    font-weight:
+        900;
 
-                    </article>
+    letter-spacing:
+        .09em;
+}
 
 
-                </section>
+/* =========================================================
+   QUICK CREATE MENU
+   ========================================================= */
 
+.quick-create-menu {
+    position: fixed;
 
+    top:
+        calc(
+            var(--topbar-height) +
+            10px
+        );
 
-                <!-- =============================================
-                     MARKETING GRID
-                     ============================================= -->
+    right:
+        70px;
 
-                <section class="dashboard-grid marketing-grid">
+    z-index:
+        3000;
 
+    width:
+        270px;
 
-                    <!-- =========================================
-                         EMAIL
-                         ========================================= -->
+    border:
+        3px solid
+        var(--ink);
 
-                    <article class="dashboard-panel marketing-panel">
+    background:
+        var(--white);
 
+    box-shadow:
+        8px 8px 0
+        var(--ink);
+}
 
-                        <div class="panel-header">
 
-                            <div>
+.quick-menu-header {
+    padding:
+        12px 14px;
 
-                                <span class="panel-kicker">
-                                    06 / EMAIL
-                                </span>
+    border-bottom:
+        3px solid
+        var(--ink);
 
-                                <h2>
-                                    Campaigns
-                                </h2>
+    background:
+        var(--blue);
 
-                            </div>
+    color:
+        white;
 
+    font-family:
+        "Courier New",
+        monospace;
 
-                            <a href="email.html">
-                                Email →
-                            </a>
+    font-size:
+        .53rem;
 
-                        </div>
+    font-weight:
+        900;
 
+    letter-spacing:
+        .1em;
+}
 
-                        <div class="marketing-stat">
 
-                            <strong id="activeCampaigns">
-                                0
-                            </strong>
+.quick-create-menu > a {
+    min-height:
+        48px;
 
-                            <span>
-                                ACTIVE CAMPAIGNS
-                            </span>
+    display: flex;
 
-                        </div>
+    align-items: center;
 
+    justify-content: space-between;
 
-                        <div class="marketing-mini-grid">
+    padding:
+        0 14px;
 
+    border-bottom:
+        2px solid
+        var(--ink);
 
-                            <div>
+    font-size:
+        .67rem;
 
-                                <span>
-                                    AVG. OPEN RATE
-                                </span>
+    font-weight:
+        900;
 
-                                <strong id="emailOpenRate">
-                                    0%
-                                </strong>
+    transition:
+        padding .12s ease,
+        background .12s ease;
+}
 
-                            </div>
 
+.quick-create-menu > a:last-child {
+    border-bottom: none;
+}
 
-                            <div>
 
-                                <span>
-                                    AVG. CLICK RATE
-                                </span>
+.quick-create-menu > a:nth-child(2):hover {
+    background:
+        var(--pink);
+}
 
-                                <strong id="emailClickRate">
-                                    0%
-                                </strong>
 
-                            </div>
+.quick-create-menu > a:nth-child(3):hover {
+    background:
+        var(--aqua);
+}
 
 
-                        </div>
+.quick-create-menu > a:nth-child(4):hover {
+    background:
+        var(--yellow);
+}
 
 
-                    </article>
+.quick-create-menu > a:nth-child(5):hover {
+    background:
+        var(--acid);
+}
 
 
+.quick-create-menu > a:nth-child(6):hover {
+    background:
+        var(--orange);
+}
 
-                    <!-- =========================================
-                         SOCIAL
-                         ========================================= -->
 
-                    <article class="dashboard-panel marketing-panel">
+.quick-create-menu > a:hover {
+    padding-left:
+        20px;
+}
 
 
-                        <div class="panel-header">
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
 
-                            <div>
+::-webkit-scrollbar {
+    width:
+        11px;
 
-                                <span class="panel-kicker">
-                                    07 / SOCIAL
-                                </span>
+    height:
+        11px;
+}
 
-                                <h2>
-                                    Social performance
-                                </h2>
 
-                            </div>
+::-webkit-scrollbar-track {
+    background:
+        var(--cream);
+}
 
 
-                            <a href="social-analytics.html">
-                                Analytics →
-                            </a>
+::-webkit-scrollbar-thumb {
+    background:
+        var(--pink);
 
-                        </div>
+    border:
+        2px solid
+        var(--ink);
+}
 
 
-                        <div class="marketing-stat">
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
-                            <strong id="socialImpressions">
-                                0
-                            </strong>
+@media (max-width: 900px) {
 
-                            <span>
-                                IMPRESSIONS
-                            </span>
+    :root {
+        --sidebar-width:
+            72px;
+    }
 
-                        </div>
 
+    .brand-copy,
+    .nav-group-label,
+    .nav-link > span:last-child,
+    .sidebar-footer {
+        display:
+            none;
+    }
 
-                        <div class="marketing-mini-grid">
 
+    .brand-mark {
+        width:
+            72px;
+    }
 
-                            <div>
 
-                                <span>
-                                    ENGAGEMENT
-                                </span>
+    .sidebar-nav {
+        padding:
+            16px 10px;
+    }
 
-                                <strong id="socialEngagement">
-                                    0%
-                                </strong>
 
-                            </div>
+    .nav-link {
+        justify-content:
+            center;
 
+        padding:
+            0;
+    }
 
-                            <div>
 
-                                <span>
-                                    POSTS THIS MONTH
-                                </span>
+    .nav-icon {
+        width:
+            auto;
+    }
 
-                                <strong id="socialPostCount">
-                                    0
-                                </strong>
 
-                            </div>
+    .quick-create {
+        min-width:
+            72px;
 
+        padding:
+            0;
+    }
 
-                        </div>
 
+    .quick-create span {
+        font-size:
+            0;
+    }
 
-                    </article>
 
+    .quick-create span::after {
+        content:
+            "+";
 
+        font-size:
+            1.4rem;
+    }
 
-                    <!-- =========================================
-                         SEO
-                         ========================================= -->
+}
 
-                    <article class="dashboard-panel marketing-panel seo-panel">
 
+@media (max-width: 620px) {
 
-                        <div class="panel-header">
+    :root {
+        --sidebar-width:
+            0px;
+    }
 
-                            <div>
 
-                                <span class="panel-kicker">
-                                    08 / SEO
-                                </span>
+    .sidebar {
+        display:
+            none;
+    }
 
-                                <h2>
-                                    Search visibility
-                                </h2>
 
-                            </div>
+    .app-shell {
+        display:
+            block;
+    }
 
 
-                            <a href="seo.html">
-                                SEO →
-                            </a>
+    .main-shell {
+        grid-column:
+            1;
+    }
 
-                        </div>
 
+    .topbar-search kbd {
+        display:
+            none;
+    }
 
-                        <div class="seo-score-wrap">
 
-                            <div class="seo-score">
+    .topbar-search {
+        border-right:
+            3px solid
+            var(--ink);
+    }
 
-                                <strong id="seoScore">
-                                    0
-                                </strong>
-
-                                <span>
-                                    /100
-                                </span>
-
-                            </div>
-
-
-                            <div>
-
-                                <span class="seo-label">
-                                    SITE HEALTH
-                                </span>
-
-                                <p>
-                                    Technical, content, and search performance.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                    </article>
-
-
-                </section>
-
-
-
-                <!-- =============================================
-                     RECENT ACTIVITY
-                     ============================================= -->
-
-                <section class="dashboard-panel activity-panel">
-
-
-                    <div class="panel-header">
-
-                        <div>
-
-                            <span class="panel-kicker">
-                                09 / WORKSPACE
-                            </span>
-
-                            <h2>
-                                Recent activity
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-
-                    <div
-                        id="activityList"
-                        class="activity-list"
-                    >
-                    </div>
-
-
-                </section>
-
-
-            </main>
-
-
-        </div>
-
-
-    </div>
-
-
-
-    <!-- =====================================================
-         QUICK CREATE MENU
-         ===================================================== -->
-
-    <div
-        id="quickCreateMenu"
-        class="quick-create-menu"
-        hidden
-    >
-
-
-        <div class="quick-menu-header">
-
-            <span>
-                CREATE NEW
-            </span>
-
-        </div>
-
-
-        <a href="customers.html?action=new">
-            Customer
-            <span>→</span>
-        </a>
-
-
-        <a href="contacts.html?action=new">
-            Contact
-            <span>→</span>
-        </a>
-
-
-        <a href="pipeline.html?action=new">
-            Opportunity
-            <span>→</span>
-        </a>
-
-
-        <a href="tasks.html?action=new">
-            Task
-            <span>→</span>
-        </a>
-
-
-        <a href="contracts.html?action=new">
-            Contract Record
-            <span>→</span>
-        </a>
-
-
-    </div>
-
-
-
-    <!-- =====================================================
-         SCRIPTS
-         ===================================================== -->
-
-    <script src="js/config.js"></script>
-
-    <script src="js/dashboard.js"></script>
-
-
-</body>
-
-</html>
+}
