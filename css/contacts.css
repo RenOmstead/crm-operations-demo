@@ -1,6 +1,7 @@
 /* =========================================================
    HELIX CRM
    CONTACTS
+   PROFESSIONAL EDITORIAL STYLE
    ========================================================= */
 
 
@@ -20,7 +21,7 @@
 
     padding:
         28px 0
-        90px;
+        80px;
 }
 
 
@@ -30,49 +31,35 @@
 
 .contacts-hero {
     min-height:
-        315px;
+        285px;
 
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         minmax(0,1fr)
-        310px;
+        245px;
 
     align-items:
         end;
 
     gap:
-        60px;
+        50px;
 
     padding:
-        48px 0;
+        42px 0
+        45px;
 }
 
 
 .hero-copy {
     max-width:
-        940px;
+        900px;
 }
 
 
 .eyebrow {
-    display:
-        inline-block;
-
-    padding:
-        5px 8px;
-
-    border:
-        2px solid
-        var(--ink);
-
-    background:
+    color:
         var(--lavender);
-
-    box-shadow:
-        3px 3px 0
-        var(--ink);
 
     font-family:
         "Courier New",
@@ -82,70 +69,41 @@
         .53rem;
 
     font-weight:
-        900;
+        700;
 
     letter-spacing:
-        .12em;
+        .11em;
 }
 
 
 .contacts-hero h1 {
-    margin:
-        18px 0 0;
-
     max-width:
-        900px;
+        880px;
+
+    margin:
+        14px 0 0;
 
     font-size:
         clamp(
-            3.5rem,
-            6.2vw,
-            7rem
+            3rem,
+            5.5vw,
+            6rem
         );
 
     font-weight:
-        1000;
+        800;
 
     line-height:
-        .83;
+        .9;
 
     letter-spacing:
-        -.075em;
+        -.06em;
 }
 
 
 .contacts-hero h1 span {
-    position:
-        relative;
-
     color:
-        var(--blue);
-}
-
-
-.contacts-hero h1 span::after {
-    content: "";
-
-    position:
-        absolute;
-
-    left:
-        0;
-
-    right:
-        0;
-
-    bottom:
-        -4px;
-
-    height:
-        9px;
-
-    z-index:
-        -1;
-
-    background:
-        var(--acid);
+        var(--lavender);
 }
 
 
@@ -154,16 +112,13 @@
         680px;
 
     margin:
-        25px 0 0;
+        23px 0 0;
 
     color:
         var(--muted);
 
     font-size:
-        .82rem;
-
-    font-weight:
-        600;
+        .81rem;
 
     line-height:
         1.7;
@@ -175,65 +130,40 @@
    ========================================================= */
 
 .hero-action-wrap {
-    position:
-        relative;
+    display: flex;
 
-    padding-top:
-        25px;
+    flex-direction:
+        column;
+
+    gap:
+        10px;
 }
 
 
 .hero-sticker {
-    position:
-        absolute;
-
-    top:
-        0;
-
-    right:
-        10px;
-
-    z-index:
-        3;
-
-    padding:
-        7px 9px;
-
-    border:
-        2px solid
-        var(--ink);
-
-    background:
-        var(--acid);
-
-    box-shadow:
-        3px 3px 0
-        var(--ink);
+    color:
+        var(--muted);
 
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .48rem;
+        .46rem;
 
     font-weight:
-        900;
+        700;
 
-    transform:
-        rotate(-3deg);
+    letter-spacing:
+        .07em;
 }
 
 
 .add-contact-button {
-    width:
-        100%;
-
     min-height:
-        105px;
+        68px;
 
-    display:
-        flex;
+    display: flex;
 
     align-items:
         center;
@@ -242,45 +172,39 @@
         space-between;
 
     gap:
-        25px;
+        20px;
 
     padding:
-        0 24px;
+        0 20px;
 
     border:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     background:
-        var(--aqua);
-
-    box-shadow:
-        8px 8px 0
-        var(--ink);
+        var(--lavender);
 
     color:
-        var(--ink);
+        white;
 
     cursor:
         pointer;
 
+    box-shadow:
+        var(--shadow-card);
+
     transition:
-        transform .12s ease,
-        box-shadow .12s ease,
-        background .12s ease;
+        background .15s ease,
+        transform .15s ease;
 }
 
 
 .add-contact-button:hover {
-    transform:
-        translate(4px,4px);
-
-    box-shadow:
-        4px 4px 0
-        var(--ink);
-
     background:
-        var(--pink);
+        #756bb4;
+
+    transform:
+        translateY(-1px);
 }
 
 
@@ -290,19 +214,22 @@
         monospace;
 
     font-size:
-        .62rem;
+        .57rem;
 
     font-weight:
-        900;
+        700;
 
     letter-spacing:
-        .09em;
+        .07em;
 }
 
 
 .add-contact-button strong {
     font-size:
-        2.4rem;
+        1.5rem;
+
+    font-weight:
+        400;
 }
 
 
@@ -311,92 +238,114 @@
    ========================================================= */
 
 .contact-metrics {
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         repeat(4,1fr);
 
-    gap:
-        16px;
+    border:
+        1px solid
+        var(--border);
+
+    background:
+        var(--surface);
 
     margin-bottom:
-        26px;
+        22px;
 }
 
 
 .contact-metric {
+    position: relative;
+
     min-height:
-        145px;
+        135px;
 
     padding:
         18px;
 
-    border:
-        3px solid
-        var(--ink);
-
-    box-shadow:
-        5px 5px 0
-        var(--ink);
+    border-right:
+        1px solid
+        var(--border);
 }
 
 
-.metric-total {
+.contact-metric:last-child {
+    border-right: none;
+}
+
+
+.contact-metric::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 18px;
+
+    right: 18px;
+
+    height: 3px;
+}
+
+
+.metric-total::before {
     background:
         var(--lavender);
 }
 
 
-.metric-decision {
+.metric-decision::before {
     background:
         var(--yellow);
 }
 
 
-.metric-followup {
+.metric-followup::before {
     background:
-        var(--pink);
+        var(--coral);
 }
 
 
-.metric-companies {
+.metric-companies::before {
     background:
-        var(--aqua);
+        var(--mint);
 }
 
 
 .contact-metric > span {
-    display:
-        block;
+    display: block;
+
+    color:
+        var(--muted);
 
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .48rem;
+        .47rem;
 
     font-weight:
-        900;
+        700;
 
     letter-spacing:
-        .09em;
+        .08em;
 }
 
 
 .contact-metric strong {
-    display:
-        block;
+    display: block;
 
     margin-top:
         16px;
 
     font-size:
-        2.4rem;
+        2.1rem;
 
     font-weight:
-        1000;
+        800;
 
     line-height:
         1;
@@ -404,17 +353,16 @@
 
 
 .contact-metric small {
-    display:
-        block;
+    display: block;
 
     margin-top:
         7px;
 
-    font-size:
-        .55rem;
+    color:
+        var(--muted);
 
-    font-weight:
-        700;
+    font-size:
+        .54rem;
 }
 
 
@@ -423,74 +371,61 @@
    ========================================================= */
 
 .contacts-toolbar {
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         minmax(320px,1fr)
         repeat(4,auto);
 
     gap:
-        10px;
+        8px;
 
     margin-bottom:
-        32px;
+        30px;
 }
 
 
 .contact-search {
     min-height:
-        58px;
+        54px;
 
-    display:
-        flex;
+    display: flex;
 
     align-items:
         center;
 
     border:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     background:
-        white;
-
-    box-shadow:
-        4px 4px 0
-        var(--ink);
+        var(--surface);
 }
 
 
 .contact-search > span {
     width:
-        55px;
+        52px;
 
-    display:
-        grid;
+    display: grid;
 
-    place-items:
-        center;
+    place-items: center;
 
     color:
-        var(--blue);
+        var(--lavender);
 
     font-size:
-        1.2rem;
-
-    font-weight:
-        1000;
+        1rem;
 }
 
 
 .contact-search input {
-    flex:
-        1;
+    flex: 1;
 
-    min-width:
-        0;
+    min-width: 0;
 
     min-height:
-        54px;
+        52px;
 
     border:
         none;
@@ -505,36 +440,29 @@
         var(--ink);
 
     font-size:
-        .72rem;
-
-    font-weight:
-        700;
+        .7rem;
 }
 
 
 .contacts-toolbar select {
     min-width:
-        150px;
+        145px;
 
     min-height:
-        58px;
+        54px;
 
     padding:
         0 13px;
 
     border:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     outline:
         none;
 
     background:
-        var(--cream);
-
-    box-shadow:
-        4px 4px 0
-        var(--ink);
+        var(--surface);
 
     color:
         var(--ink);
@@ -547,10 +475,10 @@
         monospace;
 
     font-size:
-        .5rem;
+        .48rem;
 
     font-weight:
-        900;
+        700;
 }
 
 
@@ -559,8 +487,7 @@
    ========================================================= */
 
 .directory-heading {
-    display:
-        flex;
+    display: flex;
 
     align-items:
         flex-end;
@@ -572,33 +499,33 @@
         30px;
 
     margin-bottom:
-        17px;
+        16px;
 
     padding-bottom:
         13px;
 
     border-bottom:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 }
 
 
 .directory-heading > div:first-child > span {
     color:
-        var(--pink);
+        var(--lavender);
 
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .49rem;
+        .48rem;
 
     font-weight:
-        900;
+        700;
 
     letter-spacing:
-        .1em;
+        .09em;
 }
 
 
@@ -607,16 +534,15 @@
         6px 0 0;
 
     font-size:
-        1.65rem;
+        1.55rem;
 
     font-weight:
-        1000;
+        800;
 }
 
 
 .visible-count {
-    display:
-        flex;
+    display: flex;
 
     align-items:
         baseline;
@@ -628,42 +554,41 @@
 
 .visible-count strong {
     color:
-        var(--blue);
+        var(--lavender);
 
     font-size:
-        1.8rem;
+        1.6rem;
 
     font-weight:
-        1000;
+        800;
 }
 
 
 .visible-count span {
+    color:
+        var(--muted);
+
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .48rem;
-
-    font-weight:
-        900;
+        .47rem;
 }
 
 
 /* =========================================================
-   CONTACT GRID
+   GRID
    ========================================================= */
 
 .contact-grid {
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         repeat(3,minmax(0,1fr));
 
     gap:
-        22px;
+        16px;
 }
 
 
@@ -673,100 +598,70 @@
 
 .contact-card {
     min-height:
-        355px;
+        345px;
 
-    display:
-        flex;
+    display: flex;
 
     flex-direction:
         column;
 
     border:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     background:
-        white;
+        var(--surface);
 
     box-shadow:
-        7px 7px 0
-        var(--ink);
+        var(--shadow-card);
 
     transition:
-        transform .12s ease,
-        box-shadow .12s ease;
+        border-color .15s ease,
+        transform .15s ease,
+        box-shadow .15s ease;
 }
 
 
 .contact-card:hover {
     transform:
-        translate(3px,3px);
+        translateY(-2px);
+
+    border-color:
+        var(--lavender);
 
     box-shadow:
-        4px 4px 0
-        var(--ink);
-}
-
-
-.contact-card:nth-child(4n+1)
-.contact-card-head {
-    background:
-        var(--lavender);
-}
-
-
-.contact-card:nth-child(4n+2)
-.contact-card-head {
-    background:
-        var(--aqua);
-}
-
-
-.contact-card:nth-child(4n+3)
-.contact-card-head {
-    background:
-        var(--pink-soft);
-}
-
-
-.contact-card:nth-child(4n+4)
-.contact-card-head {
-    background:
-        var(--yellow);
+        var(--shadow-soft);
 }
 
 
 /* =========================================================
-   CARD HEAD
+   CARD HEADER
    ========================================================= */
 
 .contact-card-head {
     min-height:
-        130px;
+        112px;
 
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
-        76px
+        70px
         minmax(0,1fr);
 
     border-bottom:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 }
 
 
 .contact-avatar {
-    display:
-        grid;
+    display: grid;
 
-    place-items:
-        center;
+    place-items: center;
 
     border-right:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     background:
         var(--ink);
@@ -775,16 +670,15 @@
         white;
 
     font-size:
-        1.15rem;
+        1rem;
 
     font-weight:
-        1000;
+        800;
 }
 
 
 .contact-name-wrap {
-    display:
-        flex;
+    display: flex;
 
     flex-direction:
         column;
@@ -793,7 +687,7 @@
         center;
 
     padding:
-        17px;
+        16px;
 }
 
 
@@ -805,28 +699,17 @@
         8px;
 
     padding:
-        5px 7px;
-
-    border:
-        2px solid
-        var(--ink);
-
-    background:
-        white;
-
-    box-shadow:
-        2px 2px 0
-        var(--ink);
+        4px 7px;
 
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .42rem;
+        .41rem;
 
     font-weight:
-        900;
+        700;
 
     text-transform:
         uppercase;
@@ -835,47 +718,70 @@
 
 .relationship-pill.decision-maker {
     background:
-        var(--yellow);
+        var(--yellow-soft);
+
+    color:
+        #75601c;
 }
 
 
 .relationship-pill.champion {
     background:
-        var(--acid);
+        var(--mint-soft);
+
+    color:
+        #36725a;
 }
 
 
 .relationship-pill.procurement {
     background:
-        var(--pink);
+        var(--coral-soft);
+
+    color:
+        #8b4035;
 }
 
 
 .relationship-pill.technical {
     background:
-        var(--aqua);
+        var(--blue-soft);
+
+    color:
+        var(--blue-dark);
 }
 
 
 .relationship-pill.influencer {
     background:
-        var(--lavender);
+        var(--lavender-soft);
+
+    color:
+        #574d97;
+}
+
+
+.relationship-pill.other {
+    background:
+        var(--paper-soft);
+
+    color:
+        var(--muted);
 }
 
 
 .contact-name-wrap h3 {
-    margin:
-        0;
+    margin: 0;
 
     font-size:
-        1.05rem;
+        1rem;
 
     font-weight:
-        1000;
+        800;
 }
 
 
-.contact-name-wrap .job-title {
+.job-title {
     margin-top:
         5px;
 
@@ -883,10 +789,7 @@
         var(--muted);
 
     font-size:
-        .57rem;
-
-    font-weight:
-        700;
+        .56rem;
 }
 
 
@@ -895,57 +798,58 @@
    ========================================================= */
 
 .contact-card-body {
-    flex:
-        1;
+    flex: 1;
 
     padding:
-        17px;
+        16px;
 }
 
 
 .contact-company {
     margin-bottom:
-        13px;
+        12px;
 
     padding:
-        9px 10px;
+        8px 10px;
 
-    border:
-        2px solid
-        var(--ink);
+    border-left:
+        3px solid
+        var(--lavender);
 
     background:
-        var(--cream);
+        var(--lavender-soft);
+
+    color:
+        #4e467d;
 
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .5rem;
+        .49rem;
 
     font-weight:
-        900;
+        700;
 }
 
 
 .contact-meta-grid {
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         1fr
         1fr;
 
     border:
-        2px solid
-        var(--ink);
+        1px solid
+        var(--border-soft);
 }
 
 
 .contact-meta {
     min-height:
-        70px;
+        66px;
 
     padding:
         10px;
@@ -954,21 +858,20 @@
 
 .contact-meta:nth-child(odd) {
     border-right:
-        2px solid
-        var(--ink);
+        1px solid
+        var(--border-soft);
 }
 
 
 .contact-meta:nth-child(-n+2) {
     border-bottom:
-        2px solid
-        var(--ink);
+        1px solid
+        var(--border-soft);
 }
 
 
 .contact-meta span {
-    display:
-        block;
+    display: block;
 
     color:
         var(--muted);
@@ -978,22 +881,21 @@
         monospace;
 
     font-size:
-        .42rem;
+        .4rem;
 
     font-weight:
-        900;
+        700;
 }
 
 
 .contact-meta strong {
-    display:
-        block;
+    display: block;
 
     margin-top:
         6px;
 
     font-size:
-        .61rem;
+        .6rem;
 
     line-height:
         1.35;
@@ -1005,13 +907,13 @@
 
 .contact-notes {
     margin:
-        14px 0 0;
+        13px 0 0;
 
     color:
         var(--muted);
 
     font-size:
-        .6rem;
+        .59rem;
 
     line-height:
         1.55;
@@ -1019,15 +921,14 @@
 
 
 /* =========================================================
-   FOLLOW UP
+   FOLLOW-UP
    ========================================================= */
 
 .contact-followup {
     margin-top:
-        13px;
+        12px;
 
-    display:
-        flex;
+    display: flex;
 
     align-items:
         center;
@@ -1041,28 +942,30 @@
     padding:
         8px 10px;
 
-    border:
-        2px solid
-        var(--ink);
-
     background:
-        var(--acid);
+        var(--mint-soft);
+
+    color:
+        #3a705a;
 
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .46rem;
+        .44rem;
 
     font-weight:
-        900;
+        700;
 }
 
 
 .contact-followup.due {
     background:
-        var(--pink);
+        var(--coral-soft);
+
+    color:
+        #923c31;
 }
 
 
@@ -1071,24 +974,22 @@
    ========================================================= */
 
 .contact-card-actions {
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         repeat(3,1fr);
 
     border-top:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 }
 
 
 .contact-card-actions > * {
     min-height:
-        48px;
+        45px;
 
-    display:
-        flex;
+    display: flex;
 
     align-items:
         center;
@@ -1100,11 +1001,11 @@
         none;
 
     border-right:
-        2px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     background:
-        white;
+        transparent;
 
     color:
         var(--ink);
@@ -1117,22 +1018,24 @@
         monospace;
 
     font-size:
-        .46rem;
+        .45rem;
 
     font-weight:
-        900;
+        700;
 }
 
 
 .contact-card-actions > *:last-child {
-    border-right:
-        none;
+    border-right: none;
 }
 
 
 .contact-card-actions > *:hover {
     background:
-        var(--acid);
+        var(--lavender-soft);
+
+    color:
+        #574d97;
 }
 
 
@@ -1145,14 +1048,13 @@
         1 / -1;
 
     min-height:
-        390px;
+        340px;
 
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         minmax(0,1fr)
-        180px;
+        130px;
 
     align-items:
         center;
@@ -1161,18 +1063,14 @@
         30px;
 
     padding:
-        40px;
+        38px;
 
     border:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     background:
-        var(--lavender);
-
-    box-shadow:
-        8px 8px 0
-        var(--ink);
+        var(--surface);
 }
 
 
@@ -1181,10 +1079,7 @@
         8px 0 0;
 
     font-size:
-        2rem;
-
-    font-weight:
-        1000;
+        1.5rem;
 }
 
 
@@ -1195,8 +1090,11 @@
     margin:
         12px 0 20px;
 
+    color:
+        var(--muted);
+
     font-size:
-        .7rem;
+        .68rem;
 
     line-height:
         1.6;
@@ -1204,32 +1102,34 @@
 
 
 .empty-label {
+    color:
+        var(--lavender);
+
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .5rem;
+        .48rem;
 
     font-weight:
-        900;
+        700;
 }
 
 
 .contacts-empty button {
     padding:
-        13px 16px;
+        12px 15px;
 
     border:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--lavender);
 
     background:
-        var(--acid);
+        var(--lavender);
 
-    box-shadow:
-        4px 4px 0
-        var(--ink);
+    color:
+        white;
 
     cursor:
         pointer;
@@ -1239,42 +1139,36 @@
         monospace;
 
     font-size:
-        .52rem;
+        .5rem;
 
     font-weight:
-        900;
+        700;
 }
 
 
 .empty-art {
     width:
-        155px;
+        110px;
 
     height:
-        155px;
+        110px;
 
-    display:
-        grid;
+    display: grid;
 
-    place-items:
-        center;
+    place-items: center;
 
     border:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     background:
-        var(--aqua);
+        var(--lavender-soft);
 
-    box-shadow:
-        8px 8px 0
-        var(--pink);
+    color:
+        var(--lavender);
 
     font-size:
-        4rem;
-
-    transform:
-        rotate(-5deg);
+        2.7rem;
 }
 
 
@@ -1283,20 +1177,16 @@
    ========================================================= */
 
 .contact-overlay {
-    position:
-        fixed;
+    position: fixed;
 
-    inset:
-        0;
+    inset: 0;
 
-    z-index:
-        1900;
+    z-index: 1900;
 
     background:
-        rgba(21,21,21,.68);
+        rgba(15,15,15,.58);
 
-    opacity:
-        0;
+    opacity: 0;
 
     transition:
         opacity .18s ease;
@@ -1304,8 +1194,7 @@
 
 
 .contact-overlay.open {
-    opacity:
-        1;
+    opacity: 1;
 }
 
 
@@ -1314,40 +1203,34 @@
    ========================================================= */
 
 .contact-drawer {
-    position:
-        fixed;
+    position: fixed;
 
-    top:
-        0;
+    top: 0;
 
-    right:
-        0;
+    right: 0;
 
-    bottom:
-        0;
+    bottom: 0;
 
-    z-index:
-        2000;
+    z-index: 2000;
 
     width:
-        min(680px,100%);
+        min(670px,100%);
 
-    overflow-y:
-        auto;
+    overflow-y: auto;
 
     background:
-        var(--cream);
+        var(--paper);
 
     border-left:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     box-shadow:
-        -10px 0 0
-        var(--blue);
+        -20px 0 55px
+        rgba(0,0,0,.16);
 
     transform:
-        translateX(110%);
+        translateX(100%);
 
     transition:
         transform .22s ease;
@@ -1361,21 +1244,19 @@
 
 
 body.drawer-open {
-    overflow:
-        hidden;
+    overflow: hidden;
 }
 
 
 /* =========================================================
-   DRAWER TOP
+   DRAWER HEADER
    ========================================================= */
 
 .drawer-top {
     min-height:
-        115px;
+        105px;
 
-    display:
-        flex;
+    display: flex;
 
     align-items:
         center;
@@ -1387,30 +1268,33 @@ body.drawer-open {
         20px;
 
     padding:
-        24px 27px;
+        23px 27px;
 
     border-bottom:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     background:
-        var(--lavender);
+        var(--surface);
 }
 
 
 .drawer-kicker {
+    color:
+        var(--lavender);
+
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .49rem;
+        .48rem;
 
     font-weight:
-        900;
+        700;
 
     letter-spacing:
-        .11em;
+        .09em;
 }
 
 
@@ -1419,45 +1303,42 @@ body.drawer-open {
         7px 0 0;
 
     font-size:
-        1.5rem;
+        1.4rem;
 
     font-weight:
-        1000;
+        800;
 }
 
 
 .drawer-close {
     width:
-        46px;
+        42px;
 
     height:
-        46px;
+        42px;
 
-    display:
-        grid;
+    display: grid;
 
-    place-items:
-        center;
+    place-items: center;
 
     border:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     background:
-        var(--acid);
-
-    box-shadow:
-        3px 3px 0
-        var(--ink);
+        transparent;
 
     cursor:
         pointer;
 
     font-size:
-        1.5rem;
+        1.4rem;
+}
 
-    font-weight:
-        900;
+
+.drawer-close:hover {
+    background:
+        var(--paper-soft);
 }
 
 
@@ -1466,24 +1347,22 @@ body.drawer-open {
    ========================================================= */
 
 .contact-form {
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         1fr
         1fr;
 
     gap:
-        17px;
+        16px;
 
     padding:
-        28px;
+        27px;
 }
 
 
 .form-group {
-    display:
-        flex;
+    display: flex;
 
     flex-direction:
         column;
@@ -1501,18 +1380,21 @@ body.drawer-open {
 
 
 .form-group label {
+    color:
+        var(--muted);
+
     font-family:
         "Courier New",
         monospace;
 
     font-size:
-        .47rem;
+        .46rem;
 
     font-weight:
-        900;
+        700;
 
     letter-spacing:
-        .08em;
+        .07em;
 
     text-transform:
         uppercase;
@@ -1526,20 +1408,16 @@ body.drawer-open {
         100%;
 
     border:
-        3px solid
-        var(--ink);
+        1px solid
+        var(--border);
 
     outline:
         none;
 
     background:
-        white;
+        var(--surface);
 
     color:
-        var(--ink);
-
-    box-shadow:
-        3px 3px 0
         var(--ink);
 }
 
@@ -1547,7 +1425,7 @@ body.drawer-open {
 .form-group input,
 .form-group select {
     min-height:
-        48px;
+        46px;
 
     padding:
         0 11px;
@@ -1569,12 +1447,12 @@ body.drawer-open {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    background:
-        #f2eeff;
+    border-color:
+        var(--lavender);
 
     box-shadow:
-        5px 5px 0
-        var(--pink);
+        0 0 0 2px
+        var(--lavender-soft);
 }
 
 
@@ -1583,8 +1461,7 @@ body.drawer-open {
    ========================================================= */
 
 .drawer-actions {
-    display:
-        grid;
+    display: grid;
 
     grid-template-columns:
         1fr
@@ -1594,22 +1471,18 @@ body.drawer-open {
         10px;
 
     margin-top:
-        9px;
+        8px;
 }
 
 
 .secondary-button,
 .save-button {
     min-height:
-        56px;
+        52px;
 
     border:
-        3px solid
-        var(--ink);
-
-    box-shadow:
-        4px 4px 0
-        var(--ink);
+        1px solid
+        var(--border);
 
     cursor:
         pointer;
@@ -1619,22 +1492,24 @@ body.drawer-open {
         monospace;
 
     font-size:
-        .53rem;
+        .5rem;
 
     font-weight:
-        900;
+        700;
 }
 
 
 .secondary-button {
     background:
-        white;
+        var(--surface);
+
+    color:
+        var(--ink);
 }
 
 
 .save-button {
-    display:
-        flex;
+    display: flex;
 
     align-items:
         center;
@@ -1643,21 +1518,25 @@ body.drawer-open {
         space-between;
 
     padding:
-        0 18px;
+        0 17px;
 
     background:
-        var(--aqua);
+        var(--lavender);
+
+    color:
+        white;
 }
 
 
-.secondary-button:hover,
-.save-button:hover {
-    transform:
-        translate(2px,2px);
+.secondary-button:hover {
+    background:
+        var(--paper-soft);
+}
 
-    box-shadow:
-        2px 2px 0
-        var(--ink);
+
+.save-button:hover {
+    background:
+        #756bb4;
 }
 
 
@@ -1700,9 +1579,6 @@ body.drawer-open {
     .contacts-hero {
         grid-template-columns:
             1fr;
-
-        min-height:
-            0;
     }
 
 
@@ -1718,6 +1594,12 @@ body.drawer-open {
             1fr;
     }
 
+
+    .hero-action-wrap {
+        max-width:
+            400px;
+    }
+
 }
 
 
@@ -1725,7 +1607,7 @@ body.drawer-open {
 
     .contacts-hero h1 {
         font-size:
-            3.3rem;
+            3rem;
     }
 
 
@@ -1744,12 +1626,6 @@ body.drawer-open {
     .contact-search {
         grid-column:
             auto;
-    }
-
-
-    .contacts-toolbar select {
-        width:
-            100%;
     }
 
 
