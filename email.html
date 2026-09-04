@@ -1,1 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Email Campaigns | Helix CRM
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/email.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="app-shell">
+
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-brand">
+
+                <a
+                    href="index.html"
+                    class="brand-link"
+                >
+
+                    <div class="brand-mark">
+                        H
+                    </div>
+
+
+                    <div class="brand-copy">
+
+                        <strong>
+                            HELIX
+                        </strong>
+
+                        <span>
+                            OPERATIONS CRM
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <nav class="sidebar-nav">
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        WORKSPACE
+                    </span>
+
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◫
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="customers.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◩
+                        </span>
+
+                        <span>
+                            Customers
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contacts.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◉
+                        </span>
+
+                        <span>
+                            Contacts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="pipeline.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ↗
+                        </span>
+
+                        <span>
+                            Pipeline
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="contracts.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌘
+                        </span>
+
+                        <span>
+                            Gov Contracts
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="tasks.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ✓
+                        </span>
+
+                        <span>
+                            Tasks
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        MARKETING
+                    </span>
+
+
+                    <a
+                        href="email.html"
+                        class="nav-link active"
+                    >
+
+                        <span class="nav-icon">
+                            ✉
+                        </span>
+
+                        <span>
+                            Email Campaigns
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-planner.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ◇
+                        </span>
+
+                        <span>
+                            Social Planner
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="social-analytics.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌁
+                        </span>
+
+                        <span>
+                            Social Analytics
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="seo.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ⌕
+                        </span>
+
+                        <span>
+                            SEO
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        EVENTS
+                    </span>
+
+
+                    <a
+                        href="tradeshows.html"
+                        class="nav-link"
+                    >
+
+                        <span class="nav-icon">
+                            ▦
+                        </span>
+
+                        <span>
+                            Tradeshows
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+            </nav>
+
+
+
+            <div class="sidebar-footer">
+
+                <div class="demo-chip">
+
+                    <span class="demo-dot"></span>
+
+                    Portfolio Demo
+
+                </div>
+
+
+                <div class="user-card">
+
+                    <div class="user-avatar">
+                        LO
+                    </div>
+
+
+                    <div class="user-copy">
+
+                        <strong>
+                            Lauren Omstead
+                        </strong>
+
+                        <span>
+                            Workspace Admin
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
+        <div class="main-shell">
+
+
+            <header class="topbar">
+
+
+                <div class="topbar-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        id="globalSearch"
+                        type="search"
+                        placeholder="Search email campaigns..."
+                        autocomplete="off"
+                    >
+
+                    <kbd>
+                        /
+                    </kbd>
+
+                </div>
+
+
+
+                <div class="topbar-actions">
+
+
+                    <button
+                        id="quickCreateButton"
+                        class="quick-create"
+                        type="button"
+                    >
+
+                        <span>
+                            + NEW RECORD
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="icon-button"
+                        type="button"
+                        aria-label="Notifications"
+                    >
+                        ◌
+                    </button>
+
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =============================================
+                 PAGE
+                 ============================================= -->
+
+            <main class="email-page">
+
+
+                <div class="demo-notice">
+
+                    Portfolio Demo · Helix Operations Group is fictional · Campaign and performance data shown is mock data
+
+                </div>
+
+
+
+                <!-- =========================================
+                     HERO
+                     ========================================= -->
+
+                <section class="email-hero">
+
+
+                    <div class="hero-copy">
+
+                        <span class="eyebrow">
+                            EMAIL MARKETING / 06
+                        </span>
+
+
+                        <h1>
+
+                            WHAT ARE WE
+                            <span>SENDING?</span>
+
+                        </h1>
+
+
+                        <p>
+
+                            Plan outreach, track campaign performance,
+                            organize audience segments, manage send dates,
+                            and keep marketing activity connected to the
+                            broader CRM.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="hero-action-wrap">
+
+                        <span class="hero-label">
+                            PLAN · SEND · MEASURE
+                        </span>
+
+
+                        <button
+                            id="addCampaignButton"
+                            class="add-campaign-button"
+                            type="button"
+                        >
+
+                            <span>
+                                NEW CAMPAIGN
+                            </span>
+
+                            <strong>
+                                +
+                            </strong>
+
+                        </button>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     METRICS
+                     ========================================= -->
+
+                <section class="email-metrics">
+
+
+                    <article class="email-metric metric-active">
+
+                        <span>
+                            ACTIVE CAMPAIGNS
+                        </span>
+
+                        <strong id="metricActive">
+                            0
+                        </strong>
+
+                        <small>
+                            currently running
+                        </small>
+
+                    </article>
+
+
+                    <article class="email-metric metric-scheduled">
+
+                        <span>
+                            SCHEDULED
+                        </span>
+
+                        <strong id="metricScheduled">
+                            0
+                        </strong>
+
+                        <small>
+                            waiting to send
+                        </small>
+
+                    </article>
+
+
+                    <article class="email-metric metric-open">
+
+                        <span>
+                            AVG. OPEN RATE
+                        </span>
+
+                        <strong id="metricOpenRate">
+                            0%
+                        </strong>
+
+                        <small>
+                            sent campaigns
+                        </small>
+
+                    </article>
+
+
+                    <article class="email-metric metric-click">
+
+                        <span>
+                            AVG. CLICK RATE
+                        </span>
+
+                        <strong id="metricClickRate">
+                            0%
+                        </strong>
+
+                        <small>
+                            sent campaigns
+                        </small>
+
+                    </article>
+
+
+                    <article class="email-metric metric-recipients">
+
+                        <span>
+                            TOTAL RECIPIENTS
+                        </span>
+
+                        <strong id="metricRecipients">
+                            0
+                        </strong>
+
+                        <small>
+                            across campaigns
+                        </small>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     TOOLBAR
+                     ========================================= -->
+
+                <section class="email-toolbar">
+
+
+                    <label class="email-search">
+
+                        <span>
+                            ⌕
+                        </span>
+
+                        <input
+                            id="campaignSearch"
+                            type="search"
+                            placeholder="Search campaign, subject, audience, owner..."
+                            autocomplete="off"
+                        >
+
+                    </label>
+
+
+
+                    <select id="statusFilter">
+
+                        <option value="">
+                            ALL STATUSES
+                        </option>
+
+                        <option value="draft">
+                            DRAFT
+                        </option>
+
+                        <option value="scheduled">
+                            SCHEDULED
+                        </option>
+
+                        <option value="active">
+                            ACTIVE
+                        </option>
+
+                        <option value="sent">
+                            SENT
+                        </option>
+
+                        <option value="paused">
+                            PAUSED
+                        </option>
+
+                        <option value="archived">
+                            ARCHIVED
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="typeFilter">
+
+                        <option value="">
+                            ALL CAMPAIGN TYPES
+                        </option>
+
+                        <option value="outreach">
+                            OUTREACH
+                        </option>
+
+                        <option value="nurture">
+                            NURTURE
+                        </option>
+
+                        <option value="newsletter">
+                            NEWSLETTER
+                        </option>
+
+                        <option value="event">
+                            EVENT
+                        </option>
+
+                        <option value="follow-up">
+                            FOLLOW-UP
+                        </option>
+
+                        <option value="announcement">
+                            ANNOUNCEMENT
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="ownerFilter">
+
+                        <option value="">
+                            ALL OWNERS
+                        </option>
+
+                    </select>
+
+
+
+                    <select id="campaignSort">
+
+                        <option value="recent">
+                            RECENTLY UPDATED
+                        </option>
+
+                        <option value="send-date">
+                            SEND DATE
+                        </option>
+
+                        <option value="open-rate">
+                            OPEN RATE
+                        </option>
+
+                        <option value="click-rate">
+                            CLICK RATE
+                        </option>
+
+                        <option value="name">
+                            NAME A–Z
+                        </option>
+
+                    </select>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     CAMPAIGN HEADING
+                     ========================================= -->
+
+                <section class="campaign-heading">
+
+
+                    <div>
+
+                        <span>
+                            CAMPAIGN WORKSPACE
+                        </span>
+
+                        <h2>
+                            Email campaigns
+                        </h2>
+
+                    </div>
+
+
+                    <div class="visible-count">
+
+                        <strong id="visibleCampaignCount">
+                            0
+                        </strong>
+
+                        <span>
+                            VISIBLE
+                        </span>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     CAMPAIGN LIST
+                     ========================================= -->
+
+                <section
+                    id="campaignList"
+                    class="campaign-list"
+                >
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         QUICK CREATE
+         ===================================================== -->
+
+    <div
+        id="quickCreateMenu"
+        class="quick-create-menu"
+        hidden
+    >
+
+        <div class="quick-menu-header">
+            CREATE NEW
+        </div>
+
+        <a href="customers.html?action=new">
+            Customer
+            <span>→</span>
+        </a>
+
+        <a href="contacts.html?action=new">
+            Contact
+            <span>→</span>
+        </a>
+
+        <a href="pipeline.html?action=new">
+            Opportunity
+            <span>→</span>
+        </a>
+
+        <a href="tasks.html?action=new">
+            Task
+            <span>→</span>
+        </a>
+
+        <a href="contracts.html?action=new">
+            Contract Record
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         OVERLAY
+         ===================================================== -->
+
+    <div
+        id="campaignOverlay"
+        class="campaign-overlay"
+        hidden
+    >
+    </div>
+
+
+
+    <!-- =====================================================
+         CAMPAIGN DRAWER
+         ===================================================== -->
+
+    <aside
+        id="campaignDrawer"
+        class="campaign-drawer"
+        hidden
+        aria-label="Campaign editor"
+    >
+
+
+        <div class="drawer-top">
+
+
+            <div>
+
+                <span class="drawer-kicker">
+                    EMAIL CAMPAIGN
+                </span>
+
+                <h2 id="drawerTitle">
+                    New campaign
+                </h2>
+
+            </div>
+
+
+            <button
+                id="drawerCloseButton"
+                class="drawer-close"
+                type="button"
+                aria-label="Close campaign editor"
+            >
+                ×
+            </button>
+
+
+        </div>
+
+
+
+        <form
+            id="campaignForm"
+            class="campaign-form"
+        >
+
+
+            <input
+                id="editingCampaignId"
+                type="hidden"
+            >
+
+
+
+            <div class="form-group full">
+
+                <label for="campaignName">
+                    Campaign Name
+                </label>
+
+                <input
+                    id="campaignName"
+                    type="text"
+                    placeholder="Campaign name"
+                    required
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignType">
+                    Campaign Type
+                </label>
+
+                <select id="campaignType">
+
+                    <option value="outreach">
+                        Outreach
+                    </option>
+
+                    <option value="nurture">
+                        Nurture
+                    </option>
+
+                    <option value="newsletter">
+                        Newsletter
+                    </option>
+
+                    <option value="event">
+                        Event
+                    </option>
+
+                    <option value="follow-up">
+                        Follow-Up
+                    </option>
+
+                    <option value="announcement">
+                        Announcement
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignStatus">
+                    Status
+                </label>
+
+                <select id="campaignStatus">
+
+                    <option value="draft">
+                        Draft
+                    </option>
+
+                    <option value="scheduled">
+                        Scheduled
+                    </option>
+
+                    <option value="active">
+                        Active
+                    </option>
+
+                    <option value="sent">
+                        Sent
+                    </option>
+
+                    <option value="paused">
+                        Paused
+                    </option>
+
+                    <option value="archived">
+                        Archived
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignOwner">
+                    Owner
+                </label>
+
+                <input
+                    id="campaignOwner"
+                    type="text"
+                    placeholder="Team member"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignAudience">
+                    Audience Segment
+                </label>
+
+                <input
+                    id="campaignAudience"
+                    type="text"
+                    placeholder="Rail OEMs, engineers, expo leads..."
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="campaignSubject">
+                    Subject Line
+                </label>
+
+                <input
+                    id="campaignSubject"
+                    type="text"
+                    placeholder="Email subject line"
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="campaignPreviewText">
+                    Preview Text
+                </label>
+
+                <input
+                    id="campaignPreviewText"
+                    type="text"
+                    placeholder="Short inbox preview"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignSendDate">
+                    Send Date
+                </label>
+
+                <input
+                    id="campaignSendDate"
+                    type="date"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignSendTime">
+                    Send Time
+                </label>
+
+                <input
+                    id="campaignSendTime"
+                    type="time"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignRecipients">
+                    Recipients
+                </label>
+
+                <input
+                    id="campaignRecipients"
+                    type="number"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignDelivered">
+                    Delivered
+                </label>
+
+                <input
+                    id="campaignDelivered"
+                    type="number"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignOpenRate">
+                    Open Rate %
+                </label>
+
+                <input
+                    id="campaignOpenRate"
+                    type="number"
+                    min="0"
+                    max="100"
+                    step=".1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignClickRate">
+                    Click Rate %
+                </label>
+
+                <input
+                    id="campaignClickRate"
+                    type="number"
+                    min="0"
+                    max="100"
+                    step=".1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignReplies">
+                    Replies
+                </label>
+
+                <input
+                    id="campaignReplies"
+                    type="number"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="campaignConversions">
+                    Conversions / Leads
+                </label>
+
+                <input
+                    id="campaignConversions"
+                    type="number"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="campaignGoal">
+                    Campaign Goal
+                </label>
+
+                <textarea
+                    id="campaignGoal"
+                    rows="4"
+                    placeholder="What should this campaign accomplish?"
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="campaignBody">
+                    Content Summary
+                </label>
+
+                <textarea
+                    id="campaignBody"
+                    rows="6"
+                    placeholder="Summarize the email content, offer, messaging, CTA..."
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="campaignCta">
+                    Primary CTA
+                </label>
+
+                <input
+                    id="campaignCta"
+                    type="text"
+                    placeholder="Schedule a call, visit page, download resource..."
+                >
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="campaignNotes">
+                    Internal Notes
+                </label>
+
+                <textarea
+                    id="campaignNotes"
+                    rows="5"
+                    placeholder="Testing notes, audience decisions, results, follow-up..."
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="drawer-actions full">
+
+
+                <button
+                    id="cancelCampaignButton"
+                    class="secondary-button"
+                    type="button"
+                >
+                    CANCEL
+                </button>
+
+
+                <button
+                    class="save-button"
+                    type="submit"
+                >
+
+                    <span id="saveCampaignLabel">
+                        SAVE CAMPAIGN
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </aside>
+
+
+
+    <script src="js/config.js"></script>
+    <script src="js/email.js"></script>
+
+
+</body>
+
+</html>
