@@ -1,1 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Social Analytics | Helix CRM
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/social-analytics.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <div class="app-shell">
+
+
+        <!-- =================================================
+             SIDEBAR
+             ================================================= -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-brand">
+
+                <a
+                    href="index.html"
+                    class="brand-link"
+                >
+
+                    <div class="brand-mark">
+                        H
+                    </div>
+
+
+                    <div class="brand-copy">
+
+                        <strong>
+                            HELIX
+                        </strong>
+
+                        <span>
+                            OPERATIONS CRM
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+            <nav class="sidebar-nav">
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        WORKSPACE
+                    </span>
+
+
+                    <a
+                        href="index.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">◫</span>
+                        <span>Dashboard</span>
+                    </a>
+
+
+                    <a
+                        href="customers.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">◩</span>
+                        <span>Customers</span>
+                    </a>
+
+
+                    <a
+                        href="contacts.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">◉</span>
+                        <span>Contacts</span>
+                    </a>
+
+
+                    <a
+                        href="pipeline.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">↗</span>
+                        <span>Pipeline</span>
+                    </a>
+
+
+                    <a
+                        href="contracts.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">⌘</span>
+                        <span>Gov Contracts</span>
+                    </a>
+
+
+                    <a
+                        href="tasks.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">✓</span>
+                        <span>Tasks</span>
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        MARKETING
+                    </span>
+
+
+                    <a
+                        href="email.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">✉</span>
+                        <span>Email Campaigns</span>
+                    </a>
+
+
+                    <a
+                        href="social-planner.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">◇</span>
+                        <span>Social Planner</span>
+                    </a>
+
+
+                    <a
+                        href="social-analytics.html"
+                        class="nav-link active"
+                    >
+                        <span class="nav-icon">⌁</span>
+                        <span>Social Analytics</span>
+                    </a>
+
+
+                    <a
+                        href="seo.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">⌕</span>
+                        <span>SEO</span>
+                    </a>
+
+                </div>
+
+
+
+                <div class="nav-group">
+
+                    <span class="nav-group-label">
+                        EVENTS
+                    </span>
+
+
+                    <a
+                        href="tradeshows.html"
+                        class="nav-link"
+                    >
+                        <span class="nav-icon">▦</span>
+                        <span>Tradeshows</span>
+                    </a>
+
+                </div>
+
+
+            </nav>
+
+
+
+            <div class="sidebar-footer">
+
+                <div class="demo-chip">
+                    <span class="demo-dot"></span>
+                    Portfolio Demo
+                </div>
+
+
+                <div class="user-card">
+
+                    <div class="user-avatar">
+                        LO
+                    </div>
+
+
+                    <div class="user-copy">
+
+                        <strong>
+                            Lauren Omstead
+                        </strong>
+
+                        <span>
+                            Workspace Admin
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+             ================================================= -->
+
+        <div class="main-shell">
+
+
+            <header class="topbar">
+
+
+                <div class="topbar-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        id="globalSearch"
+                        type="search"
+                        placeholder="Search analytics..."
+                        autocomplete="off"
+                    >
+
+                    <kbd>
+                        /
+                    </kbd>
+
+                </div>
+
+
+
+                <div class="topbar-actions">
+
+                    <button
+                        id="quickCreateButton"
+                        class="quick-create"
+                        type="button"
+                    >
+                        <span>
+                            + NEW RECORD
+                        </span>
+                    </button>
+
+
+                    <button
+                        class="icon-button"
+                        type="button"
+                        aria-label="Notifications"
+                    >
+                        ◌
+                    </button>
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =============================================
+                 PAGE
+                 ============================================= -->
+
+            <main class="analytics-page">
+
+
+                <div class="demo-notice">
+
+                    Portfolio Demo · Helix Operations Group is fictional · Social performance data shown is mock data
+
+                </div>
+
+
+
+                <!-- =========================================
+                     HERO
+                     ========================================= -->
+
+                <section class="analytics-hero">
+
+
+                    <div class="hero-copy">
+
+                        <span class="eyebrow">
+                            SOCIAL PERFORMANCE / 08
+                        </span>
+
+
+                        <h1>
+
+                            WHAT'S ACTUALLY
+                            <span>WORKING?</span>
+
+                        </h1>
+
+
+                        <p>
+
+                            Compare platform performance, track engagement
+                            trends, identify the content earning attention,
+                            and turn social activity into clearer marketing
+                            decisions.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="hero-action-wrap">
+
+                        <span class="hero-label">
+                            MEASURE · COMPARE · IMPROVE
+                        </span>
+
+
+                        <button
+                            id="editAnalyticsButton"
+                            class="edit-analytics-button"
+                            type="button"
+                        >
+
+                            <span>
+                                UPDATE DATA
+                            </span>
+
+                            <strong>
+                                ↗
+                            </strong>
+
+                        </button>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     FILTER BAR
+                     ========================================= -->
+
+                <section class="analytics-controls">
+
+
+                    <div class="range-buttons">
+
+                        <button
+                            type="button"
+                            class="range-button"
+                            data-range="7"
+                        >
+                            7 DAYS
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="range-button active"
+                            data-range="30"
+                        >
+                            30 DAYS
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="range-button"
+                            data-range="90"
+                        >
+                            90 DAYS
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="range-button"
+                            data-range="365"
+                        >
+                            12 MONTHS
+                        </button>
+
+                    </div>
+
+
+
+                    <select id="platformFilter">
+
+                        <option value="">
+                            ALL PLATFORMS
+                        </option>
+
+                        <option value="linkedin">
+                            LINKEDIN
+                        </option>
+
+                        <option value="facebook">
+                            FACEBOOK
+                        </option>
+
+                        <option value="instagram">
+                            INSTAGRAM
+                        </option>
+
+                        <option value="x">
+                            X / TWITTER
+                        </option>
+
+                    </select>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     METRICS
+                     ========================================= -->
+
+                <section class="analytics-metrics">
+
+
+                    <article class="analytics-metric metric-impressions">
+
+                        <span>
+                            IMPRESSIONS
+                        </span>
+
+                        <strong id="metricImpressions">
+                            0
+                        </strong>
+
+                        <small id="metricImpressionsChange">
+                            0% vs. prior period
+                        </small>
+
+                    </article>
+
+
+                    <article class="analytics-metric metric-engagement">
+
+                        <span>
+                            ENGAGEMENT RATE
+                        </span>
+
+                        <strong id="metricEngagement">
+                            0%
+                        </strong>
+
+                        <small id="metricEngagementChange">
+                            0% vs. prior period
+                        </small>
+
+                    </article>
+
+
+                    <article class="analytics-metric metric-clicks">
+
+                        <span>
+                            CLICKS
+                        </span>
+
+                        <strong id="metricClicks">
+                            0
+                        </strong>
+
+                        <small id="metricClicksChange">
+                            0% vs. prior period
+                        </small>
+
+                    </article>
+
+
+                    <article class="analytics-metric metric-followers">
+
+                        <span>
+                            FOLLOWER GROWTH
+                        </span>
+
+                        <strong id="metricFollowerGrowth">
+                            0
+                        </strong>
+
+                        <small>
+                            net new followers
+                        </small>
+
+                    </article>
+
+
+                    <article class="analytics-metric metric-posts">
+
+                        <span>
+                            POSTS PUBLISHED
+                        </span>
+
+                        <strong id="metricPosts">
+                            0
+                        </strong>
+
+                        <small>
+                            during selected period
+                        </small>
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     PRIMARY ANALYTICS
+                     ========================================= -->
+
+                <section class="analytics-grid primary-analytics-grid">
+
+
+                    <!-- =====================================
+                         TREND
+                         ===================================== -->
+
+                    <article class="analytics-panel trend-panel">
+
+
+                        <div class="panel-heading">
+
+                            <div>
+
+                                <span>
+                                    PERFORMANCE TREND
+                                </span>
+
+                                <h2>
+                                    Impressions & engagement
+                                </h2>
+
+                            </div>
+
+
+                            <div class="chart-legend">
+
+                                <span>
+                                    <i class="legend-dot impressions"></i>
+                                    Impressions
+                                </span>
+
+                                <span>
+                                    <i class="legend-dot engagement"></i>
+                                    Engagement
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div
+                            id="trendChart"
+                            class="trend-chart"
+                        >
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- =====================================
+                         PLATFORM COMPARISON
+                         ===================================== -->
+
+                    <article class="analytics-panel platform-panel">
+
+
+                        <div class="panel-heading">
+
+                            <div>
+
+                                <span>
+                                    CHANNEL MIX
+                                </span>
+
+                                <h2>
+                                    Platform comparison
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            id="platformComparison"
+                            class="platform-comparison"
+                        >
+                        </div>
+
+
+                    </article>
+
+
+                </section>
+
+
+
+                <!-- =========================================
+                     SECONDARY ANALYTICS
+                     ========================================= -->
+
+                <section class="analytics-grid secondary-analytics-grid">
+
+
+                    <!-- =====================================
+                         TOP POSTS
+                         ===================================== -->
+
+                    <article class="analytics-panel top-posts-panel">
+
+
+                        <div class="panel-heading">
+
+                            <div>
+
+                                <span>
+                                    CONTENT PERFORMANCE
+                                </span>
+
+                                <h2>
+                                    Top posts
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            id="topPostList"
+                            class="top-post-list"
+                        >
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- =====================================
+                         CONTENT TYPES
+                         ===================================== -->
+
+                    <article class="analytics-panel content-type-panel">
+
+
+                        <div class="panel-heading">
+
+                            <div>
+
+                                <span>
+                                    CONTENT MIX
+                                </span>
+
+                                <h2>
+                                    Best content types
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            id="contentTypeList"
+                            class="content-type-list"
+                        >
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- =====================================
+                         SUMMARY
+                         ===================================== -->
+
+                    <article class="analytics-panel insight-panel">
+
+
+                        <div class="panel-heading">
+
+                            <div>
+
+                                <span>
+                                    QUICK READ
+                                </span>
+
+                                <h2>
+                                    Performance summary
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            id="performanceSummary"
+                            class="performance-summary"
+                        >
+                        </div>
+
+
+                    </article>
+
+
+                </section>
+
+
+            </main>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         QUICK CREATE
+         ===================================================== -->
+
+    <div
+        id="quickCreateMenu"
+        class="quick-create-menu"
+        hidden
+    >
+
+        <div class="quick-menu-header">
+            CREATE NEW
+        </div>
+
+        <a href="customers.html?action=new">
+            Customer
+            <span>→</span>
+        </a>
+
+        <a href="contacts.html?action=new">
+            Contact
+            <span>→</span>
+        </a>
+
+        <a href="pipeline.html?action=new">
+            Opportunity
+            <span>→</span>
+        </a>
+
+        <a href="tasks.html?action=new">
+            Task
+            <span>→</span>
+        </a>
+
+        <a href="contracts.html?action=new">
+            Contract Record
+            <span>→</span>
+        </a>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         OVERLAY
+         ===================================================== -->
+
+    <div
+        id="analyticsOverlay"
+        class="analytics-overlay"
+        hidden
+    >
+    </div>
+
+
+
+    <!-- =====================================================
+         DATA DRAWER
+         ===================================================== -->
+
+    <aside
+        id="analyticsDrawer"
+        class="analytics-drawer"
+        hidden
+        aria-label="Social analytics editor"
+    >
+
+
+        <div class="drawer-top">
+
+
+            <div>
+
+                <span class="drawer-kicker">
+                    PERFORMANCE SNAPSHOT
+                </span>
+
+                <h2>
+                    Update analytics
+                </h2>
+
+            </div>
+
+
+            <button
+                id="drawerCloseButton"
+                class="drawer-close"
+                type="button"
+                aria-label="Close analytics editor"
+            >
+                ×
+            </button>
+
+
+        </div>
+
+
+
+        <form
+            id="analyticsForm"
+            class="analytics-form"
+        >
+
+
+            <div class="form-section-title full">
+                OVERALL PERFORMANCE
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="analyticsImpressions">
+                    Impressions
+                </label>
+
+                <input
+                    id="analyticsImpressions"
+                    type="number"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="analyticsImpressionsChange">
+                    Impression Change %
+                </label>
+
+                <input
+                    id="analyticsImpressionsChange"
+                    type="number"
+                    step=".1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="analyticsEngagement">
+                    Engagement Rate %
+                </label>
+
+                <input
+                    id="analyticsEngagement"
+                    type="number"
+                    min="0"
+                    max="100"
+                    step=".1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="analyticsEngagementChange">
+                    Engagement Change %
+                </label>
+
+                <input
+                    id="analyticsEngagementChange"
+                    type="number"
+                    step=".1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="analyticsClicks">
+                    Clicks
+                </label>
+
+                <input
+                    id="analyticsClicks"
+                    type="number"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="analyticsClicksChange">
+                    Click Change %
+                </label>
+
+                <input
+                    id="analyticsClicksChange"
+                    type="number"
+                    step=".1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="analyticsFollowers">
+                    Follower Growth
+                </label>
+
+                <input
+                    id="analyticsFollowers"
+                    type="number"
+                    step="1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-group">
+
+                <label for="analyticsPosts">
+                    Posts Published
+                </label>
+
+                <input
+                    id="analyticsPosts"
+                    type="number"
+                    min="0"
+                    step="1"
+                    value="0"
+                >
+
+            </div>
+
+
+
+            <div class="form-section-title full">
+                PLATFORM PERFORMANCE
+            </div>
+
+
+
+            <div class="platform-editor full">
+
+
+                <div class="platform-editor-row">
+
+                    <strong>
+                        LinkedIn
+                    </strong>
+
+                    <input
+                        id="linkedinImpressions"
+                        type="number"
+                        min="0"
+                        placeholder="Impressions"
+                    >
+
+                    <input
+                        id="linkedinEngagement"
+                        type="number"
+                        min="0"
+                        max="100"
+                        step=".1"
+                        placeholder="Engagement %"
+                    >
+
+                    <input
+                        id="linkedinFollowers"
+                        type="number"
+                        step="1"
+                        placeholder="Follower growth"
+                    >
+
+                </div>
+
+
+
+                <div class="platform-editor-row">
+
+                    <strong>
+                        Facebook
+                    </strong>
+
+                    <input
+                        id="facebookImpressions"
+                        type="number"
+                        min="0"
+                        placeholder="Impressions"
+                    >
+
+                    <input
+                        id="facebookEngagement"
+                        type="number"
+                        min="0"
+                        max="100"
+                        step=".1"
+                        placeholder="Engagement %"
+                    >
+
+                    <input
+                        id="facebookFollowers"
+                        type="number"
+                        step="1"
+                        placeholder="Follower growth"
+                    >
+
+                </div>
+
+
+
+                <div class="platform-editor-row">
+
+                    <strong>
+                        Instagram
+                    </strong>
+
+                    <input
+                        id="instagramImpressions"
+                        type="number"
+                        min="0"
+                        placeholder="Impressions"
+                    >
+
+                    <input
+                        id="instagramEngagement"
+                        type="number"
+                        min="0"
+                        max="100"
+                        step=".1"
+                        placeholder="Engagement %"
+                    >
+
+                    <input
+                        id="instagramFollowers"
+                        type="number"
+                        step="1"
+                        placeholder="Follower growth"
+                    >
+
+                </div>
+
+
+
+                <div class="platform-editor-row">
+
+                    <strong>
+                        X / Twitter
+                    </strong>
+
+                    <input
+                        id="xImpressions"
+                        type="number"
+                        min="0"
+                        placeholder="Impressions"
+                    >
+
+                    <input
+                        id="xEngagement"
+                        type="number"
+                        min="0"
+                        max="100"
+                        step=".1"
+                        placeholder="Engagement %"
+                    >
+
+                    <input
+                        id="xFollowers"
+                        type="number"
+                        step="1"
+                        placeholder="Follower growth"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="form-group full">
+
+                <label for="analyticsSummary">
+                    Performance Notes
+                </label>
+
+                <textarea
+                    id="analyticsSummary"
+                    rows="7"
+                    placeholder="Key takeaways, trends, wins, areas to improve..."
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="drawer-actions full">
+
+
+                <button
+                    id="cancelAnalyticsButton"
+                    class="secondary-button"
+                    type="button"
+                >
+                    CANCEL
+                </button>
+
+
+                <button
+                    class="save-button"
+                    type="submit"
+                >
+                    <span>
+                        SAVE ANALYTICS
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </aside>
+
+
+
+    <script src="js/config.js"></script>
+    <script src="js/social-analytics.js"></script>
+
+
+</body>
+
+</html>
